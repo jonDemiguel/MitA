@@ -8,8 +8,8 @@ public class MapManager : MonoBehaviour
     // Controls the width and height of the map
     [SerializeField] private int width = 80, height = 45;
     [SerializeField] private Color32 darkColor = new Color32(0, 0, 0, 0), lightColor = new Color32(255, 255, 255, 255);
-    [SerializzeField] private TileBase floorTile, wallTile;
-    [SerializeField] private Tilemap floorMap, ObstacleMap;
+    [SerializeField] private TileBase floorTile, wallTile;
+    [SerializeField] private Tilemap floorMap, obstacleMap;
 
     // Getter methods
     public Tilemap FloorMap { get => floorMap; }
