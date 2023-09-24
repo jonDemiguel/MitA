@@ -121,15 +121,15 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: run_southwest_Frame_0
     originalName: 
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0.5, y: -0.0625}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 16
-      height: 20
+      width: 8
+      height: 16
     spriteID: 66a1ae18684343842922c406803cebc7
     spriteBone: []
     spriteOutline: []
@@ -141,15 +141,15 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 4}
   - name: run_southwest_Frame_1
     originalName: 
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0.5, y: -0.20000002}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 32
-      width: 16
-      height: 20
+      x: 36
+      y: 28
+      width: 8
+      height: 15
     spriteID: ed068f9ed5b13714b83a90ce5d3f2f36
     spriteBone: []
     spriteOutline: []
@@ -158,18 +158,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 32}
+    uvTransform: {x: 36, y: 28}
   - name: run_southwest_Frame_2
     originalName: 
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0.5, y: -0.125}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
-      y: 60
-      width: 16
-      height: 20
+      y: 28
+      width: 8
+      height: 16
     spriteID: 4e03ed98c80c9654991bd4f4e1f4b3c4
     spriteBone: []
     spriteOutline: []
@@ -178,18 +178,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 60}
+    uvTransform: {x: 4, y: 28}
   - name: run_southwest_Frame_3
     originalName: 
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0.5, y: -0.0625}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 4
-      y: 88
-      width: 16
-      height: 20
+      x: 20
+      y: 4
+      width: 8
+      height: 16
     spriteID: 665bf589f84808f429cfbf3a3be9e198
     spriteBone: []
     spriteOutline: []
@@ -198,18 +198,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 88}
+    uvTransform: {x: 20, y: 4}
   - name: run_southwest_Frame_4
     originalName: 
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0.5, y: -0.125}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 28
-      y: 4
-      width: 16
-      height: 20
+      x: 20
+      y: 28
+      width: 8
+      height: 16
     spriteID: 2c9053827a4d7a64a8c2ce9326021d03
     spriteBone: []
     spriteOutline: []
@@ -218,18 +218,18 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 28, y: 4}
+    uvTransform: {x: 20, y: 28}
   - name: run_southwest_Frame_5
     originalName: 
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0.5, y: -0.125}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
-      x: 28
-      y: 32
-      width: 16
-      height: 20
+      x: 36
+      y: 4
+      width: 8
+      height: 16
     spriteID: 62615bc6b3c91b0479bbda09e4f490fe
     spriteBone: []
     spriteOutline: []
@@ -238,7 +238,7 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 28, y: 32}
+    uvTransform: {x: 36, y: 4}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
@@ -251,50 +251,50 @@ ScriptedImporter:
     - name: run_southwest_Frame_0
       frameIndex: 0
       cellRect:
-        x: 0
-        y: 0
-        width: 16
-        height: 20
+        x: 4
+        y: 1
+        width: 8
+        height: 16
       spriteId: 66a1ae18684343842922c406803cebc7
     - name: run_southwest_Frame_1
       frameIndex: 1
       cellRect:
-        x: 0
-        y: 0
-        width: 16
-        height: 20
+        x: 4
+        y: 3
+        width: 8
+        height: 15
       spriteId: ed068f9ed5b13714b83a90ce5d3f2f36
     - name: run_southwest_Frame_2
       frameIndex: 2
       cellRect:
-        x: 0
-        y: 0
-        width: 16
-        height: 20
+        x: 4
+        y: 2
+        width: 8
+        height: 16
       spriteId: 4e03ed98c80c9654991bd4f4e1f4b3c4
     - name: run_southwest_Frame_3
       frameIndex: 3
       cellRect:
-        x: 0
-        y: 0
-        width: 16
-        height: 20
+        x: 4
+        y: 1
+        width: 8
+        height: 16
       spriteId: 665bf589f84808f429cfbf3a3be9e198
     - name: run_southwest_Frame_4
       frameIndex: 4
       cellRect:
-        x: 0
-        y: 0
-        width: 16
-        height: 20
+        x: 4
+        y: 2
+        width: 8
+        height: 16
       spriteId: 2c9053827a4d7a64a8c2ce9326021d03
     - name: run_southwest_Frame_5
       frameIndex: 5
       cellRect:
-        x: 0
-        y: 0
-        width: 16
-        height: 20
+        x: 4
+        y: 2
+        width: 8
+        height: 16
       spriteId: 62615bc6b3c91b0479bbda09e4f490fe
     linkedCells: []
     parentIndex: -1
