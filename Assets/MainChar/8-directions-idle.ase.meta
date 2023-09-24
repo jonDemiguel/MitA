@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f13b2cf011d874144a781df56894abb2
+guid: 3d3ec5f928d2874438ba82883889af22
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -119,18 +119,18 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: red_eye_monster_Frame_0
+  - name: 8-directions-idle
     originalName: 
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0.50877196, y: -1}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 4
       y: 4
-      width: 16
-      height: 16
-    spriteID: 1808a05fbb1b4284dacc3f72a7690fc3
+      width: 57
+      height: 32
+    spriteID: b17b077064323bf43bb289f150e773f4
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -139,138 +139,26 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: red_eye_monster_Frame_1
-    originalName: 
-    pivot: {x: 0.53333336, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 52
-      width: 15
-      height: 16
-    spriteID: d71eabf71f223f04fb637f56ff2636a3
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 52}
-  - name: red_eye_monster_Frame_2
-    originalName: 
-    pivot: {x: 0.53333336, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 76
-      width: 15
-      height: 16
-    spriteID: 69550c069a1b0824293fddad5da5cfcc
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 76}
-  - name: red_eye_monster_Frame_3
-    originalName: 
-    pivot: {x: 0.53333336, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 100
-      width: 15
-      height: 16
-    spriteID: 6076c88e1a26cb54b882af5a0b973645
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 100}
-  - name: red_eye_monster_Frame_4
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 28
-      width: 16
-      height: 16
-    spriteID: c9980609855964542a360c89d0bb4949
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 28}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -873905282
-    name: red_eye_monster
+    guid: -1113866320
+    name: 8-directions-idle
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: red_eye_monster_Frame_0
+    - name: 8-directions-idle
       frameIndex: 0
       cellRect:
-        x: 0
-        y: 0
-        width: 16
-        height: 16
-      spriteId: 1808a05fbb1b4284dacc3f72a7690fc3
-    - name: red_eye_monster_Frame_1
-      frameIndex: 1
-      cellRect:
-        x: 0
-        y: 0
-        width: 15
-        height: 16
-      spriteId: d71eabf71f223f04fb637f56ff2636a3
-    - name: red_eye_monster_Frame_2
-      frameIndex: 2
-      cellRect:
-        x: 0
-        y: 0
-        width: 15
-        height: 16
-      spriteId: 69550c069a1b0824293fddad5da5cfcc
-    - name: red_eye_monster_Frame_3
-      frameIndex: 3
-      cellRect:
-        x: 0
-        y: 0
-        width: 15
-        height: 16
-      spriteId: 6076c88e1a26cb54b882af5a0b973645
-    - name: red_eye_monster_Frame_4
-      frameIndex: 4
-      cellRect:
-        x: 0
-        y: 0
-        width: 16
-        height: 16
-      spriteId: c9980609855964542a360c89d0bb4949
+        x: 3
+        y: 32
+        width: 57
+        height: 32
+      spriteId: b17b077064323bf43bb289f150e773f4
     linkedCells: []
     parentIndex: -1
   platformSettings: []
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 16, y: 16}
+  canvasSize: {x: 64, y: 64}

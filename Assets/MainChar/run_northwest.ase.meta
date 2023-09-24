@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f13b2cf011d874144a781df56894abb2
+guid: ae894bb34751b3645820d25adc408d41
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -119,7 +119,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: red_eye_monster_Frame_0
+  - name: run_northwest_Frame_0
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -129,8 +129,8 @@ ScriptedImporter:
       x: 4
       y: 4
       width: 16
-      height: 16
-    spriteID: 1808a05fbb1b4284dacc3f72a7690fc3
+      height: 20
+    spriteID: ea55e0cee17c4164c9890705216e6121
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -139,67 +139,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: red_eye_monster_Frame_1
-    originalName: 
-    pivot: {x: 0.53333336, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 52
-      width: 15
-      height: 16
-    spriteID: d71eabf71f223f04fb637f56ff2636a3
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 52}
-  - name: red_eye_monster_Frame_2
-    originalName: 
-    pivot: {x: 0.53333336, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 76
-      width: 15
-      height: 16
-    spriteID: 69550c069a1b0824293fddad5da5cfcc
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 76}
-  - name: red_eye_monster_Frame_3
-    originalName: 
-    pivot: {x: 0.53333336, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 100
-      width: 15
-      height: 16
-    spriteID: 6076c88e1a26cb54b882af5a0b973645
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 100}
-  - name: red_eye_monster_Frame_4
+  - name: run_northwest_Frame_1
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -207,10 +147,10 @@ ScriptedImporter:
     rect:
       serializedVersion: 2
       x: 4
-      y: 28
+      y: 32
       width: 16
-      height: 16
-    spriteID: c9980609855964542a360c89d0bb4949
+      height: 20
+    spriteID: 0c24fd5b3a0c37442bc8fe87e81249f0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -218,59 +158,147 @@ ScriptedImporter:
     indices: 
     edges: []
     tessellationDetail: 0
-    uvTransform: {x: 4, y: 28}
+    uvTransform: {x: 4, y: 32}
+  - name: run_northwest_Frame_2
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 60
+      width: 16
+      height: 20
+    spriteID: 18eae2ac8a07be1478290f1128d4bae2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 60}
+  - name: run_northwest_Frame_3
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 88
+      width: 16
+      height: 20
+    spriteID: fe8b299818dcfb84a9e06d541c5e2fe8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 88}
+  - name: run_northwest_Frame_4
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 28
+      y: 4
+      width: 16
+      height: 20
+    spriteID: b28473a9dc8fc7341a0431505ba6bf2b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 28, y: 4}
+  - name: run_northwest_Frame_5
+    originalName: 
+    pivot: {x: 0.5, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 28
+      y: 32
+      width: 16
+      height: 20
+    spriteID: 581d949718c3bac43aaca53331654933
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 28, y: 32}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -873905282
-    name: red_eye_monster
+    guid: 2105511644
+    name: run_northwest
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: red_eye_monster_Frame_0
+    - name: run_northwest_Frame_0
       frameIndex: 0
       cellRect:
         x: 0
         y: 0
         width: 16
-        height: 16
-      spriteId: 1808a05fbb1b4284dacc3f72a7690fc3
-    - name: red_eye_monster_Frame_1
+        height: 20
+      spriteId: ea55e0cee17c4164c9890705216e6121
+    - name: run_northwest_Frame_1
       frameIndex: 1
       cellRect:
         x: 0
         y: 0
-        width: 15
-        height: 16
-      spriteId: d71eabf71f223f04fb637f56ff2636a3
-    - name: red_eye_monster_Frame_2
+        width: 16
+        height: 20
+      spriteId: 0c24fd5b3a0c37442bc8fe87e81249f0
+    - name: run_northwest_Frame_2
       frameIndex: 2
       cellRect:
         x: 0
         y: 0
-        width: 15
-        height: 16
-      spriteId: 69550c069a1b0824293fddad5da5cfcc
-    - name: red_eye_monster_Frame_3
+        width: 16
+        height: 20
+      spriteId: 18eae2ac8a07be1478290f1128d4bae2
+    - name: run_northwest_Frame_3
       frameIndex: 3
       cellRect:
         x: 0
         y: 0
-        width: 15
-        height: 16
-      spriteId: 6076c88e1a26cb54b882af5a0b973645
-    - name: red_eye_monster_Frame_4
+        width: 16
+        height: 20
+      spriteId: fe8b299818dcfb84a9e06d541c5e2fe8
+    - name: run_northwest_Frame_4
       frameIndex: 4
       cellRect:
         x: 0
         y: 0
         width: 16
-        height: 16
-      spriteId: c9980609855964542a360c89d0bb4949
+        height: 20
+      spriteId: b28473a9dc8fc7341a0431505ba6bf2b
+    - name: run_northwest_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 0
+        y: 0
+        width: 16
+        height: 20
+      spriteId: 581d949718c3bac43aaca53331654933
     linkedCells: []
     parentIndex: -1
   platformSettings: []
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 16, y: 16}
+  canvasSize: {x: 16, y: 20}
