@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3fc843b11e7f95e4fbb3fc54c77025c4
+guid: 9e05d900faf5db1499acb4b5812450bf
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -119,9 +119,9 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: run_east_Frame_0
+  - name: temp_main_char
     originalName: 
-    pivot: {x: 0.5, y: -0.0625}
+    pivot: {x: 0.5, y: 0}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -129,8 +129,8 @@ ScriptedImporter:
       x: 4
       y: 4
       width: 8
-      height: 16
-    spriteID: 1f0ccd3357bee4daaab7c0962fb2e840
+      height: 13
+    spriteID: 98de93149d05ee44da81bc6738582ae5
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -139,166 +139,26 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: run_east_Frame_1
-    originalName: 
-    pivot: {x: 0.5, y: -0.20000002}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 36
-      y: 4
-      width: 8
-      height: 15
-    spriteID: 5d416296c22704efdad5366aee27fc49
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 36, y: 4}
-  - name: run_east_Frame_2
-    originalName: 
-    pivot: {x: 0.5, y: -0.125}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 4
-      y: 28
-      width: 8
-      height: 16
-    spriteID: cb42add8ae990494e92e4c30d240a007
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 4, y: 28}
-  - name: run_east_Frame_3
-    originalName: 
-    pivot: {x: 0.5, y: -0.0625}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 20
-      y: 4
-      width: 8
-      height: 16
-    spriteID: 45c53d8ba3fc24d1797726bc26286827
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 20, y: 4}
-  - name: run_east_Frame_4
-    originalName: 
-    pivot: {x: 0.5, y: -0.20000002}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 36
-      y: 27
-      width: 8
-      height: 15
-    spriteID: 1a8a5b4bbce4d47f78fa8221180d31df
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 36, y: 27}
-  - name: run_east_Frame_5
-    originalName: 
-    pivot: {x: 0.5, y: -0.125}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 20
-      y: 28
-      width: 8
-      height: 16
-    spriteID: b73c48e67af9548c8ba88fbf03549962
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 20, y: 28}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -2124508131
-    name: run_east
+    guid: 497442343
+    name: temp_main_char
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: run_east_Frame_0
+    - name: temp_main_char
       frameIndex: 0
       cellRect:
         x: 4
-        y: 1
+        y: 0
         width: 8
-        height: 16
-      spriteId: 1f0ccd3357bee4daaab7c0962fb2e840
-    - name: run_east_Frame_1
-      frameIndex: 1
-      cellRect:
-        x: 4
-        y: 3
-        width: 8
-        height: 15
-      spriteId: 5d416296c22704efdad5366aee27fc49
-    - name: run_east_Frame_2
-      frameIndex: 2
-      cellRect:
-        x: 4
-        y: 2
-        width: 8
-        height: 16
-      spriteId: cb42add8ae990494e92e4c30d240a007
-    - name: run_east_Frame_3
-      frameIndex: 3
-      cellRect:
-        x: 4
-        y: 1
-        width: 8
-        height: 16
-      spriteId: 45c53d8ba3fc24d1797726bc26286827
-    - name: run_east_Frame_4
-      frameIndex: 4
-      cellRect:
-        x: 4
-        y: 3
-        width: 8
-        height: 15
-      spriteId: 1a8a5b4bbce4d47f78fa8221180d31df
-    - name: run_east_Frame_5
-      frameIndex: 5
-      cellRect:
-        x: 4
-        y: 2
-        width: 8
-        height: 16
-      spriteId: b73c48e67af9548c8ba88fbf03549962
+        height: 13
+      spriteId: 98de93149d05ee44da81bc6738582ae5
     linkedCells: []
     parentIndex: -1
   platformSettings: []
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 16, y: 20}
+  canvasSize: {x: 16, y: 16}
