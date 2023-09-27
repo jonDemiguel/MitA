@@ -1,6 +1,6 @@
 name: Test MitA
 
-on: [push, pull_request]
+on: workflow_dispatch
 
 env:
   UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
