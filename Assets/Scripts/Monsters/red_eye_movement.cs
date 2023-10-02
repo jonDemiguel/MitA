@@ -44,4 +44,21 @@ public class red_eye_movement : MonoBehaviour
         // Move the monster towards the player object's position
         transform.position = Vector3.MoveTowards(transform.position, targetPosition, step);
     }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            // Stop the monster's rotation (set it to a fixed angle):
+            transform.rotation = Quaternion.Euler(0, 0, 0); // Adjust the angles as needed.
+        }
+    }
+
+    void OnCollisionExit2D(Collision2D collision)
+{
+    if (collision.gameObject.CompareTag("Player"))
+    {
+        transform.rotation = Quaternion.Euler(0, 0, 0); // Reset rotation when the collision ends.
+    }
+}
 }
