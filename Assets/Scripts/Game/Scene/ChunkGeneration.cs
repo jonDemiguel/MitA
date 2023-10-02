@@ -6,8 +6,8 @@ public class ChunkManager : MonoBehaviour
 {
     public Tilemap tilemap;
     public TileBase groundTile;
-    public int chunkSize = 100;
-    public int bufferDistance = 1; // Number of chunks to keep around the player.
+    public int chunkSize = 300; // Adjusted chunk size.
+    public int bufferDistance = 3; // Adjusted buffer distance.
 
     private Transform player;
     private Vector2Int currentPlayerChunk;
@@ -38,9 +38,11 @@ public class ChunkManager : MonoBehaviour
 
     private void LoadChunksAroundPlayer(Vector2Int playerChunk)
     {
-        for (int x = playerChunk.x - bufferDistance; x <= playerChunk.x + bufferDistance; x++)
+        int gridRadius = 3; // Grid of 7x7 chunks, so radius is 3.
+
+        for (int x = playerChunk.x - gridRadius; x <= playerChunk.x + gridRadius; x++)
         {
-            for (int y = playerChunk.y - bufferDistance; y <= playerChunk.y + bufferDistance; y++)
+            for (int y = playerChunk.y - gridRadius; y <= playerChunk.y + gridRadius; y++)
             {
                 Vector2Int chunkPosition = new Vector2Int(x, y);
 
@@ -68,13 +70,11 @@ public class ChunkManager : MonoBehaviour
             }
         }
     }
-    
-    
     private void GenerateChunk(Tilemap chunkTilemap, int startX, int startY)
     {
         // Define the size of the chunk (number of tiles in X and Y directions).
-        int chunkSizeX = 10;
-        int chunkSizeY = 10;
+        float chunkSizeX = (float)chunkSize / tilemap.tileAnchor.x; // Cast to float for division.
+        float chunkSizeY = (float)chunkSize / tilemap.tileAnchor.y; // Cast to float for division.
 
         for (int x = 0; x < chunkSizeX; x++)
         {
@@ -84,7 +84,7 @@ public class ChunkManager : MonoBehaviour
                 Vector3Int tilePosition = new Vector3Int(startX + x, startY + y, 0);
 
                 // Create a checkerboard pattern.
-                bool isEvenTile = (x + y) % 2 == 0;
+                bool isEvenTile = ((int)x + (int)y) % 2 == 0;
 
                 if (isEvenTile)
                 {
@@ -92,10 +92,9 @@ public class ChunkManager : MonoBehaviour
                 }
                 else
                 {
-                    // set other tiles here as needed.
+                    // Set other tiles here as needed.
                 }
             }
         }
     }
-
 }
