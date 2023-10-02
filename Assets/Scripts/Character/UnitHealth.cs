@@ -33,7 +33,6 @@ public class UnitHealth
 
     }
 
-
     public void HealUnit(int healAmount)
     {
         if (_currentHealth < _currentMaxHealth)
