@@ -1,26 +1,42 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor;
+using UnityEngine.Tilemaps;
 
-[CustomEditor(typeof(MapGenerator)), CanEditMultipleObjects]
-public class MapGeneratorEditor : Editor
+public class MapGenerator : MonoBehaviour
 {
-    public override void OnInspectorGUI()
+    public Tilemap groundTilemap;
+    public Tilemap treeTilemap;
+    public TileBase groundTile;
+    public TileBase treeTile;
+
+    public int mapWidth = 100;
+    public int mapHeight = 100;
+    public float scale = 0.1f;
+
+    private void Start()
     {
-        MapGenerator mapGen = (MapGenerator)target;
+        GenerateMap();
+    }
 
-        if (DrawDefaultInspector())
+    private void GenerateMap()
+    {
+        for (int x = 0; x < mapWidth; x++)
         {
-            if (mapGen.autoUpdate)
+            for (int y = 0; y < mapHeight; y++)
             {
-                mapGen.GenerateMap();
-            }
-        }
+                float xCoord = (float)x / mapWidth * scale;
+                float yCoord = (float)y / mapHeight * scale;
 
-        if(GUILayout.Button("Generate"))
-        {
-            mapGen.GenerateMap();
+                float sample = Mathf.PerlinNoise(xCoord, yCoord);
+
+                if (sample > 0.5f)
+                {
+                    groundTilemap.SetTile(new Vector3Int(x, y, 0), groundTile);
+                }
+                else
+                {
+                    treeTilemap.SetTile(new Vector3Int(x, y, 0), treeTile);
+                }
+            }
         }
     }
 }
