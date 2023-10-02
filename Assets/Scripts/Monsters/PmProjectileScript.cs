@@ -15,7 +15,7 @@ public class PmProjectileScript : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
 
         Vector3 moveDirection = player.transform.position - transform.position;
-        rb.velocity = new Vector2(moveDirection.x, moveDirection.y).normalized * speed; // Apply velocity using the corrected moveDirection
+        rb.velocity = new Vector2(moveDirection.x, moveDirection.y).normalized * speed; 
 
         float rotation = Mathf.Atan2(-moveDirection.y, -moveDirection.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0,0, rotation);
