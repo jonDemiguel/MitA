@@ -67,12 +67,14 @@ public class red_eye_movement : MonoBehaviour
     {
         // Perform attack logic here
         Debug.Log("Monster attacks player for " + damageAmount + " damage!");
-
+        
         // Deal damage to the player (you should have a PlayerBehavior script with a PlayerTakeDmg method)
         PlayerBehavior playerBehavior = player.GetComponent<PlayerBehavior>();
+        
         if (playerBehavior != null)
         {
             playerBehavior.PlayerTakeDmg(damageAmount);
+ 
         }
 
         // Put the attack on cooldown
