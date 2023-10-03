@@ -66,7 +66,11 @@ public class EnemySpawnManager : MonoBehaviour
             yield return new WaitForSeconds(timeBetweenSpawns);
             System.Random rnd = new System.Random();
             int type = rnd.Next(0, enemySpawnSystem.Length);
-            Instantiate(enemySpawnSystem[type]);
+            if(type == 0)
+                Instantiate(Resources.Load<GameObject>("red_eye_monster")).name = "red_eye_monster";
+            if (type == 1)
+                Instantiate(Resources.Load<GameObject>("Purple_Ghost_Monster")).name = "Purple_Ghost_Monster";
+//            Instantiate(enemySpawnSystem[type]);
 
             //enemy.name = "Enemy" + i;
             enemySpawned++;

@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &9214563547085212883
+--- !u!1001 &1727790302921211634
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -10,7 +10,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -2253911629886400664, guid: 33e70f3bb367c3c4d975b4554f065bc9, type: 3}
       propertyPath: m_Name
-      value: Purple_Ghost_Monster
+      value: PF_Purple_Ghost_Monster
+      objectReference: {fileID: 0}
+    - target: {fileID: -2253911629886400664, guid: 33e70f3bb367c3c4d975b4554f065bc9, type: 3}
+      propertyPath: m_TagString
+      value: purple_ghost_monster
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 33e70f3bb367c3c4d975b4554f065bc9, type: 3}
       propertyPath: m_LocalPosition.x
