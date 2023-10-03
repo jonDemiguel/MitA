@@ -6417,11 +6417,8 @@ MonoBehaviour:
   timeBetweenSpawns: 0.5
   wave: 1
   startEnemyCount: 3
-  addPerWave: 2
   modifier: 1.8171
-  enemySpawnSystem:
-  - {fileID: 7790352870271309181, guid: 5aabdfbe068e5444987d4a35a07ca022, type: 3}
-  - {fileID: 2258779418224286651, guid: 99a187a6dd405de4691b5f273e685f72, type: 3}
+  prefab: {fileID: 7790352870271309181, guid: 5aabdfbe068e5444987d4a35a07ca022, type: 3}
 --- !u!4 &520049010
 Transform:
   m_ObjectHideFlags: 0
