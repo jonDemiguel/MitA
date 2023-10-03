@@ -15,9 +15,9 @@ public class EnemySpawnManager : MonoBehaviour
     public float timeBetweenSpawns = 0.5f; // half sec between enemy spawns
     public int wave = 0; // start at wave 1
     public int startEnemyCount = 3; // number of enemies... our base amount
-    public int addPerWave = 2; // how many new enemies per wave
     public double modifier = 1.8171;
-    public GameObject[] enemySpawnSystem;
+    //public GameObject[] enemySpawnSystem;
+    public GameObject prefab;
     private int enemyCount = 0; // active enemies
     private int enemySpawned = 0;
     
@@ -42,7 +42,7 @@ public class EnemySpawnManager : MonoBehaviour
      
     private bool CheckEnemyCount()
     {
-        if (enemySpawned >= (startEnemyCount + wave * Math.Pow(modifier, wave)))
+        if (enemySpawned >= (startEnemyCount * Math.Pow(modifier, wave)))
         {
             return true;
         }
@@ -65,12 +65,14 @@ public class EnemySpawnManager : MonoBehaviour
         {
             yield return new WaitForSeconds(timeBetweenSpawns);
             System.Random rnd = new System.Random();
-            int type = rnd.Next(0, enemySpawnSystem.Length);
-            if(type == 0)
-                Instantiate(Resources.Load<GameObject>("red_eye_monster")).name = "red_eye_monster";
-            if (type == 1)
-                Instantiate(Resources.Load<GameObject>("Purple_Ghost_Monster")).name = "Purple_Ghost_Monster";
-//            Instantiate(enemySpawnSystem[type]);
+            //int type = rnd.Next(0, enemySpawnSystem.Length);
+            //if(type == 0)
+            /*    Instantiate(Resources.Load<GameObject>("red_eye_monster")).name = "red_eye_monster";*/
+            //  if (type == 1)
+            //Instantiate(Resources.Load<GameObject>("Purple_Ghost_Monster")).name = "Purple_Ghost_Monster";
+            //            Instantiate(enemySpawnSystem[type]);
+
+            Instantiate(prefab, new Vector3(0, 0, 0f), transform.rotation);
 
             //enemy.name = "Enemy" + i;
             enemySpawned++;
