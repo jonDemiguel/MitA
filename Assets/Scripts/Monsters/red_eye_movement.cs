@@ -44,4 +44,7 @@ public class red_eye_movement : MonoBehaviour
         // Move the monster towards the player object's position
         transform.position = Vector3.MoveTowards(transform.position, targetPosition, step);
     }
+
+
+
 }
