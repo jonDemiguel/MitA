@@ -17,7 +17,8 @@ public class PmProjectileScript : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
         if (player == null ) Destroy(this.gameObject);
         Vector3 moveDirection = player.transform.position - transform.position;
-        rb.velocity = new Vector2(moveDirection.x, moveDirection.y).normalized * speed; 
+        float v = (float)(moveDirection.y + .09);
+        rb.velocity = new Vector2(moveDirection.x, v).normalized * speed;
 
         float rotation = Mathf.Atan2(-moveDirection.y, -moveDirection.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0,0, rotation);

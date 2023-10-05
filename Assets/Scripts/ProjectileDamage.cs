@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class DetectPlayer : MonoBehaviour
+public class ProjectileDamage : MonoBehaviour
 {
 
     public int damageAmount = 5;
+    public bool inHitBox = false;
 
     void Start()
     {
@@ -18,9 +19,7 @@ public class DetectPlayer : MonoBehaviour
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         if (player != null)
         {
-            Vector3 targetPosition = player.transform.position;
-            float distanceToPlayer = Vector3.Distance(transform.position, targetPosition);
-            if (distanceToPlayer <= 1)
+            if (inHitBox)
             {
                 AttackPlayer(player);
                 Destroy(gameObject);
@@ -28,7 +27,22 @@ public class DetectPlayer : MonoBehaviour
             }
         }
     }
-
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            Debug.Log("collided");
+            inHitBox = true;
+        }
+    }
+    void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            Debug.Log("exited");
+            inHitBox = false;
+        }
+    }
     void AttackPlayer(GameObject player)
     {
         // Perform attack logic here
