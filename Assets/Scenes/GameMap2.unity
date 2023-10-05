@@ -6411,14 +6411,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d741b551da533c1409c76adbd453b6bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  minSpawnDistanceFromCenter: 2
+  spawnMargin: 1
   enemyTypes: []
+  mainCamera: {fileID: 1759754184}
   spawnArea: 1.5
+  spawnDistance: 5
   timeBetweenWaves: 15
   timeBetweenSpawns: 0.5
   wave: 1
   startEnemyCount: 3
   modifier: 1.8171
-  prefab: {fileID: 7790352870271309181, guid: 5aabdfbe068e5444987d4a35a07ca022, type: 3}
+  prefab:
+  - {fileID: 7790352870271309181, guid: 5aabdfbe068e5444987d4a35a07ca022, type: 3}
+  - {fileID: 8593474401679468954, guid: e60bbee38765fc8458665f0aa8ad7026, type: 3}
+  player: {fileID: 0}
 --- !u!4 &520049010
 Transform:
   m_ObjectHideFlags: 0
@@ -6428,7 +6435,7 @@ Transform:
   m_GameObject: {fileID: 520049008}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 11111, y: 11111, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

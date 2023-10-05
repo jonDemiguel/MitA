@@ -17,6 +17,14 @@ PrefabInstance:
       value: red_eye_monster
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: f13b2cf011d874144a781df56894abb2, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7878350319992209165, guid: f13b2cf011d874144a781df56894abb2, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7878350319992209165, guid: f13b2cf011d874144a781df56894abb2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
