@@ -48,7 +48,6 @@ public class EnemySpawnManager : MonoBehaviour
 
     private bool CheckEnemyCount()
     {
-        Debug.Log(startEnemyCount * Math.Pow(modifier, wave) + "            " + wave);
         if (enemySpawned >= (startEnemyCount * Math.Pow(modifier, wave)))
         {
             return false;
