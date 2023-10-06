@@ -18,12 +18,18 @@ public class purple_monster_shooting : MonoBehaviour
     void Update()
     {
         timer += Time.deltaTime;
-
-        if(timer > 2) {
+        if (GameObject.FindGameObjectWithTag("Player") == null)
+        {
+            purple_monster_shooting script = GetComponent<purple_monster_shooting>();
+            script.enabled = false;
+        }
+        if (timer > 2) {
             timer = 0;
             shoot();
         }
         
+
+
     }
 
     void shoot() {

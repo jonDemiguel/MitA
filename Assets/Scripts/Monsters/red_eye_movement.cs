@@ -1,11 +1,10 @@
-using System.Collections;
+    using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class red_eye_movement : MonoBehaviour
 {
     public float moveSpeed = 5f;
-
     private Vector3 previousPosition;
     private SpriteRenderer spriteRenderer;
 
@@ -13,6 +12,8 @@ public class red_eye_movement : MonoBehaviour
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         previousPosition = transform.position;
+
+
     }
 
     void Update()
@@ -23,6 +24,7 @@ public class red_eye_movement : MonoBehaviour
             Vector3 targetPosition = player.transform.position;
             MoveCharacter(targetPosition);
 
+           
             // Determine the direction of movement based on the change in position
             float moveDirection = transform.position.x - previousPosition.x;
 
@@ -34,6 +36,7 @@ public class red_eye_movement : MonoBehaviour
             }
              previousPosition = transform.position;
         }
+
     }
 
     void MoveCharacter(Vector3 targetPosition)
@@ -44,7 +47,4 @@ public class red_eye_movement : MonoBehaviour
         // Move the monster towards the player object's position
         transform.position = Vector3.MoveTowards(transform.position, targetPosition, step);
     }
-
-
-
 }
