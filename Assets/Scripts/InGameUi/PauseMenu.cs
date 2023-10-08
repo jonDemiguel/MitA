@@ -47,6 +47,7 @@ public class InGameUIScript : MonoBehaviour
 
     public void QuitGame()
     {
+        Debug.Log("QUIT!");
         Application.Quit();
     }
 }
