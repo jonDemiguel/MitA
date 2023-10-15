@@ -4,41 +4,20 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public static GameManager Instance;
+    public static GameManager gameManager {  get; private set; }
 
-    [SerializeField] private float time = 0.1f;
-    [SerializeField] private bool isPlayerTurn = true;
+    public UnitHealth _playerHealth = new UnitHealth(100, 100);
 
-    public bool IsPlayerTurn { get => isPlayerTurn; }
-
-    //On Create Game Manager, check if already exists, if so delete
-    void Awake()
+    private void Awake()
     {
-        if(Instance == null)
+        if (gameManager != null && gameManager != this)
         {
-            Instance = this;
+            Destroy(this);
         }
         else
         {
-            Destroy(gameObject);
+            gameManager = this;
         }
-    }
-
-    private void Start()
-    {
-        Instantiate(Resources.Load<GameObject>("Player")).name = "Player";
-    }
-
-    public void EndTurn()
-    {
-        isPlayerTurn = false;
-        StartCoroutine(WaitForTurns());
-    }
-
-    private IEnumerator WaitForTurns()
-    {
-        yield return new WaitForSeconds(time);
-        isPlayerTurn = true;
     }
 
 }
