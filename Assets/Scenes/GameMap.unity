@@ -154,9 +154,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   terrainChunks:
   - {fileID: 8776081628895139481, guid: 8ffbe2af086fdb146af4ea356fd591ee, type: 3}
-  - {fileID: 8776081628895139481, guid: 80efe6ff8b7cd2347bdefe2e952f2d45, type: 3}
-  - {fileID: 8776081628895139481, guid: 5277740d79723764ea4a59d26867649b, type: 3}
-  - {fileID: 8776081628895139481, guid: 67a74f976a937ff44b5791bd84d5aa08, type: 3}
+  - {fileID: 8776081628895139481, guid: d1abbbce7e2546848889b86818df22d5, type: 3}
+  - {fileID: 8776081628895139481, guid: 25079f52301cab841b6b5704f0c3dc46, type: 3}
+  - {fileID: 8776081628895139481, guid: ffb90e2f3bee53b489c20216fe5d05a6, type: 3}
   player: {fileID: 1346981721}
   checkerRadius: 0.2
   noTerrainPosition: {x: 0, y: 0, z: 0}
@@ -586,7 +586,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4800820904087253881, guid: 8ffbe2af086fdb146af4ea356fd591ee, type: 3}
       propertyPath: propPrefabs.Array.size
-      value: 0
+      value: 43
       objectReference: {fileID: 0}
     - target: {fileID: 4800820904087253881, guid: 8ffbe2af086fdb146af4ea356fd591ee, type: 3}
       propertyPath: propPrefabs.Array.data[0]
