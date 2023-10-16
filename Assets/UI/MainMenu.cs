@@ -7,11 +7,16 @@ public class MainMenu : MonoBehaviour
 {
     public void Begin()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +1);
     }
 
     public void Exit()
     {
-        Application.Quit();
+        #if UNITY_STANDALONE
+                Application.Quit();
+        #endif
+        #if UNITY_EDITOR
+                UnityEditor.EditorApplication.isPlaying = false;
+        #endif
     }
 }
