@@ -227,10 +227,9 @@ GameObject:
   - component: {fileID: 1664875847}
   - component: {fileID: 1664875846}
   - component: {fileID: 1664875845}
-  - component: {fileID: 1664875849}
   m_Layer: 0
   m_Name: char
-  m_TagString: Player
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -305,7 +304,7 @@ MonoBehaviour:
   - {fileID: -6687702758997216244, guid: 3fc843b11e7f95e4fbb3fc54c77025c4, type: 3}
   - {fileID: 6267082216278372988, guid: 3fc843b11e7f95e4fbb3fc54c77025c4, type: 3}
   - {fileID: 1094846724624564678, guid: 3fc843b11e7f95e4fbb3fc54c77025c4, type: 3}
-  walkspeed: 5
+  walkspeed: 2
   frameRate: 6
 --- !u!50 &1664875846
 Rigidbody2D:
@@ -395,47 +394,12 @@ Transform:
   m_GameObject: {fileID: 1664875844}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.41, y: 0.22, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!70 &1664875849
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1664875844}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.16, y: 0.16}
-  m_Direction: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
