@@ -154,9 +154,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   terrainChunks:
   - {fileID: 8776081628895139481, guid: 8ffbe2af086fdb146af4ea356fd591ee, type: 3}
-  - {fileID: 8776081628895139481, guid: 66adced2b64bbfc48a7c6faff61a724d, type: 3}
-  - {fileID: 8776081628895139481, guid: a60c8e3b41f768f4b8c6a54cc95dcda0, type: 3}
-  - {fileID: 8776081628895139481, guid: 47350cfb49c77e444a54226360d13a4c, type: 3}
+  - {fileID: 8776081628895139481, guid: d1abbbce7e2546848889b86818df22d5, type: 3}
+  - {fileID: 8776081628895139481, guid: 25079f52301cab841b6b5704f0c3dc46, type: 3}
+  - {fileID: 8776081628895139481, guid: ffb90e2f3bee53b489c20216fe5d05a6, type: 3}
   player: {fileID: 1346981721}
   checkerRadius: 0.2
   noTerrainPosition: {x: 0, y: 0, z: 0}
