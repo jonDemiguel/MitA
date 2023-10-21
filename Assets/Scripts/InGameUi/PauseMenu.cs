@@ -41,18 +41,13 @@ public class InGameUIScript : MonoBehaviour
 
     public void loadMenu()
     {
-        //Make iterative and not hard coded using scene order in Build Settings (ref main menu script)
         SceneManager.LoadScene("MainMenu");
         Time.timeScale = 1f;
     }
 
     public void QuitGame()
     {
-        #if UNITY_STANDALONE
-                Application.Quit();
-        #endif
-        #if UNITY_EDITOR
-                UnityEditor.EditorApplication.isPlaying = false;
-        #endif
+        Debug.Log("QUIT!");
+        Application.Quit();
     }
 }
