@@ -6596,8 +6596,7 @@ MonoBehaviour:
   startEnemyCount: 3
   modifier: 1.8171
   prefab:
-  - {fileID: 257840841347424026, guid: 3644d200f284d0c4da720a78681b6352, type: 3}
-  - {fileID: 1470541270922282246, guid: 03419702b593e5b49a265bd533612c64, type: 3}
+  - {fileID: 1739551612755022058, guid: d1db6caa812a4cb4390149299a1236d0, type: 3}
   mainCamera: {fileID: 1759754184}
 --- !u!4 &520049010
 Transform:
@@ -117952,7 +117951,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 10
+  orthographic size: 15.059385
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -117977,7 +117976,7 @@ Transform:
   m_GameObject: {fileID: 1759754182}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.243, y: 2.449, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
