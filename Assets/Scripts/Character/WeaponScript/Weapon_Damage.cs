@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class Weapon_Damage : MonoBehaviour
 {
-    public int damageAmount = 10; // Adjust the damage amount as needed.
-    public string enemyTag = "Enemy"; // Set the tag for your enemy GameObjects.
+    public int damageAmount = 10; 
+    public string enemyTag = "Enemy"; 
 
     private void OnTriggerEnter2D(Collider2D other) {
         if (other.CompareTag(enemyTag)) {
