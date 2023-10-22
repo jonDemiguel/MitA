@@ -17010,19 +17010,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   propSpawnPoints:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1140652750500489800}
+  - {fileID: 8243121062581874}
+  - {fileID: 5518751430975545801}
+  - {fileID: 6892501627321270306}
+  - {fileID: 4483154499408712439}
+  - {fileID: 4681001292627859420}
+  - {fileID: 7894971480099695714}
+  - {fileID: 8978367765793898404}
+  - {fileID: 3664411421472249957}
+  - {fileID: 6757227827499694789}
+  - {fileID: 7277274704653290049}
+  - {fileID: 4512638082811564154}
+  - {fileID: 6142911301025049178}
   propPrefabs:
   - {fileID: 7160493251958563857, guid: fcfb2abdb2cc54e42bc3ce554ade48fe, type: 3}
   - {fileID: 334555084809655848, guid: b20e6997a5a359a408beee48636e14c8, type: 3}
