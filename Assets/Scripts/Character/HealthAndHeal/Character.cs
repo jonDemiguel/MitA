@@ -3,11 +3,17 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-public class CharHP : MonoBehaviour
+public class Character : MonoBehaviour
 {
     public int MaxPlayerHP = 100;
     public int currentPlayerHP = 100;
     [SerializeField] PlayerHPstats hpBar;
+
+    private void Start()
+    {
+        hpBar.StatePlayer(currentPlayerHP, MaxPlayerHP);
+    }
+
     public void DamageTaken(int damage)
     {
         currentPlayerHP -= damage;
@@ -23,7 +29,7 @@ public class CharHP : MonoBehaviour
 
     public void Heal(int amount)
     {
-        if(currentPlayerHP <= 0)
+        if (currentPlayerHP <= 0)
         { return; }
 
         currentPlayerHP += amount;
@@ -31,5 +37,6 @@ public class CharHP : MonoBehaviour
         {
             currentPlayerHP = MaxPlayerHP;
         }
+        hpBar.StatePlayer(currentPlayerHP, MaxPlayerHP);
     }
 }
