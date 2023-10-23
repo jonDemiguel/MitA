@@ -256,6 +256,9 @@ MonoBehaviour:
   - {fileID: 8776081628895139481, guid: 66adced2b64bbfc48a7c6faff61a724d, type: 3}
   - {fileID: 8776081628895139481, guid: a60c8e3b41f768f4b8c6a54cc95dcda0, type: 3}
   - {fileID: 8776081628895139481, guid: 47350cfb49c77e444a54226360d13a4c, type: 3}
+  - {fileID: 5501191041386302037, guid: 43b4adb6b1797644984ebe8e230e6de9, type: 3}
+  - {fileID: 8776081628895139481, guid: 4086f024bf148684e887e5295f585467, type: 3}
+  - {fileID: 8776081628895139481, guid: b6064d5244a1d1b4aa68618588e5e9e1, type: 3}
   player: {fileID: 352152566}
   checkerRadius: 0.2
   noTerrainPosition: {x: 0, y: 0, z: 0}
