@@ -17,6 +17,7 @@ public class PlayerBehavior : MonoBehaviour
 
     public void PlayerTakeDmg(int dmg)
     {
+        Debug.Log("Make it work");
         GameManager.gameManager._playerHealth.DmgUnit(dmg);
         Debug.Log("Player health = " + GameManager.gameManager._playerHealth.Health);
         if (GameManager.gameManager._playerHealth.Health <= 0)

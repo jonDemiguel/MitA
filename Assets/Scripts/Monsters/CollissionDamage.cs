@@ -18,6 +18,7 @@ public class CollissionDamage : MonoBehaviour
 
     void Update()
     {
+        Debug.Log("Got to here 1");
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         if (player != null)
         {
@@ -25,7 +26,9 @@ public class CollissionDamage : MonoBehaviour
             //if (distanceToPlayer <= attackDistance && canAttack)
             if (inHitBox && canAttack)
             {
+                Debug.Log("Got to here 2");
                 AttackPlayer(player);
+                Debug.Log("Got to here 3");
             }
         }
         
@@ -57,6 +60,7 @@ public class CollissionDamage : MonoBehaviour
 
         if (playerBehavior != null)
         {
+            Debug.Log("This is not null");
             playerBehavior.PlayerTakeDmg(damageAmount);
 
         }

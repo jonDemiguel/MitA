@@ -44,4 +44,9 @@ public class UnitHealth
             _currentHealth = _currentMaxHealth;
         }
     }
+
+    public int GetMaxHealth()
+    {
+        return _currentMaxHealth;
+    }
 }

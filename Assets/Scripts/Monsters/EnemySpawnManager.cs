@@ -142,4 +142,11 @@ public class EnemySpawnManager : MonoBehaviour
         }
         EndWave();
     }
+
+    public int GetWave()
+    {
+        return wave;
+    }
+
+
 }
