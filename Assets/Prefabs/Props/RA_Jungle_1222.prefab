@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2471148169203667508}
   - component: {fileID: 7220747580712246098}
-  - component: {fileID: 6472417257150044512}
-  m_Layer: 0
+  - component: {fileID: -2803063151535072207}
+  m_Layer: 6
   m_Name: RA_Jungle_1222
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85,7 +85,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &6472417257150044512
+--- !u!61 &-2803063151535072207
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -117,7 +117,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -1.5}
+  m_Offset: {x: 0, y: -1.2}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -128,5 +128,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.9, y: 0.17}
+  m_Size: {x: 1.5, y: 0.5}
   m_EdgeRadius: 0
