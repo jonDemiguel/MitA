@@ -8,6 +8,7 @@ TagManager:
   - red_eye_monster
   - purple_ghost_monster
   - EnemySpawner
+  - VirtualCamera
   layers:
   - Default
   - TransparentFX
