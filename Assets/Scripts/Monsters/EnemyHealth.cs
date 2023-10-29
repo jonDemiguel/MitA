@@ -1,18 +1,23 @@
 using UnityEngine;
 
-public class EnemyHealth : MonoBehaviour {
+public class EnemyHealth : MonoBehaviour
+{
     public int maxHealth = 100;
     private int currentHealth;
     public GameObject[] itemsToDrop; // Array of items that can be dropped
+    [SerializeField] int experience_gain = 400;
 
-    private void Start() {
+    private void Start()
+    {
         currentHealth = maxHealth;
     }
 
-    public void TakeDamage(int damage) {
+    public void TakeDamage(int damage)
+    {
         currentHealth -= damage;
 
-        if (currentHealth <= 0) {
+        if (currentHealth <= 0)
+        {
             Die();
         }
 
@@ -23,12 +28,35 @@ public class EnemyHealth : MonoBehaviour {
     {
         Debug.Log("Enemy has been defeated.");
 
+        // Drop a random item if any exist
         if (itemsToDrop.Length > 0)
         {
             int randomIndex = Random.Range(0, itemsToDrop.Length);
             Instantiate(itemsToDrop[randomIndex], transform.position, Quaternion.identity);
         }
 
+        // Find the player object by tag
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        if (player != null)
+        {
+            // Try to get the Level component from the player
+            Level playerLevel = player.GetComponent<Level>();
+            if (playerLevel != null)
+            {
+                // Add experience to the player
+                playerLevel.AddExperience(experience_gain);
+            }
+            else
+            {
+                Debug.LogError("Level component not found on player!");
+            }
+        }
+        else
+        {
+            Debug.LogError("Player not found!");
+        }
+
+        // Destroy the enemy object
         Destroy(gameObject);
     }
 }
