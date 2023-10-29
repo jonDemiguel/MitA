@@ -36,6 +36,7 @@ public class EnemySpawnManager : MonoBehaviour
     void Start()
     {
         wave = 0;
+        Debug.Log("WTF");
         StartCoroutine(SpawnEnemies());
     }
 

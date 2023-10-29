@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerBehavior : MonoBehaviour
 {
@@ -32,7 +33,10 @@ public class PlayerBehavior : MonoBehaviour
     private void Die()
     {
         // Handle player death logic here (e.g., play death animation, show game over screen, etc.)
+        
         Destroy(gameObject);
+        Time.timeScale = 0f;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     private void PlayerHeal(int heal)
