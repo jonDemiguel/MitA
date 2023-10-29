@@ -16,11 +16,6 @@ public class PlayerBehavior : MonoBehaviour
         hpBar.StatePlayer(currentPlayerHP, MaxPlayerHP);
     }
 
-    void Update()
-    {
-        
-    }
-
     public void PlayerTakeDmg(int dmg)
     {
         // GameManager.gameManager._playerHealth.DmgUnit(dmg);
@@ -34,8 +29,13 @@ public class PlayerBehavior : MonoBehaviour
         //     damageFlash.Flash(); // Flash the sprite red when taking damage
         // }
         
+        // Apply armor
         applyArmor(ref dmg);
+
+        // Apply damage
         currentPlayerHP -= dmg;
+
+        // Check if player is dead
         if (currentPlayerHP <= 0)
         {
             Die();
@@ -44,6 +44,8 @@ public class PlayerBehavior : MonoBehaviour
         {
             damageFlash.Flash(); // Flash the sprite red when taking damage
         }
+
+        // Update health bar
         hpBar.StatePlayer(currentPlayerHP, MaxPlayerHP);
     }
 
@@ -54,17 +56,20 @@ public class PlayerBehavior : MonoBehaviour
         Destroy(gameObject);
     }
 
-    private void PlayerHeal(int heal)
-    {
-        GameManager.gameManager._playerHealth.HealUnit(heal);
-    }
+    // private void PlayerHeal(int heal)
+    // {
+    //     GameManager.gameManager._playerHealth.HealUnit(heal);
+    // }
     
+    // Armor logic
     private void applyArmor(ref int damage)
     {
         damage -= armor;
         if (damage <= 0) { damage = 0; }
 
     }
+
+    // Heal logic
     public void Heal(int amount)
     {
         if (currentPlayerHP <= 0)
