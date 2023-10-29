@@ -822,7 +822,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 1
-  itemsToDrop: []
+  itemsToDrop:
+  - {fileID: 6542954674936235511, guid: a05ec956f7832ad4595f567544c326b6, type: 3}
+  - {fileID: 5088745367548216150, guid: b038f1ef81def4045b28248576e37891, type: 3}
+  - {fileID: 2919763588843830898, guid: 64bbe01f2b378c64984b9be94365b21e, type: 3}
+  - {fileID: 4662713221773132109, guid: 79deabd84d4464d4b9f7fe3e1aab1933, type: 3}
 --- !u!1 &3587176784718034818
 GameObject:
   m_ObjectHideFlags: 0
@@ -1507,7 +1511,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 1
-  itemsToDrop: []
+  itemsToDrop:
+  - {fileID: 6542954674936235511, guid: a05ec956f7832ad4595f567544c326b6, type: 3}
+  - {fileID: 5088745367548216150, guid: b038f1ef81def4045b28248576e37891, type: 3}
+  - {fileID: 2919763588843830898, guid: 64bbe01f2b378c64984b9be94365b21e, type: 3}
+  - {fileID: 4662713221773132109, guid: 79deabd84d4464d4b9f7fe3e1aab1933, type: 3}
 --- !u!1 &5673873025895133674
 GameObject:
   m_ObjectHideFlags: 0
