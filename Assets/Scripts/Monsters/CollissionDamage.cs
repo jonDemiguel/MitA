@@ -8,6 +8,7 @@ public class CollissionDamage : MonoBehaviour
     public int damageAmount = 10; // Amount of damage dealt to the player per attack
     public float attackCooldown = 2f; // Cooldown time between attacks in seconds
     private bool canAttack = true;
+    PlayerBehavior targetCharacter;
     public bool inHitBox = false;
 
     void Start()
@@ -25,7 +26,7 @@ public class CollissionDamage : MonoBehaviour
             //if (distanceToPlayer <= attackDistance && canAttack)
             if (inHitBox && canAttack)
             {
-                AttackPlayer(player);
+                AttackPlayer();
             }
         }
         
@@ -47,22 +48,17 @@ public class CollissionDamage : MonoBehaviour
         }
     }
 
-    void AttackPlayer(GameObject player)
+    void AttackPlayer()
     {
         // Perform attack logic here
         Debug.Log("Monster attacks player for " + damageAmount + " damage!");
 
-        // Deal damage to the player (you should have a PlayerBehavior script with a PlayerTakeDmg method)
-        PlayerBehavior playerBehavior = player.GetComponent<PlayerBehavior>();
-
-        if (playerBehavior != null)
+        if (targetCharacter != null)
         {
-            playerBehavior.PlayerTakeDmg(damageAmount);
-
+            targetCharacter = targetCharacter.GetComponent<PlayerBehavior>();
         }
 
-        // Put the attack on cooldown
-        StartCoroutine(AttackCooldown());
+        targetCharacter.PlayerTakeDmg(damageAmount);
     }
 
     IEnumerator AttackCoroutine()
