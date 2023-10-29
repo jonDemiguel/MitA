@@ -123,38 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &27815311
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 27815312}
-  m_Layer: 0
-  m_Name: ChangingHP
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &27815312
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 27815311}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.5, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1231512738}
-  m_Father: {fileID: 2047915187}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &59125941
 GameObject:
   m_ObjectHideFlags: 0
@@ -2717,7 +2685,6 @@ GameObject:
   - component: {fileID: 1115601423}
   - component: {fileID: 1115601422}
   - component: {fileID: 1115601421}
-  - component: {fileID: 1115601420}
   - component: {fileID: 1115601429}
   - component: {fileID: 1115601430}
   m_Layer: 0
@@ -2727,22 +2694,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1115601420
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1115601419}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fe0801354220c745ad26b5a7547924d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MaxPlayerHP: 100
-  currentPlayerHP: 100
-  armor: 100
-  hpBar: {fileID: 2047915186}
 --- !u!114 &1115601421
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2830,6 +2781,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab1b41a55bfece64bb1e7ef9194a322b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MaxPlayerHP: 100
+  currentPlayerHP: 100
+  armor: 1
+  hpBar: {fileID: 2047915186}
 --- !u!114 &1115601425
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3026,6 +2981,38 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   experienceBar: {fileID: 2047552329}
+--- !u!1 &1190921537
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1190921538}
+  m_Layer: 0
+  m_Name: PlayerHPBarContainer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1190921538
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1190921537}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.49700004, y: 0.009999984, z: 0.07708551}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1231512738}
+  m_Father: {fileID: 2047915187}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1231512737
 GameObject:
   m_ObjectHideFlags: 0
@@ -3052,11 +3039,11 @@ Transform:
   m_GameObject: {fileID: 1231512737}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.5, y: 0, z: 0}
+  m_LocalPosition: {x: 0.497, y: -0.01, z: -0.07708551}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 27815312}
+  m_Father: {fileID: 1190921538}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1231512739
 SpriteRenderer:
@@ -6212,7 +6199,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b26b03aa1b9d0944d8c1cfeba77a2c5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bar: {fileID: 27815312}
+  bar: {fileID: 1190921538}
 --- !u!4 &2047915187
 Transform:
   m_ObjectHideFlags: 0
@@ -6226,7 +6213,7 @@ Transform:
   m_LocalScale: {x: 0.25, y: 0.03, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 27815312}
+  - {fileID: 1190921538}
   m_Father: {fileID: 1115601428}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2047915188

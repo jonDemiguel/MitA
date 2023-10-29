@@ -6,13 +6,13 @@ public class Equipments : MonoBehaviour
 {
     [SerializeField] List<Items> items;
 
-    Character character;
+    PlayerBehavior character;
 
     [SerializeField] Items armorTest;
 
     private void Awake()
     {
-        character = GetComponent<Character>();
+        character = GetComponent<PlayerBehavior>();
     }
 
     public void Start()

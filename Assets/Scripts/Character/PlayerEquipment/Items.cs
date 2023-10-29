@@ -8,12 +8,12 @@ public class Items : ScriptableObject
     public string Name;
     public int armor;
     
-    public void Equip(Character character)
+    public void Equip(PlayerBehavior character)
     {
         character.armor = armor;
     }
 
-    public void UnEquip(Character character)
+    public void UnEquip(PlayerBehavior character)
     {
         character.armor -= armor;
     }
