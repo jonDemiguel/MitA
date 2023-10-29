@@ -5,8 +5,7 @@ using UnityEngine;
 public class purple_monster_shooting : MonoBehaviour
 {
     public GameObject bullet;
-    public Transform bulletPos;
-
+    
     private float timer;
     // Start is called before the first frame update
     void Start()
@@ -33,6 +32,8 @@ public class purple_monster_shooting : MonoBehaviour
     }
 
     void shoot() {
-        Instantiate(bullet, bulletPos.position, Quaternion.identity);
+        Vector3 pos = transform.position;
+        pos.y += 3;
+        Instantiate(bullet, pos, Quaternion.identity);
     }   
 }

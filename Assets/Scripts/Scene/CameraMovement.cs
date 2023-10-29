@@ -9,6 +9,9 @@ public class CameraMovement : MonoBehaviour
 
     void Update()
     {
-        transform.position = target.position + offset;
+        if (this.target)
+        {
+            transform.position = target.position + offset;
+        }
     }
 }

@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
+  - red_eye_monster
+  - purple_ghost_monster
+  - GameOver
   layers:
   - Default
   - TransparentFX
