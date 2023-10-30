@@ -26,11 +26,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 580d295a96eec8a438ed5b6de3c3618c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -14.41
+      value: -15.069843
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 580d295a96eec8a438ed5b6de3c3618c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.63
+      value: 2.8321824
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 580d295a96eec8a438ed5b6de3c3618c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -146,3 +146,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 20
+  itemsToDrop: []
