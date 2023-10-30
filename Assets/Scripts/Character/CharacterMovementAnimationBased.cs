@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CMAB : MonoBehaviour
 {
-    public float speed = 5.0f;
+    public float speed;
     private Vector2 movement;
     private Animator animator;
 
@@ -15,6 +15,7 @@ public class CMAB : MonoBehaviour
 
     void Update()
     {
+        speed = GetComponent<PlayerStats>().currentSpeed;
         // Get horizontal and vertical inputs
         float moveX = Input.GetAxis("Horizontal");
         float moveY = Input.GetAxis("Vertical");

@@ -185,6 +185,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3347059094905330855, guid: f1ea980730559fe489232ce760a038f2, type: 3}
       insertIndex: -1
       addedObject: {fileID: 885183022}
+    - targetCorrespondingSourceObject: {fileID: 3347059094905330855, guid: f1ea980730559fe489232ce760a038f2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 885183023}
   m_SourcePrefab: {fileID: 100100000, guid: f1ea980730559fe489232ce760a038f2, type: 3}
 --- !u!1 &209225152
 GameObject:
@@ -256,6 +259,31 @@ MonoBehaviour:
   bulletPrefab: {fileID: 510452553564940061, guid: 7c186a77020443d4994f3991f2fa554a, type: 3}
   bulletSpawnPoint: {fileID: 885183014}
   bulletSpeed: 100
+--- !u!114 &885183023
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 885183013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8b1895df0fbe7740bca5684ca89b58f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerLevel: 1
+  baseSpeed: 5
+  baseDamage: 25
+  baseHealth: 100
+  baseCritChance: 0.1
+  speedIncreasePerLevel: 0.5
+  damageIncreasePerLevel: 5
+  healthIncreasePerLevel: 20
+  critChanceIncreasePerLevel: 0.02
+  currentSpeed: 0
+  currentDamage: 0
+  currentHealth: 0
+  currentCritChance: 0
 --- !u!1 &1280480854 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 257840841347424026, guid: 3644d200f284d0c4da720a78681b6352, type: 3}
@@ -301,7 +329,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 257840841347424026, guid: 3644d200f284d0c4da720a78681b6352, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1043131345579964287, guid: 3644d200f284d0c4da720a78681b6352, type: 3}
       propertyPath: m_LocalPosition.x

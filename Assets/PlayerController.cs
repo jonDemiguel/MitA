@@ -26,9 +26,11 @@ public class PlayerController : MonoBehaviour
 
     void AimGunAtMouse()
     {
+        // Get the mouse position in world space. The camera's z position doesn't matter.
         Vector3 mousePos = Input.mousePosition;
-        mousePos = mainCamera.ScreenToWorldPoint(new Vector3(mousePos.x, mousePos.y, transform.position.z - mainCamera.transform.position.z));
-
+        mousePos = mainCamera.ScreenToWorldPoint(new Vector3(mousePos.x, mousePos.y,
+            transform.position.z - mainCamera.transform.position.z));
+        // Get the direction from the gun to the mouse. This will be used to rotate the gun.
         Vector3 difference = mousePos - gun.transform.position;
         float rotationZ = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
         gun.transform.rotation = Quaternion.Euler(0.0f, 0.0f, rotationZ);

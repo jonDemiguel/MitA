@@ -7,7 +7,7 @@ public class EnemyHealth : MonoBehaviour
     void Start()
     {
         damageFlash = GetComponent<DamageFlash>();
-        unitHealth = new UnitHealth(100, 100); // Initialize with max health 100
+        unitHealth = new UnitHealth(1000, 1000); // Initialize with max health 100
     }
 
     public void TakeDamage(int amount)
