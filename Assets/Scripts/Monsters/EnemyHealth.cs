@@ -3,6 +3,7 @@ using UnityEngine;
 public class EnemyHealth : MonoBehaviour {
     public int maxHealth = 100;
     private int currentHealth;
+    public GameObject[] itemsToDrop; // Array of items that can be dropped
 
     private void Start() {
         currentHealth = maxHealth;
@@ -18,10 +19,16 @@ public class EnemyHealth : MonoBehaviour {
         Debug.Log("Enemy took " + damage + " damage. Current health: " + currentHealth);
     }
 
-    //Destroy game object if killed
-    void Die() {
+    void Die()
+    {
         Debug.Log("Enemy has been defeated.");
-        Destroy(gameObject); 
-    }
 
+        if (itemsToDrop.Length > 0)
+        {
+            int randomIndex = Random.Range(0, itemsToDrop.Length);
+            Instantiate(itemsToDrop[randomIndex], transform.position, Quaternion.identity);
+        }
+
+        Destroy(gameObject);
+    }
 }
