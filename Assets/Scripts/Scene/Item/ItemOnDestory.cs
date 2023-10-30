@@ -10,7 +10,10 @@ public class ItemOnDestory : MonoBehaviour
 
     private void OnDestory()
     {
-        Transform t = Instantiate(healthPickup).transform;
-        t.position = transform.position;
+        // if (Random.value <= chanceOfDrop)
+        {
+            Transform t = Instantiate(healthPickup).transform;
+            t.position = transform.position;
+        }
     }
 }
