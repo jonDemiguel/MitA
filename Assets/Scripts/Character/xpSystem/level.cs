@@ -8,6 +8,7 @@ public class Level : MonoBehaviour
     int experience = 0;
     [SerializeField] ExperienceBar experienceBar;
     public LevelMenu lm;
+    public LevelUpEffect lve;
     // Base experience required to level up from level 1 to 2
     private const int baseExperience = 1000;
 
@@ -55,6 +56,7 @@ public class Level : MonoBehaviour
             OnLevelUp();
             if(experience < ExperienceToLevelUp)
                 upGradeAttribute();
+
         }
         
     }
@@ -66,6 +68,7 @@ public class Level : MonoBehaviour
 
     private void upGradeAttribute()
     {
-        lm.openMenu();
+        //lm.openMenu();
+        lve.playEffect();
     }
 }
