@@ -58,10 +58,11 @@ public class ExplodingEyeScript : MonoBehaviour
     //the coroutine for the explosion animation
     private IEnumerator Explode() {
         isExploding = true;
-
-        animator.Play(explosionAnimationName);
+        
+        animator.SetBool("isExploding", true);
+        
         yield return new WaitForSeconds(1.5f); 
-
+        
         Destroy(gameObject);
     }
 }
