@@ -6,6 +6,7 @@ public class EnemyHealth : MonoBehaviour, Destroyable
     private int currentHealth;
     public GameObject[] itemsToDrop; // Array of items that can be dropped
     [SerializeField] int experience_gain = 400;
+    [SerializeField] float chanceOfDrop = 1f;
 
     private void Start()
     {
@@ -29,10 +30,13 @@ public class EnemyHealth : MonoBehaviour, Destroyable
         Debug.Log("Enemy has been defeated.");
 
         // Drop a random item if any exist
-        if (itemsToDrop.Length > 0)
+        if (Random.value <= chanceOfDrop)
         {
-            int randomIndex = Random.Range(0, itemsToDrop.Length);
-            Instantiate(itemsToDrop[randomIndex], transform.position, Quaternion.identity);
+            if (itemsToDrop.Length > 0)
+            {
+                int randomIndex = Random.Range(0, itemsToDrop.Length);
+                Instantiate(itemsToDrop[randomIndex], transform.position, Quaternion.identity);
+            }
         }
 
         // Find the player object by tag

@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Armor
   m_EditorClassIdentifier: 
   Name: WoodenArmor
-  armor: 5
+  armor: 1
