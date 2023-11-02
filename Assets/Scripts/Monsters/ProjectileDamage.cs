@@ -6,7 +6,8 @@ using UnityEngine;
 public class ProjectileDamage : MonoBehaviour
 {
 
-    public int damageAmount = 5;
+
+    public int damageAmount;
     public bool inHitBox = false;
 
     void Start()
