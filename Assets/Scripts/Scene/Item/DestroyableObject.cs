@@ -4,15 +4,8 @@ using UnityEngine;
 
 public class DestroyableObject : MonoBehaviour 
 {
-    // Start is called before the first frame update
-    void Start()
+    public void TakeDamage (int damage)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        Destroy(gameObject);
     }
 }
