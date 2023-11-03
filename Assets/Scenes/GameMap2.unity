@@ -1853,6 +1853,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   display: 0
   lvEffect: {fileID: 529309629}
+  timeRemain: 10
 --- !u!1 &692624514
 GameObject:
   m_ObjectHideFlags: 0
@@ -3483,7 +3484,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1139440206
 RectTransform:
   m_ObjectHideFlags: 0
