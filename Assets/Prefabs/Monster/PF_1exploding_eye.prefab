@@ -10,11 +10,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -2253911629886400664, guid: 580d295a96eec8a438ed5b6de3c3618c, type: 3}
       propertyPath: m_Name
-      value: exploding_eye 1
+      value: PF_1exploding_eye
       objectReference: {fileID: 0}
     - target: {fileID: -2253911629886400664, guid: 580d295a96eec8a438ed5b6de3c3618c, type: 3}
       propertyPath: m_TagString
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 3626916397498700004, guid: 580d295a96eec8a438ed5b6de3c3618c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 580d295a96eec8a438ed5b6de3c3618c, type: 3}
       propertyPath: m_LocalScale.x
@@ -146,3 +150,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 20
+  itemsToDrop: []
+  experience_gain: 400
+  chanceOfDrop: 1
