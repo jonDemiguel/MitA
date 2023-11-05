@@ -18,17 +18,6 @@ public class PlayerBehavior : MonoBehaviour
 
     public void PlayerTakeDmg(int dmg)
     {
-        // GameManager.gameManager._playerHealth.DmgUnit(dmg);
-        // Debug.Log("Player health = " + GameManager.gameManager._playerHealth.Health);
-        // if (GameManager.gameManager._playerHealth.Health <= 0)
-        // {
-        //     Die();
-        // }
-        // else
-        // {
-        //     damageFlash.Flash(); // Flash the sprite red when taking damage
-        // }
-        
         // Apply armor
         applyArmor(ref dmg);
 
@@ -56,11 +45,6 @@ public class PlayerBehavior : MonoBehaviour
         Destroy(gameObject);
     }
 
-    // private void PlayerHeal(int heal)
-    // {
-    //     GameManager.gameManager._playerHealth.HealUnit(heal);
-    // }
-    
     // Armor logic
     private void applyArmor(ref int damage)
     {
