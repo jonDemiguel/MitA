@@ -129,16 +129,28 @@ public class EnemySpawnManager : MonoBehaviour
     {
         while (CheckEnemyCount())
         {
-            
-            yield return new WaitForSeconds(timeBetweenSpawns);
             System.Random rnd = new System.Random();
             int type = rnd.Next(0, prefab.Length);
+            if (wave == 0)
+            {
+                type %= 3;
+            }
+            if(wave == 1)
+            {
+                type = (type % 3) + 3;
+            }
+            if(wave == 2)
+            {
+                type = (type % 3) + 6;
+            }
+            Debug.Log("type: " + type);
             Vector3 spawnPosition = getSpawnLocation();
             Vector3 spawnScale = new Vector3(10f, 10f, 1f);
             Instantiate(prefab[type], spawnPosition, transform.rotation);
             prefab[type].transform.localScale = spawnScale;
             enemySpawned++;
             enemyCount++;
+            yield return new WaitForSeconds(timeBetweenSpawns);
         }
         EndWave();
     }

@@ -9,8 +9,7 @@ public class ExplodingEyeScript : MonoBehaviour
 
     private Vector3 previousPosition;
     private SpriteRenderer spriteRenderer;
-    private bool isExploding = false;
-    public int damageAmount = 100;
+    private bool isExploding = false; 
 
     void Start() {
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -59,22 +58,11 @@ public class ExplodingEyeScript : MonoBehaviour
     //the coroutine for the explosion animation
     private IEnumerator Explode() {
         isExploding = true;
-        GameObject player = GameObject.FindGameObjectWithTag("Player");
-        animator.Play(explosionAnimationName);
-        yield return new WaitForSeconds(1.5f);
-        AttackPlayer(player);
+        
+        animator.SetBool("isExploding", true);
+        
+        yield return new WaitForSeconds(1.5f); 
+        
         Destroy(gameObject);
-    }
-    void AttackPlayer(GameObject player)
-    {
-        // Perform attack logic here
-        Debug.Log("Projectile attacks player for " + damageAmount + " damage!");
-
-        // Deal damage to the player (you should have a PlayerBehavior script with a PlayerTakeDmg method)
-        PlayerBehavior playerBehavior = player.GetComponent<PlayerBehavior>();
-        if (playerBehavior != null)
-        {
-            playerBehavior.PlayerTakeDmg(damageAmount);
-        }
     }
 }

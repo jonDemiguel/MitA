@@ -1,0 +1,388 @@
+fileFormatVersion: 2
+guid: f40cec2a396bb6d4b80cf1514d3b3e97
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: Spinning Sword_Frame_0
+    originalName: 
+    pivot: {x: 0.52380955, y: -0.42105263}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 639
+      y: 1307
+      width: 693
+      height: 627
+    spriteID: f60a4fe4690d6ed4f9aee5fe46ebe7c4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 639, y: 1307}
+  - name: Spinning Sword_Frame_1
+    originalName: 
+    pivot: {x: 0.52380955, y: -0.42105263}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 639
+      y: 1942
+      width: 693
+      height: 627
+    spriteID: e8b0eee51fea10448a1ab2cd83dfebe0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 639, y: 1942}
+  - name: Spinning Sword_Frame_2
+    originalName: 
+    pivot: {x: 0.47368422, y: -0.9285714}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 639
+      y: 3212
+      width: 627
+      height: 462
+    spriteID: 68f4667d08efaa148ad3bb88b4b3e764
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 639, y: 3212}
+  - name: Spinning Sword_Frame_3
+    originalName: 
+    pivot: {x: 0.47368422, y: -0.3181818}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 627
+      height: 726
+    spriteID: 0a2d22feeff049f4498e98733d3dabcd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: Spinning Sword_Frame_4
+    originalName: 
+    pivot: {x: 0.33333337, y: -0.36842108}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 639
+      y: 2577
+      width: 495
+      height: 627
+    spriteID: 422a1a4b6d834ac4ab4adfc6f5959041
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 639, y: 2577}
+  - name: Spinning Sword_Frame_5
+    originalName: 
+    pivot: {x: 0.45454547, y: -0.3157895}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 639
+      y: 4
+      width: 726
+      height: 627
+    spriteID: 12e7e159bcb7a684187944cf45419a5d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 639, y: 4}
+  - name: Spinning Sword_Frame_6
+    originalName: 
+    pivot: {x: 0.57894737, y: -0.5714286}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 738
+      width: 627
+      height: 462
+    spriteID: 81d43e445cd610541a6ed63f468ac427
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 738}
+  - name: Spinning Sword_Frame_7
+    originalName: 
+    pivot: {x: 0.5, y: -0.3}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 639
+      y: 639
+      width: 660
+      height: 660
+    spriteID: 3d14666477e105442b277a2762beddb7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 639, y: 639}
+  - name: Spinning Sword_Frame_8
+    originalName: 
+    pivot: {x: 0.71428573, y: -0.36842108}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1208
+      width: 462
+      height: 627
+    spriteID: 28ec84cfc855eb648a40c1cdeffe3d84
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 1208}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 1646464319
+    name: Spinning Sword
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: Spinning Sword_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 231
+        y: 264
+        width: 693
+        height: 627
+      spriteId: f60a4fe4690d6ed4f9aee5fe46ebe7c4
+    - name: Spinning Sword_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 231
+        y: 264
+        width: 693
+        height: 627
+      spriteId: e8b0eee51fea10448a1ab2cd83dfebe0
+    - name: Spinning Sword_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 297
+        y: 429
+        width: 627
+        height: 462
+      spriteId: 68f4667d08efaa148ad3bb88b4b3e764
+    - name: Spinning Sword_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 297
+        y: 231
+        width: 627
+        height: 726
+      spriteId: 0a2d22feeff049f4498e98733d3dabcd
+    - name: Spinning Sword_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 429
+        y: 231
+        width: 495
+        height: 627
+      spriteId: 422a1a4b6d834ac4ab4adfc6f5959041
+    - name: Spinning Sword_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 264
+        y: 198
+        width: 726
+        height: 627
+      spriteId: 12e7e159bcb7a684187944cf45419a5d
+    - name: Spinning Sword_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 231
+        y: 264
+        width: 627
+        height: 462
+      spriteId: 81d43e445cd610541a6ed63f468ac427
+    - name: Spinning Sword_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 264
+        y: 198
+        width: 660
+        height: 660
+      spriteId: 3d14666477e105442b277a2762beddb7
+    - name: Spinning Sword_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 264
+        y: 231
+        width: 462
+        height: 627
+      spriteId: 28ec84cfc855eb648a40c1cdeffe3d84
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 1188, y: 1188}
