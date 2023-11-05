@@ -1,0 +1,612 @@
+fileFormatVersion: 2
+guid: 4e884124145d2ad4b91e6fecc18ea07c
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: exploding_eye_exploding_animation_lvl3_Frame_0
+    originalName: 
+    pivot: {x: 0.55172414, y: -0.03846154}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 74
+      width: 29
+      height: 26
+    spriteID: aaaac297af5ddda4d857c0cca0fa3159
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 74}
+  - name: exploding_eye_exploding_animation_lvl3_Frame_1
+    originalName: 
+    pivot: {x: 0.55172414, y: -0.03846154}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 108
+      width: 29
+      height: 26
+    spriteID: 3fd32203f6647c747b1cd7951ce95475
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 108}
+  - name: exploding_eye_exploding_animation_lvl3_Frame_2
+    originalName: 
+    pivot: {x: 0.55172414, y: -0.03846154}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 142
+      width: 29
+      height: 26
+    spriteID: 6e14f6ba43e122843836fc93e8645208
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 142}
+  - name: exploding_eye_exploding_animation_lvl3_Frame_3
+    originalName: 
+    pivot: {x: 0.55172414, y: -0.03846154}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 176
+      width: 29
+      height: 26
+    spriteID: 3d4212faa3135334ab59421cecbbf91e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 176}
+  - name: exploding_eye_exploding_animation_lvl3_Frame_4
+    originalName: 
+    pivot: {x: 0.53333336, y: -0.037037037}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 30
+      height: 27
+    spriteID: c8d6d13561215be4ba7cd7462c34e0c3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: exploding_eye_exploding_animation_lvl3_Frame_5
+    originalName: 
+    pivot: {x: 0.5, y: -0.037037037}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 39
+      width: 28
+      height: 27
+    spriteID: e5dbffeaa97e2b343b7ef9d4676d5e14
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 39}
+  - name: exploding_eye_exploding_animation_lvl3_Frame_6
+    originalName: 
+    pivot: {x: 0.4615385, y: -0.037037037}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 210
+      width: 26
+      height: 27
+    spriteID: a6b983043331879448b68b69e0cecf68
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 210}
+  - name: exploding_eye_exploding_animation_lvl3_Frame_7
+    originalName: 
+    pivot: {x: 0.4166667, y: -0.037037037}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 42
+      y: 113
+      width: 24
+      height: 27
+    spriteID: a6f5c14748a1c134aa17b9b8c564e04f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 42, y: 113}
+  - name: exploding_eye_exploding_animation_lvl3_Frame_8
+    originalName: 
+    pivot: {x: 0.33333334, y: -0.037037037}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 42
+      y: 184
+      width: 21
+      height: 27
+    spriteID: 439ea1f72a937554c9a632d75ce885dd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 42, y: 184}
+  - name: exploding_eye_exploding_animation_lvl3_Frame_9
+    originalName: 
+    pivot: {x: 0.33333334, y: -0.037037037}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 42
+      y: 219
+      width: 21
+      height: 27
+    spriteID: eb2dd6f6a70321f4fa1366743f3bf3e8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 42, y: 219}
+  - name: exploding_eye_exploding_animation_lvl3_Frame_10
+    originalName: 
+    pivot: {x: 0.33333334, y: -0.037037037}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 75
+      y: 4
+      width: 21
+      height: 27
+    spriteID: b1455067a9fa8d8468764b3cf6729ec8
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 75, y: 4}
+  - name: exploding_eye_exploding_animation_lvl3_Frame_11
+    originalName: 
+    pivot: {x: 0.39999998, y: -0.035714287}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 42
+      y: 4
+      width: 25
+      height: 28
+    spriteID: 0875f6b48de67b64db936da80f14a31b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 42, y: 4}
+  - name: exploding_eye_exploding_animation_lvl3_Frame_12
+    originalName: 
+    pivot: {x: 0.375, y: -0.03448276}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 42
+      y: 40
+      width: 24
+      height: 29
+    spriteID: 16d0a5a9728562e449ff17d928f9b5cb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 42, y: 40}
+  - name: exploding_eye_exploding_animation_lvl3_Frame_13
+    originalName: 
+    pivot: {x: 0.375, y: -0.035714287}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 42
+      y: 77
+      width: 24
+      height: 28
+    spriteID: d6b68d4f459ecd244bc286b083248831
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 42, y: 77}
+  - name: exploding_eye_exploding_animation_lvl3_Frame_14
+    originalName: 
+    pivot: {x: 0.39130434, y: -0.035714287}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 42
+      y: 148
+      width: 23
+      height: 28
+    spriteID: 4dd960d1778d93043a34fddcbc44f288
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 42, y: 148}
+  - name: exploding_eye_exploding_animation_lvl3_Frame_15
+    originalName: 
+    pivot: {x: 0.39130434, y: -0.26086956}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 75
+      y: 39
+      width: 23
+      height: 23
+    spriteID: b9b9450f4713d8640a152420a4c1ffe6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 75, y: 39}
+  - name: exploding_eye_exploding_animation_lvl3_Frame_16
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 245
+      width: 0
+      height: 0
+    spriteID: b9407943242cafd44927feae8ad0d00c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: -28, y: 213}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 931578512
+    name: exploding_eye_exploding_animation_lvl3
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: exploding_eye_exploding_animation_lvl3_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 0
+        y: 1
+        width: 29
+        height: 26
+      spriteId: aaaac297af5ddda4d857c0cca0fa3159
+    - name: exploding_eye_exploding_animation_lvl3_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 0
+        y: 1
+        width: 29
+        height: 26
+      spriteId: 3fd32203f6647c747b1cd7951ce95475
+    - name: exploding_eye_exploding_animation_lvl3_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 0
+        y: 1
+        width: 29
+        height: 26
+      spriteId: 6e14f6ba43e122843836fc93e8645208
+    - name: exploding_eye_exploding_animation_lvl3_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 0
+        y: 1
+        width: 29
+        height: 26
+      spriteId: 3d4212faa3135334ab59421cecbbf91e
+    - name: exploding_eye_exploding_animation_lvl3_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 0
+        y: 1
+        width: 30
+        height: 27
+      spriteId: c8d6d13561215be4ba7cd7462c34e0c3
+    - name: exploding_eye_exploding_animation_lvl3_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 2
+        y: 1
+        width: 28
+        height: 27
+      spriteId: e5dbffeaa97e2b343b7ef9d4676d5e14
+    - name: exploding_eye_exploding_animation_lvl3_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 4
+        y: 1
+        width: 26
+        height: 27
+      spriteId: a6b983043331879448b68b69e0cecf68
+    - name: exploding_eye_exploding_animation_lvl3_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 6
+        y: 1
+        width: 24
+        height: 27
+      spriteId: a6f5c14748a1c134aa17b9b8c564e04f
+    - name: exploding_eye_exploding_animation_lvl3_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 9
+        y: 1
+        width: 21
+        height: 27
+      spriteId: 439ea1f72a937554c9a632d75ce885dd
+    - name: exploding_eye_exploding_animation_lvl3_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 9
+        y: 1
+        width: 21
+        height: 27
+      spriteId: eb2dd6f6a70321f4fa1366743f3bf3e8
+    - name: exploding_eye_exploding_animation_lvl3_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 9
+        y: 1
+        width: 21
+        height: 27
+      spriteId: b1455067a9fa8d8468764b3cf6729ec8
+    - name: exploding_eye_exploding_animation_lvl3_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 6
+        y: 1
+        width: 25
+        height: 28
+      spriteId: 0875f6b48de67b64db936da80f14a31b
+    - name: exploding_eye_exploding_animation_lvl3_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 7
+        y: 1
+        width: 24
+        height: 29
+      spriteId: 16d0a5a9728562e449ff17d928f9b5cb
+    - name: exploding_eye_exploding_animation_lvl3_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 7
+        y: 1
+        width: 24
+        height: 28
+      spriteId: d6b68d4f459ecd244bc286b083248831
+    - name: exploding_eye_exploding_animation_lvl3_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 7
+        y: 1
+        width: 23
+        height: 28
+      spriteId: 4dd960d1778d93043a34fddcbc44f288
+    - name: exploding_eye_exploding_animation_lvl3_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 7
+        y: 6
+        width: 23
+        height: 23
+      spriteId: b9b9450f4713d8640a152420a4c1ffe6
+    - name: exploding_eye_exploding_animation_lvl3_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      spriteId: b9407943242cafd44927feae8ad0d00c
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 32, y: 32}
