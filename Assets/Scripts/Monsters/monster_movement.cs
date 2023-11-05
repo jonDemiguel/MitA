@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class red_eye_movement : MonoBehaviour
+public class monster_movement : MonoBehaviour
 {
     public float moveSpeed = 5f;
     private Vector3 previousPosition;

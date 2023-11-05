@@ -24,7 +24,6 @@ public class ProjectileDamage : MonoBehaviour
             {
                 AttackPlayer(player);
                 Destroy(gameObject);
-                Debug.Log("Destroyed" + gameObject);
             }
         }
     }
@@ -32,7 +31,6 @@ public class ProjectileDamage : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            Debug.Log("collided");
             inHitBox = true;
         }
     }
@@ -40,7 +38,6 @@ public class ProjectileDamage : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            Debug.Log("exited");
             inHitBox = false;
         }
     }
