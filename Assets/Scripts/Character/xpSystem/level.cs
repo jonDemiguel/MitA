@@ -1,12 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+using TMPro;
 
-public class Level : MonoBehaviour
+public class Level : MonoBehaviour, IDataPersistance
 {
-    int level = 1;
-    int experience = 0;
+    public int level = 1;
+    public int experience = 0;
     [SerializeField] ExperienceBar experienceBar;
     public LevelMenu lm;
     public LevelUpEffect lve;
@@ -15,7 +15,18 @@ public class Level : MonoBehaviour
 
     // Additional experience required for each subsequent level
     private const int additionalExperiencePerLevel = 1000;
+    //load saved level
+    public void loadData(GameData data)
+    {
+        this.level = data.level;
+        this.experience = data.experience;
+    }
 
+    public void saveData(ref GameData data)
+    {
+        data.level = this.level;
+        data.experience = this.experience;
+    }
     // Calculate the total experience required to reach the next level
     private int ExperienceToLevelUp
     {
@@ -55,14 +66,11 @@ public class Level : MonoBehaviour
             experience -= ExperienceToLevelUp;
             Level_update += 1;  // Use the property here
             OnLevelUp();
-            if(experience < ExperienceToLevelUp)
+            if (experience < ExperienceToLevelUp)
                 upGradeAttribute();
 
         }
-        if(level == 10)
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        }
+
     }
 
     private void OnLevelUp()
@@ -75,4 +83,6 @@ public class Level : MonoBehaviour
         //lm.openMenu();
         lve.playEffect();
     }
+
+
 }

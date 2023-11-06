@@ -284,6 +284,7 @@ MonoBehaviour:
   maxHealth: 50
   itemsToDrop: []
   experience_gain: 400
+  chanceOfDrop: 1
 --- !u!114 &77489935
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -589,6 +590,7 @@ MonoBehaviour:
   maxHealth: 10
   itemsToDrop: []
   experience_gain: 400
+  chanceOfDrop: 1
 --- !u!114 &395190120
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -856,6 +858,7 @@ MonoBehaviour:
   maxHealth: 10
   itemsToDrop: []
   experience_gain: 400
+  chanceOfDrop: 1
 --- !u!114 &500654560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1467,6 +1470,7 @@ MonoBehaviour:
   maxHealth: 10
   itemsToDrop: []
   experience_gain: 400
+  chanceOfDrop: 1
 --- !u!114 &613091476
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2326,12 +2330,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 841814699}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.35430658, y: 1.1126829, z: -0.1862366}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1009.7242, y: -602.6127, z: 6.9711695}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 975357215}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &885910125
 GameObject:
@@ -2665,6 +2669,39 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &975357214
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 975357215}
+  m_Layer: 0
+  m_Name: Mangers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &975357215
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 975357214}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1009.3699, y: 603.72534, z: -7.157406}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 841814701}
+  - {fileID: 1201635637}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1006969049
@@ -3652,6 +3689,51 @@ Transform:
   - {fileID: 1231512738}
   m_Father: {fileID: 2047915187}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1201635636
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1201635637}
+  - component: {fileID: 1201635638}
+  m_Layer: 0
+  m_Name: DataManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1201635637
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1201635636}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 975357215}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1201635638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1201635636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b949ee52484f28d479da9c6d059ba025, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fileName: data.json
 --- !u!1 &1231512737
 GameObject:
   m_ObjectHideFlags: 0
@@ -6009,6 +6091,7 @@ MonoBehaviour:
   maxHealth: 50
   itemsToDrop: []
   experience_gain: 400
+  chanceOfDrop: 1
 --- !u!114 &1585225257
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6567,6 +6650,7 @@ MonoBehaviour:
   maxHealth: 10
   itemsToDrop: []
   experience_gain: 400
+  chanceOfDrop: 1
 --- !u!114 &1804786924
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7197,6 +7281,7 @@ MonoBehaviour:
   maxHealth: 50
   itemsToDrop: []
   experience_gain: 400
+  chanceOfDrop: 1
 --- !u!114 &2141325358
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7337,4 +7422,4 @@ SceneRoots:
   - {fileID: 1679339160}
   - {fileID: 409217994}
   - {fileID: 1557180114}
-  - {fileID: 841814701}
+  - {fileID: 975357215}
