@@ -22,11 +22,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 580d295a96eec8a438ed5b6de3c3618c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.77
+      value: -24.76
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 580d295a96eec8a438ed5b6de3c3618c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.22
+      value: -1.96
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 580d295a96eec8a438ed5b6de3c3618c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -91,7 +91,6 @@ MonoBehaviour:
   moveSpeed: 5
   animator: {fileID: 1160356261127867848, guid: 98c4df253fa55f541a8dc1a29c787b13, type: 3}
   explosionAnimationName: Explode
-  damageAmount: 100
 --- !u!58 &6266563289693377390
 CircleCollider2D:
   m_ObjectHideFlags: 0
