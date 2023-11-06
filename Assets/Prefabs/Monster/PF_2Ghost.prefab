@@ -112,7 +112,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: 8314671340115470504, guid: 4e35c82058782d140b2e88fa5624ee78, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -158,7 +158,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 2372783886298195916, guid: 6031cc7df53b4eb4fb4f8633c1460d31, type: 3}
-  bulletPos: {fileID: 4430040119712492736}
 --- !u!61 &4310716486352241615
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -327,3 +326,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 30
+  itemsToDrop: []
+  experience_gain: 400
+  chanceOfDrop: 1

@@ -44,4 +44,15 @@ public class UnitHealth
             _currentHealth = _currentMaxHealth;
         }
     }
+
+
+    public void SetMaxHealth(int maxHealth)
+    {
+        // Update the player's maximum health and fully heal them, or implement as desired
+        _currentMaxHealth = maxHealth;
+        _currentHealth = maxHealth; // Optional: Heal the player to full health on level up
+        // // Update the player's maximum health and fully heal them, or implement as desired
+        // this.maxHealth = maxHealth;
+        // this.currentHealth = maxHealth; // Optional: Heal the player to full health on level up
+    }
 }

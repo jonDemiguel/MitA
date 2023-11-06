@@ -10,11 +10,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -2253911629886400664, guid: f13b2cf011d874144a781df56894abb2, type: 3}
       propertyPath: m_Name
-      value: PF_red_eye_monster
+      value: PF_1eye_monster
       objectReference: {fileID: 0}
     - target: {fileID: -2253911629886400664, guid: f13b2cf011d874144a781df56894abb2, type: 3}
       propertyPath: m_TagString
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 3626916397498700004, guid: f13b2cf011d874144a781df56894abb2, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: f13b2cf011d874144a781df56894abb2, type: 3}
       propertyPath: m_LocalScale.x
