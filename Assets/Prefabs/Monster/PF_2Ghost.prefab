@@ -49,6 +49,7 @@ GameObject:
   - component: {fileID: 7556556789220704059}
   - component: {fileID: 5855036007978891985}
   - component: {fileID: 4662858914378914672}
+  - component: {fileID: 92247953644082924}
   m_Layer: 0
   m_Name: PF_2Ghost
   m_TagString: Enemy
@@ -329,3 +330,16 @@ MonoBehaviour:
   itemsToDrop: []
   experience_gain: 400
   chanceOfDrop: 1
+--- !u!114 &92247953644082924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6455280753277181184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 705c943e3eda2204988a357a111c71de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageAmount: 10
