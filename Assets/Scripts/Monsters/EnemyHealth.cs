@@ -7,7 +7,6 @@ public class EnemyHealth : MonoBehaviour, Destroyable
     public GameObject[] itemsToDrop; // Array of items that can be dropped
     [SerializeField] int experience_gain = 400;
     [SerializeField] [Range(0f, 1f)] float chanceOfDrop = 1f;
-    [SerializeField] GameObject dropItemPrefab;
 
     private void Start()
     {
