@@ -45,7 +45,7 @@ public class Enemy : MonoBehaviour
 
             // Optionally, if you want the spell to automatically destroy after the animation
             // Assuming your animation clip is 2 seconds long
-            Destroy(spell, 1.04f);
+            Destroy(spell, 1.5f);
         }
     }
 }
