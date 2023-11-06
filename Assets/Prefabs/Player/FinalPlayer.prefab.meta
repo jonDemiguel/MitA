@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Prefabs/Player/FinalPlayer.prefab.meta
 guid: 5dc1d862d203d3c4a8f2c88a2e52ac0b
+=======
+guid: 12ad6054eb2925442b2a840b07f2a218
+>>>>>>> origin:Assets/Prefabs/bullet.prefab.meta
 PrefabImporter:
   externalObjects: {}
   userData: 

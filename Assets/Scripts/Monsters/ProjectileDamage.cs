@@ -5,51 +5,33 @@ using UnityEngine;
 
 public class ProjectileDamage : MonoBehaviour
 {
-
-
     public int damageAmount;
-    public bool inHitBox = false;
+    private bool hasDamagedPlayer = false; 
 
     void Start()
     {
+    }
+
+    void Update() {
 
     }
 
-    void Update()
-    {
-        GameObject player = GameObject.FindGameObjectWithTag("Player");
-        if (player != null)
-        {
-            if (inHitBox)
-            {
-                AttackPlayer(player);
-                Destroy(gameObject);
-            }
+    void OnCollisionEnter2D(Collision2D collision) {
+        if (collision.gameObject.CompareTag("Player") && !hasDamagedPlayer) {
+            // Pass the collided object to AttackPlayer
+            AttackPlayer(collision.gameObject); 
+            // Set the flag to prevent further damage
+            hasDamagedPlayer = true; 
         }
     }
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            inHitBox = true;
-        }
-    }
-    void OnCollisionExit2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            inHitBox = false;
-        }
-    }
-    void AttackPlayer(GameObject player)
-    {
+
+    void AttackPlayer(GameObject player) {
         // Perform attack logic here
         Debug.Log("Projectile attacks player for " + damageAmount + " damage!");
 
         // Deal damage to the player (you should have a PlayerBehavior script with a PlayerTakeDmg method)
         PlayerBehavior playerBehavior = player.GetComponent<PlayerBehavior>();
-        if (playerBehavior != null)
-        {
+        if (playerBehavior != null) {
             playerBehavior.PlayerTakeDmg(damageAmount);
         }
     }
