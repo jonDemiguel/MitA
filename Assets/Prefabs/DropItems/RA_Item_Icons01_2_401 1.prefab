@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4702233588127395264}
   - component: {fileID: -6718309906537074902}
   - component: {fileID: -8975336393001282059}
+  - component: {fileID: -6272875844805714597}
   m_Layer: 0
   m_Name: RA_Item_Icons01_2_401 1
   m_TagString: Untagged
@@ -131,6 +132,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 278500f463cb01448b095d91238997a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-6272875844805714597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2081465777096373492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a85979b2a7d75a04dbdd5601ac14ddf1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   healAmount: 100

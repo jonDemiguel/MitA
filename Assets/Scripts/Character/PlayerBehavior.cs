@@ -10,6 +10,12 @@ public class PlayerBehavior : MonoBehaviour
     public int armor = 0;
     private DamageFlash damageFlash;
     [SerializeField] PlayerHPstats hpBar;
+    [HideInInspector] public Coins coins;
+
+    public void Awake()
+    {
+        coins = GetComponent<Coins>();
+    }
 
     void Start()
     {
