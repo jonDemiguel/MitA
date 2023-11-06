@@ -11,7 +11,7 @@ public class Level : MonoBehaviour
     public LevelUpEffect lve;
     // Base experience required to level up from level 1 to 2
     private const int baseExperience = 1000;
-
+    public int levelPoint = 0;
     // Additional experience required for each subsequent level
     private const int additionalExperiencePerLevel = 1000;
 
@@ -53,6 +53,7 @@ public class Level : MonoBehaviour
         {
             experience -= ExperienceToLevelUp;
             Level_update += 1;  // Use the property here
+            levelPoint++;
             OnLevelUp();
             if(experience < ExperienceToLevelUp)
                 upGradeAttribute();
@@ -68,7 +69,7 @@ public class Level : MonoBehaviour
 
     private void upGradeAttribute()
     {
-        //lm.openMenu();
+        
         lve.playEffect();
     }
 }
