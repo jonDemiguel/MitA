@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class InGameUIScript : MonoBehaviour
+public class PauseMenu : MonoBehaviour
 {
     public GameObject pauseMenu;
+    public LevelMenu lm;
     public bool isPaused;
     // Start is called before the first frame update
     void Start()
@@ -19,12 +20,16 @@ public class InGameUIScript : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             if (isPaused)
+            {
                 ResumeGame();
+                pauseMenu.SetActive(false);
+                lm.closeMenu();
+            }
             else
                 PauseGame();
         }
     }
-
+   
     public void PauseGame()
     {
         pauseMenu.SetActive(true);
