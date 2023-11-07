@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EnemySpawnManager : MonoBehaviour
 {
@@ -25,18 +26,49 @@ public class EnemySpawnManager : MonoBehaviour
     int screenWidth = Screen.width;
     int screenHeight = Screen.height;
     public Camera mainCamera;
+    public GameManager gameManager;
+    String activeScene;
+    String nextScene;
 
     //Called before game start
     private void Awake()
     {
-        Instance = this;
+        //Instance = this;
+    }
+
+    void Update()
+    {
+        
+        if (GameObject.FindGameObjectsWithTag("Enemy").Length == 0)
+        {
+            SceneManager.LoadScene(nextScene);
+        }
     }
 
     // Start is called before the first frame update
     void Start()
     {
         wave = 0;
+        gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+        gameManager.NewScene();
+        activeScene = gameManager.GetActiveScene();
+        if (activeScene == "GameMap2")
+        {
+           nextScene = "Level2";
+           wave = 0;
+        }
+        if (activeScene == "Level2")
+        {
+            nextScene = "Level3";
+            wave = 1;
+        }
+        if (activeScene == "Level3")
+        {
+            nextScene = "FinalBossRoom";
+            wave = 2;
+        }
         StartCoroutine(SpawnEnemies());
+        
     }
 
     //Invokes new wave
@@ -57,16 +89,10 @@ public class EnemySpawnManager : MonoBehaviour
 
     //End wave
     void EndWave()
-    {
-        while(stillEnemies)
-        {
-            //Figure out how to monitor if Enemies have been destroyed
-            //
-        }
-        wave++;
-        enemyCount = 0;
+    {    
+        gameManager.ResetKillCount();
         enemySpawned = 0;
-        StartWave();
+        SceneManager.LoadScene(nextScene);
     }
 
     public Vector3 getSpawnLocation()
@@ -143,7 +169,6 @@ public class EnemySpawnManager : MonoBehaviour
             {
                 type = (type % 3) + 6;
             }
-            Debug.Log("type: " + type);
             Vector3 spawnPosition = getSpawnLocation();
             Vector3 spawnScale = new Vector3(10f, 10f, 1f);
             Instantiate(prefab[type], spawnPosition, transform.rotation);
@@ -152,6 +177,5 @@ public class EnemySpawnManager : MonoBehaviour
             enemyCount++;
             yield return new WaitForSeconds(timeBetweenSpawns);
         }
-        EndWave();
     }
 }

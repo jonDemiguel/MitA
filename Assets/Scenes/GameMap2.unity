@@ -1150,6 +1150,7 @@ MonoBehaviour:
   - {fileID: 7814079288601450305, guid: fc96f84a43152c44a80bd4c6d4cbe661, type: 3}
   - {fileID: 1232587148974458000, guid: 0147fe04518b6405abd223144f1539ab, type: 3}
   mainCamera: {fileID: 1300887325}
+  gameManager: {fileID: 0}
 --- !u!4 &520049010
 Transform:
   m_ObjectHideFlags: 0
@@ -1864,6 +1865,7 @@ MonoBehaviour:
   isPaused: 0
   playerSta: {fileID: 0}
   lv: {fileID: 1115601430}
+  pausemenu: {fileID: 0}
   levelPointText: {fileID: 214129883}
 --- !u!114 &654345323
 MonoBehaviour:
@@ -2551,7 +2553,7 @@ GameObject:
   - component: {fileID: 841814700}
   m_Layer: 0
   m_Name: GameManager
-  m_TagString: Untagged
+  m_TagString: GameManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2568,6 +2570,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29f2d674044c35047833891199bb8c99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneName: 
+  enemiesKilled: 0
 --- !u!4 &841814701
 Transform:
   m_ObjectHideFlags: 0
@@ -6454,6 +6458,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damageAmount: 10
   enemyTag: Enemy
+  destroyableTag: Destroyable
 --- !u!1 &1665146561
 GameObject:
   m_ObjectHideFlags: 0

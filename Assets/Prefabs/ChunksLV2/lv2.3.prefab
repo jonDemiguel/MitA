@@ -17875,7 +17875,7 @@ GameObject:
   - component: {fileID: 5848289842341699169}
   m_Layer: 0
   m_Name: sRA_Interior_74
-  m_TagString: Enemy
+  m_TagString: Destroyable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18004,6 +18004,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 630268c2e55f4324b82c1f54c5b3b622, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemsToDrop:
+  - {fileID: 1666251942956670988, guid: c50957b91514a3740bb2576b979bc37e, type: 3}
+  - {fileID: 8800657170758353713, guid: 4116b0b263f6f134f8a4911644fc20f8, type: 3}
+  - {fileID: 3737490920896635388, guid: 5539c0e16e4ea2240b651eaf23bbbc08, type: 3}
+  - {fileID: 8246866455991826606, guid: f0022f6483fe8cf4f8b62090c019a391, type: 3}
 --- !u!114 &5848289842341699169
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18024,6 +18029,7 @@ MonoBehaviour:
   - {fileID: 8246866455991826606, guid: f0022f6483fe8cf4f8b62090c019a391, type: 3}
   experience_gain: 0
   chanceOfDrop: 1
+  isDestroyable: 0
 --- !u!1 &1771746247213561085
 GameObject:
   m_ObjectHideFlags: 0
@@ -18963,7 +18969,7 @@ GameObject:
   - component: {fileID: 6577589154429114094}
   m_Layer: 0
   m_Name: sRA_Interior_335
-  m_TagString: Enemy
+  m_TagString: Destroyable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -19092,6 +19098,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 630268c2e55f4324b82c1f54c5b3b622, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemsToDrop:
+  - {fileID: 6542954674936235511, guid: a05ec956f7832ad4595f567544c326b6, type: 3}
+  - {fileID: 5088745367548216150, guid: b038f1ef81def4045b28248576e37891, type: 3}
+  - {fileID: 2919763588843830898, guid: 64bbe01f2b378c64984b9be94365b21e, type: 3}
 --- !u!114 &6577589154429114094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19111,6 +19121,7 @@ MonoBehaviour:
   - {fileID: 2919763588843830898, guid: 64bbe01f2b378c64984b9be94365b21e, type: 3}
   experience_gain: 0
   chanceOfDrop: 1
+  isDestroyable: 0
 --- !u!1 &2835856365673071315
 GameObject:
   m_ObjectHideFlags: 0
@@ -20919,7 +20930,7 @@ GameObject:
   - component: {fileID: 279596045167861449}
   m_Layer: 0
   m_Name: sRA_Interior_322
-  m_TagString: Enemy
+  m_TagString: Destroyable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21048,6 +21059,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 630268c2e55f4324b82c1f54c5b3b622, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemsToDrop:
+  - {fileID: 1666251942956670988, guid: c50957b91514a3740bb2576b979bc37e, type: 3}
+  - {fileID: 8800657170758353713, guid: 4116b0b263f6f134f8a4911644fc20f8, type: 3}
+  - {fileID: 3737490920896635388, guid: 5539c0e16e4ea2240b651eaf23bbbc08, type: 3}
+  - {fileID: 8246866455991826606, guid: f0022f6483fe8cf4f8b62090c019a391, type: 3}
+  - {fileID: 7647524794907159406, guid: 4b0ce643dd6173f4d98510499f1f1b46, type: 3}
+  - {fileID: 3665869209267375507, guid: b7a9b7a30e5580d4884207c3a8e36145, type: 3}
+  - {fileID: 7784726160217863405, guid: 2df576a0bc2291a4287ff4764c2be273, type: 3}
 --- !u!114 &279596045167861449
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21071,6 +21090,7 @@ MonoBehaviour:
   - {fileID: 7784726160217863405, guid: 2df576a0bc2291a4287ff4764c2be273, type: 3}
   experience_gain: 0
   chanceOfDrop: 1
+  isDestroyable: 0
 --- !u!1 &4308562117552056706
 GameObject:
   m_ObjectHideFlags: 0
@@ -22165,7 +22185,7 @@ GameObject:
   - component: {fileID: 268503149609991999}
   m_Layer: 0
   m_Name: sRA_Interior_375
-  m_TagString: Enemy
+  m_TagString: Destroyable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -22294,6 +22314,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 630268c2e55f4324b82c1f54c5b3b622, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemsToDrop:
+  - {fileID: 7684690867954094861, guid: f2f854262a1433642959d6c7d5683f47, type: 3}
+  - {fileID: 8620269994557591337, guid: b618e5f25a726aa418f9d58d6c2c61bd, type: 3}
+  - {fileID: 4841427679353565591, guid: 2f53be00dcad8994aa456974faf74c8b, type: 3}
+  - {fileID: 7595277173292076878, guid: 7c02068b1118b3340ad8a389ac0dbd8d, type: 3}
+  - {fileID: 1785068536683512424, guid: fd11821cd4ad90842a5d67ec70fbc8e9, type: 3}
+  - {fileID: 3399371134365638983, guid: 13a360201ea359b41ba41688311333f5, type: 3}
+  - {fileID: 5268951474565617365, guid: cb3cb51fc4efc2c4092d3a7a38158a27, type: 3}
+  - {fileID: 8230848318324010260, guid: a8c5e29661850174eae545f2c5bc04b1, type: 3}
+  - {fileID: 6311499597228812996, guid: df20d4d659387e84c9b30ad19ba0d3fb, type: 3}
+  - {fileID: 3304320633831443538, guid: 70b4e17edc9a2aa42adc07ce88448d1e, type: 3}
+  - {fileID: 4546985721124895248, guid: a80f0ad7dcee3c7469ac4a5d74022216, type: 3}
+  - {fileID: 6936504875649790291, guid: c68c1f3b5bc26f44c9df0af6ddf23bce, type: 3}
+  - {fileID: 7335542986110774813, guid: ac3c844a84f32ad4188a3da901714f9c, type: 3}
+  - {fileID: 262998688718869077, guid: 2fb8410c6eec0304abdd94b2f659a243, type: 3}
+  - {fileID: 3639089780451779146, guid: a97a6d6c4f3115e4db88fea256c88868, type: 3}
+  - {fileID: 2345565339452050236, guid: b6cbe2023a2caef4a873828f859065e5, type: 3}
 --- !u!114 &268503149609991999
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22326,6 +22363,7 @@ MonoBehaviour:
   - {fileID: 2345565339452050236, guid: b6cbe2023a2caef4a873828f859065e5, type: 3}
   experience_gain: 0
   chanceOfDrop: 1
+  isDestroyable: 0
 --- !u!1 &5015503451375357692
 GameObject:
   m_ObjectHideFlags: 0
@@ -24627,7 +24665,7 @@ GameObject:
   - component: {fileID: 5906393904422751121}
   m_Layer: 0
   m_Name: sRA_Interior_377
-  m_TagString: Enemy
+  m_TagString: Destroyable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24756,6 +24794,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 630268c2e55f4324b82c1f54c5b3b622, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemsToDrop:
+  - {fileID: 7684690867954094861, guid: f2f854262a1433642959d6c7d5683f47, type: 3}
+  - {fileID: 8620269994557591337, guid: b618e5f25a726aa418f9d58d6c2c61bd, type: 3}
+  - {fileID: 4841427679353565591, guid: 2f53be00dcad8994aa456974faf74c8b, type: 3}
+  - {fileID: 7595277173292076878, guid: 7c02068b1118b3340ad8a389ac0dbd8d, type: 3}
+  - {fileID: 1785068536683512424, guid: fd11821cd4ad90842a5d67ec70fbc8e9, type: 3}
+  - {fileID: 3399371134365638983, guid: 13a360201ea359b41ba41688311333f5, type: 3}
+  - {fileID: 5268951474565617365, guid: cb3cb51fc4efc2c4092d3a7a38158a27, type: 3}
+  - {fileID: 8230848318324010260, guid: a8c5e29661850174eae545f2c5bc04b1, type: 3}
+  - {fileID: 6311499597228812996, guid: df20d4d659387e84c9b30ad19ba0d3fb, type: 3}
+  - {fileID: 3304320633831443538, guid: 70b4e17edc9a2aa42adc07ce88448d1e, type: 3}
+  - {fileID: 4546985721124895248, guid: a80f0ad7dcee3c7469ac4a5d74022216, type: 3}
+  - {fileID: 6936504875649790291, guid: c68c1f3b5bc26f44c9df0af6ddf23bce, type: 3}
+  - {fileID: 7335542986110774813, guid: ac3c844a84f32ad4188a3da901714f9c, type: 3}
+  - {fileID: 262998688718869077, guid: 2fb8410c6eec0304abdd94b2f659a243, type: 3}
+  - {fileID: 3639089780451779146, guid: a97a6d6c4f3115e4db88fea256c88868, type: 3}
+  - {fileID: 2345565339452050236, guid: b6cbe2023a2caef4a873828f859065e5, type: 3}
 --- !u!114 &5906393904422751121
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24788,6 +24843,7 @@ MonoBehaviour:
   - {fileID: 2345565339452050236, guid: b6cbe2023a2caef4a873828f859065e5, type: 3}
   experience_gain: 0
   chanceOfDrop: 1
+  isDestroyable: 0
 --- !u!1 &7043703898630923554
 GameObject:
   m_ObjectHideFlags: 0
@@ -26910,7 +26966,7 @@ Tilemap:
       - {fileID: -291623746, guid: 0e53a65579725754186a158590dd9d44, type: 3}
       - {fileID: -1395211192, guid: 0e53a65579725754186a158590dd9d44, type: 3}
       - {fileID: -1695909776, guid: 0e53a65579725754186a158590dd9d44, type: 3}
-      m_AnimationSpeed: 6.0000005
+      m_AnimationSpeed: 6
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -13, y: -13, z: 0}
@@ -27135,7 +27191,7 @@ Tilemap:
       - {fileID: -1700149752, guid: 0e53a65579725754186a158590dd9d44, type: 3}
       - {fileID: -253067248, guid: 0e53a65579725754186a158590dd9d44, type: 3}
       - {fileID: 1889070566, guid: 0e53a65579725754186a158590dd9d44, type: 3}
-      m_AnimationSpeed: 6.0000005
+      m_AnimationSpeed: 6
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -13, y: -11, z: 0}
@@ -27255,7 +27311,7 @@ Tilemap:
       - {fileID: -1700149752, guid: 0e53a65579725754186a158590dd9d44, type: 3}
       - {fileID: -253067248, guid: 0e53a65579725754186a158590dd9d44, type: 3}
       - {fileID: 1889070566, guid: 0e53a65579725754186a158590dd9d44, type: 3}
-      m_AnimationSpeed: 6
+      m_AnimationSpeed: 6.0000005
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -15, y: -10, z: 0}
@@ -27285,7 +27341,7 @@ Tilemap:
       - {fileID: -1700149752, guid: 0e53a65579725754186a158590dd9d44, type: 3}
       - {fileID: -253067248, guid: 0e53a65579725754186a158590dd9d44, type: 3}
       - {fileID: 1889070566, guid: 0e53a65579725754186a158590dd9d44, type: 3}
-      m_AnimationSpeed: 6
+      m_AnimationSpeed: 6.0000005
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -13, y: -10, z: 0}
@@ -27630,7 +27686,7 @@ Tilemap:
       - {fileID: -1700149752, guid: 0e53a65579725754186a158590dd9d44, type: 3}
       - {fileID: -253067248, guid: 0e53a65579725754186a158590dd9d44, type: 3}
       - {fileID: 1889070566, guid: 0e53a65579725754186a158590dd9d44, type: 3}
-      m_AnimationSpeed: 6.0000005
+      m_AnimationSpeed: 6
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -6, y: -8, z: 0}
@@ -27660,7 +27716,7 @@ Tilemap:
       - {fileID: -1700149752, guid: 0e53a65579725754186a158590dd9d44, type: 3}
       - {fileID: -253067248, guid: 0e53a65579725754186a158590dd9d44, type: 3}
       - {fileID: 1889070566, guid: 0e53a65579725754186a158590dd9d44, type: 3}
-      m_AnimationSpeed: 6.0000005
+      m_AnimationSpeed: 6
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -4, y: -8, z: 0}
@@ -27810,7 +27866,7 @@ Tilemap:
       - {fileID: -1700149752, guid: 0e53a65579725754186a158590dd9d44, type: 3}
       - {fileID: -253067248, guid: 0e53a65579725754186a158590dd9d44, type: 3}
       - {fileID: 1889070566, guid: 0e53a65579725754186a158590dd9d44, type: 3}
-      m_AnimationSpeed: 6.0000005
+      m_AnimationSpeed: 6
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -1, y: -5, z: 0}
@@ -27825,7 +27881,7 @@ Tilemap:
       - {fileID: -1700149752, guid: 0e53a65579725754186a158590dd9d44, type: 3}
       - {fileID: -253067248, guid: 0e53a65579725754186a158590dd9d44, type: 3}
       - {fileID: 1889070566, guid: 0e53a65579725754186a158590dd9d44, type: 3}
-      m_AnimationSpeed: 6.0000005
+      m_AnimationSpeed: 6
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -1, y: -4, z: 0}
@@ -27840,7 +27896,7 @@ Tilemap:
       - {fileID: -1700149752, guid: 0e53a65579725754186a158590dd9d44, type: 3}
       - {fileID: -253067248, guid: 0e53a65579725754186a158590dd9d44, type: 3}
       - {fileID: 1889070566, guid: 0e53a65579725754186a158590dd9d44, type: 3}
-      m_AnimationSpeed: 6.0000005
+      m_AnimationSpeed: 6
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 0, y: -4, z: 0}
@@ -27915,7 +27971,7 @@ Tilemap:
       - {fileID: -1700149752, guid: 0e53a65579725754186a158590dd9d44, type: 3}
       - {fileID: -253067248, guid: 0e53a65579725754186a158590dd9d44, type: 3}
       - {fileID: 1889070566, guid: 0e53a65579725754186a158590dd9d44, type: 3}
-      m_AnimationSpeed: 6.0000005
+      m_AnimationSpeed: 6
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 1, y: -2, z: 0}
@@ -27960,7 +28016,7 @@ Tilemap:
       - {fileID: -1700149752, guid: 0e53a65579725754186a158590dd9d44, type: 3}
       - {fileID: -253067248, guid: 0e53a65579725754186a158590dd9d44, type: 3}
       - {fileID: 1889070566, guid: 0e53a65579725754186a158590dd9d44, type: 3}
-      m_AnimationSpeed: 6.0000005
+      m_AnimationSpeed: 6
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 2, y: 0, z: 0}
@@ -28035,7 +28091,7 @@ Tilemap:
       - {fileID: -1700149752, guid: 0e53a65579725754186a158590dd9d44, type: 3}
       - {fileID: -253067248, guid: 0e53a65579725754186a158590dd9d44, type: 3}
       - {fileID: 1889070566, guid: 0e53a65579725754186a158590dd9d44, type: 3}
-      m_AnimationSpeed: 6.0000005
+      m_AnimationSpeed: 6
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 3, y: 2, z: 0}
@@ -28050,7 +28106,7 @@ Tilemap:
       - {fileID: -1700149752, guid: 0e53a65579725754186a158590dd9d44, type: 3}
       - {fileID: -253067248, guid: 0e53a65579725754186a158590dd9d44, type: 3}
       - {fileID: 1889070566, guid: 0e53a65579725754186a158590dd9d44, type: 3}
-      m_AnimationSpeed: 6.0000005
+      m_AnimationSpeed: 6
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 4, y: 2, z: 0}
@@ -28200,7 +28256,7 @@ Tilemap:
       - {fileID: -1700149752, guid: 0e53a65579725754186a158590dd9d44, type: 3}
       - {fileID: -253067248, guid: 0e53a65579725754186a158590dd9d44, type: 3}
       - {fileID: 1889070566, guid: 0e53a65579725754186a158590dd9d44, type: 3}
-      m_AnimationSpeed: 6.0000005
+      m_AnimationSpeed: 6
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 9, y: 6, z: 0}
@@ -28215,7 +28271,7 @@ Tilemap:
       - {fileID: -1700149752, guid: 0e53a65579725754186a158590dd9d44, type: 3}
       - {fileID: -253067248, guid: 0e53a65579725754186a158590dd9d44, type: 3}
       - {fileID: 1889070566, guid: 0e53a65579725754186a158590dd9d44, type: 3}
-      m_AnimationSpeed: 6
+      m_AnimationSpeed: 6.0000005
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 10, y: 6, z: 0}
@@ -28565,7 +28621,7 @@ GameObject:
   - component: {fileID: 7012564566746420949}
   m_Layer: 0
   m_Name: sRA_Interior_27
-  m_TagString: Enemy
+  m_TagString: Destroyable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -28694,6 +28750,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 630268c2e55f4324b82c1f54c5b3b622, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemsToDrop:
+  - {fileID: 1666251942956670988, guid: c50957b91514a3740bb2576b979bc37e, type: 3}
+  - {fileID: 8800657170758353713, guid: 4116b0b263f6f134f8a4911644fc20f8, type: 3}
+  - {fileID: 3737490920896635388, guid: 5539c0e16e4ea2240b651eaf23bbbc08, type: 3}
+  - {fileID: 8246866455991826606, guid: f0022f6483fe8cf4f8b62090c019a391, type: 3}
 --- !u!114 &7012564566746420949
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28714,6 +28775,7 @@ MonoBehaviour:
   - {fileID: 8246866455991826606, guid: f0022f6483fe8cf4f8b62090c019a391, type: 3}
   experience_gain: 0
   chanceOfDrop: 1
+  isDestroyable: 0
 --- !u!1 &7894971480099695714
 GameObject:
   m_ObjectHideFlags: 0

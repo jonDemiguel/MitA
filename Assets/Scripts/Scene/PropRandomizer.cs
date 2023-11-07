@@ -18,9 +18,13 @@ public class PropRandomizer : MonoBehaviour
         //Spawn a random prop at every spawn point
         foreach (GameObject sp in propSpawnPoints)
         {
-            int rand = Random.Range(0, propPrefabs.Count);
-            GameObject prop = Instantiate(propPrefabs[rand], sp.transform.position, Quaternion.identity);
-            prop.transform.parent = sp.transform;  //Move spawned object into map
+            if(propPrefabs != null)
+            {
+                int rand = Random.Range(0, propPrefabs.Count-1);
+                GameObject prop = Instantiate(propPrefabs[rand], sp.transform.position, Quaternion.identity);
+                prop.transform.parent = sp.transform;  //Move spawned object into map
+            }
+            
         }
     }
 }
