@@ -122,7 +122,7 @@ GameObject:
   - component: {fileID: 2215830795421465946}
   m_Layer: 0
   m_Name: sRA_Interior_433
-  m_TagString: Enemy
+  m_TagString: Destroyable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -251,6 +251,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 630268c2e55f4324b82c1f54c5b3b622, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemsToDrop:
+  - {fileID: 6542954674936235511, guid: a05ec956f7832ad4595f567544c326b6, type: 3}
+  - {fileID: 5088745367548216150, guid: b038f1ef81def4045b28248576e37891, type: 3}
+  experience_gain: 400
 --- !u!114 &2215830795421465946
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -269,6 +273,7 @@ MonoBehaviour:
   - {fileID: 5088745367548216150, guid: b038f1ef81def4045b28248576e37891, type: 3}
   experience_gain: 0
   chanceOfDrop: 1
+  isDestroyable: 0
 --- !u!1 &1369447190999930570
 GameObject:
   m_ObjectHideFlags: 0
@@ -346,7 +351,7 @@ GameObject:
   - component: {fileID: 7348422076309885632}
   m_Layer: 0
   m_Name: sRA_Interior_377
-  m_TagString: Enemy
+  m_TagString: Destroyable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -475,6 +480,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 630268c2e55f4324b82c1f54c5b3b622, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemsToDrop:
+  - {fileID: 7684690867954094861, guid: f2f854262a1433642959d6c7d5683f47, type: 3}
+  - {fileID: 8620269994557591337, guid: b618e5f25a726aa418f9d58d6c2c61bd, type: 3}
+  - {fileID: 4841427679353565591, guid: 2f53be00dcad8994aa456974faf74c8b, type: 3}
+  - {fileID: 7595277173292076878, guid: 7c02068b1118b3340ad8a389ac0dbd8d, type: 3}
+  - {fileID: 1785068536683512424, guid: fd11821cd4ad90842a5d67ec70fbc8e9, type: 3}
+  - {fileID: 3399371134365638983, guid: 13a360201ea359b41ba41688311333f5, type: 3}
+  - {fileID: 5268951474565617365, guid: cb3cb51fc4efc2c4092d3a7a38158a27, type: 3}
+  - {fileID: 8230848318324010260, guid: a8c5e29661850174eae545f2c5bc04b1, type: 3}
+  - {fileID: 6311499597228812996, guid: df20d4d659387e84c9b30ad19ba0d3fb, type: 3}
+  - {fileID: 3304320633831443538, guid: 70b4e17edc9a2aa42adc07ce88448d1e, type: 3}
+  - {fileID: 4546985721124895248, guid: a80f0ad7dcee3c7469ac4a5d74022216, type: 3}
+  - {fileID: 6936504875649790291, guid: c68c1f3b5bc26f44c9df0af6ddf23bce, type: 3}
+  - {fileID: 7335542986110774813, guid: ac3c844a84f32ad4188a3da901714f9c, type: 3}
+  - {fileID: 262998688718869077, guid: 2fb8410c6eec0304abdd94b2f659a243, type: 3}
+  - {fileID: 3639089780451779146, guid: a97a6d6c4f3115e4db88fea256c88868, type: 3}
+  - {fileID: 2345565339452050236, guid: b6cbe2023a2caef4a873828f859065e5, type: 3}
+  experience_gain: 400
 --- !u!114 &7348422076309885632
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -507,6 +530,7 @@ MonoBehaviour:
   - {fileID: 2345565339452050236, guid: b6cbe2023a2caef4a873828f859065e5, type: 3}
   experience_gain: 0
   chanceOfDrop: 1
+  isDestroyable: 0
 --- !u!1 &1801010263200339321
 GameObject:
   m_ObjectHideFlags: 0
@@ -615,7 +639,7 @@ GameObject:
   - component: {fileID: 8461619385212191536}
   m_Layer: 0
   m_Name: sRA_Interior_75
-  m_TagString: Enemy
+  m_TagString: Destroyable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -744,6 +768,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 630268c2e55f4324b82c1f54c5b3b622, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemsToDrop:
+  - {fileID: 1666251942956670988, guid: c50957b91514a3740bb2576b979bc37e, type: 3}
+  - {fileID: 8800657170758353713, guid: 4116b0b263f6f134f8a4911644fc20f8, type: 3}
+  - {fileID: 3737490920896635388, guid: 5539c0e16e4ea2240b651eaf23bbbc08, type: 3}
+  - {fileID: 8246866455991826606, guid: f0022f6483fe8cf4f8b62090c019a391, type: 3}
+  - {fileID: 3820853765585848777, guid: 04bd336745b90a840b7f2cc824427839, type: 3}
+  - {fileID: 3181500269228511450, guid: 1d8288b1642601141b4f53651f470809, type: 3}
+  - {fileID: 7551525214886201460, guid: abc29b1d47df9c545a4b22de57f99d0b, type: 3}
+  experience_gain: 400
 --- !u!114 &8461619385212191536
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -767,6 +800,7 @@ MonoBehaviour:
   - {fileID: 7551525214886201460, guid: abc29b1d47df9c545a4b22de57f99d0b, type: 3}
   experience_gain: 0
   chanceOfDrop: 1
+  isDestroyable: 0
 --- !u!1 &2807311319263098986
 GameObject:
   m_ObjectHideFlags: 0
@@ -782,7 +816,7 @@ GameObject:
   - component: {fileID: 9129772069769483193}
   m_Layer: 0
   m_Name: sRA_Interior_335 (1)
-  m_TagString: Enemy
+  m_TagString: Destroyable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -911,6 +945,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 630268c2e55f4324b82c1f54c5b3b622, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemsToDrop:
+  - {fileID: 6542954674936235511, guid: a05ec956f7832ad4595f567544c326b6, type: 3}
+  - {fileID: 5088745367548216150, guid: b038f1ef81def4045b28248576e37891, type: 3}
+  experience_gain: 400
 --- !u!114 &9129772069769483193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -929,6 +967,7 @@ MonoBehaviour:
   - {fileID: 5088745367548216150, guid: b038f1ef81def4045b28248576e37891, type: 3}
   experience_gain: 0
   chanceOfDrop: 1
+  isDestroyable: 0
 --- !u!1 &3210535055712197753
 GameObject:
   m_ObjectHideFlags: 0
@@ -1099,7 +1138,7 @@ GameObject:
   - component: {fileID: 4370486809673379703}
   m_Layer: 0
   m_Name: sRA_Interior_336
-  m_TagString: Enemy
+  m_TagString: Destroyable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1228,6 +1267,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 630268c2e55f4324b82c1f54c5b3b622, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemsToDrop:
+  - {fileID: 6542954674936235511, guid: a05ec956f7832ad4595f567544c326b6, type: 3}
+  - {fileID: 5088745367548216150, guid: b038f1ef81def4045b28248576e37891, type: 3}
+  experience_gain: 400
 --- !u!114 &4370486809673379703
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1246,6 +1289,7 @@ MonoBehaviour:
   - {fileID: 5088745367548216150, guid: b038f1ef81def4045b28248576e37891, type: 3}
   experience_gain: 0
   chanceOfDrop: 1
+  isDestroyable: 0
 --- !u!1 &4761722287350023255
 GameObject:
   m_ObjectHideFlags: 0
@@ -17721,7 +17765,7 @@ GameObject:
   - component: {fileID: 8466207941540210010}
   m_Layer: 0
   m_Name: sRA_Interior_375
-  m_TagString: Enemy
+  m_TagString: Destroyable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17850,6 +17894,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 630268c2e55f4324b82c1f54c5b3b622, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemsToDrop:
+  - {fileID: 7684690867954094861, guid: f2f854262a1433642959d6c7d5683f47, type: 3}
+  - {fileID: 8620269994557591337, guid: b618e5f25a726aa418f9d58d6c2c61bd, type: 3}
+  - {fileID: 4841427679353565591, guid: 2f53be00dcad8994aa456974faf74c8b, type: 3}
+  - {fileID: 7595277173292076878, guid: 7c02068b1118b3340ad8a389ac0dbd8d, type: 3}
+  - {fileID: 1785068536683512424, guid: fd11821cd4ad90842a5d67ec70fbc8e9, type: 3}
+  - {fileID: 3399371134365638983, guid: 13a360201ea359b41ba41688311333f5, type: 3}
+  - {fileID: 5268951474565617365, guid: cb3cb51fc4efc2c4092d3a7a38158a27, type: 3}
+  - {fileID: 8230848318324010260, guid: a8c5e29661850174eae545f2c5bc04b1, type: 3}
+  - {fileID: 6311499597228812996, guid: df20d4d659387e84c9b30ad19ba0d3fb, type: 3}
+  - {fileID: 3304320633831443538, guid: 70b4e17edc9a2aa42adc07ce88448d1e, type: 3}
+  - {fileID: 4546985721124895248, guid: a80f0ad7dcee3c7469ac4a5d74022216, type: 3}
+  - {fileID: 6936504875649790291, guid: c68c1f3b5bc26f44c9df0af6ddf23bce, type: 3}
+  - {fileID: 7335542986110774813, guid: ac3c844a84f32ad4188a3da901714f9c, type: 3}
+  - {fileID: 262998688718869077, guid: 2fb8410c6eec0304abdd94b2f659a243, type: 3}
+  - {fileID: 3639089780451779146, guid: a97a6d6c4f3115e4db88fea256c88868, type: 3}
+  - {fileID: 2345565339452050236, guid: b6cbe2023a2caef4a873828f859065e5, type: 3}
+  experience_gain: 400
 --- !u!114 &8466207941540210010
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17882,6 +17944,7 @@ MonoBehaviour:
   - {fileID: 2345565339452050236, guid: b6cbe2023a2caef4a873828f859065e5, type: 3}
   experience_gain: 0
   chanceOfDrop: 1
+  isDestroyable: 0
 --- !u!1 &7479691919196596010
 GameObject:
   m_ObjectHideFlags: 0

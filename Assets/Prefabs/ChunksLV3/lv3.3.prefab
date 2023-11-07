@@ -40874,6 +40874,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 630268c2e55f4324b82c1f54c5b3b622, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemsToDrop: []
 --- !u!114 &5848289842341699169
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40894,6 +40895,7 @@ MonoBehaviour:
   - {fileID: 8246866455991826606, guid: f0022f6483fe8cf4f8b62090c019a391, type: 3}
   experience_gain: 0
   chanceOfDrop: 1
+  isDestroyable: 0
 --- !u!1 &1607170333063334232
 GameObject:
   m_ObjectHideFlags: 0
@@ -41206,6 +41208,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 630268c2e55f4324b82c1f54c5b3b622, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemsToDrop: []
 --- !u!114 &6577589154429114094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41225,6 +41228,7 @@ MonoBehaviour:
   - {fileID: 2919763588843830898, guid: 64bbe01f2b378c64984b9be94365b21e, type: 3}
   experience_gain: 0
   chanceOfDrop: 1
+  isDestroyable: 0
 --- !u!1 &3205890096491065871
 GameObject:
   m_ObjectHideFlags: 0
@@ -78716,6 +78720,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 630268c2e55f4324b82c1f54c5b3b622, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemsToDrop: []
 --- !u!114 &279596045167861449
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -78739,6 +78744,7 @@ MonoBehaviour:
   - {fileID: 7784726160217863405, guid: 2df576a0bc2291a4287ff4764c2be273, type: 3}
   experience_gain: 0
   chanceOfDrop: 1
+  isDestroyable: 0
 --- !u!1 &4431049138042027882
 GameObject:
   m_ObjectHideFlags: 0
@@ -79290,6 +79296,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 630268c2e55f4324b82c1f54c5b3b622, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemsToDrop: []
 --- !u!114 &268503149609991999
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -79322,6 +79329,7 @@ MonoBehaviour:
   - {fileID: 2345565339452050236, guid: b6cbe2023a2caef4a873828f859065e5, type: 3}
   experience_gain: 0
   chanceOfDrop: 1
+  isDestroyable: 0
 --- !u!1 &5504820903884442989
 GameObject:
   m_ObjectHideFlags: 0
@@ -79736,6 +79744,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 630268c2e55f4324b82c1f54c5b3b622, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemsToDrop: []
 --- !u!114 &5906393904422751121
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -79768,6 +79777,7 @@ MonoBehaviour:
   - {fileID: 2345565339452050236, guid: b6cbe2023a2caef4a873828f859065e5, type: 3}
   experience_gain: 0
   chanceOfDrop: 1
+  isDestroyable: 0
 --- !u!1 &7277274704653290049
 GameObject:
   m_ObjectHideFlags: 0
@@ -80058,6 +80068,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 630268c2e55f4324b82c1f54c5b3b622, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemsToDrop: []
 --- !u!114 &7012564566746420949
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -80078,6 +80089,7 @@ MonoBehaviour:
   - {fileID: 8246866455991826606, guid: f0022f6483fe8cf4f8b62090c019a391, type: 3}
   experience_gain: 0
   chanceOfDrop: 1
+  isDestroyable: 0
 --- !u!1 &7889683096403322428
 GameObject:
   m_ObjectHideFlags: 0
@@ -80651,7 +80663,46 @@ MonoBehaviour:
   - {fileID: 7277274704653290049}
   - {fileID: 4512638082811564154}
   - {fileID: 6142911301025049178}
-  propPrefabs: []
+  propPrefabs:
+  - {fileID: 1917052755525937759, guid: 8043602431ad78847b9b04975b812fdc, type: 3}
+  - {fileID: 7131898417714921593, guid: 34db9860d571fdd4087543f83b1c596e, type: 3}
+  - {fileID: 7694427498998030301, guid: 28ab10585e097ad498ce444d6be1033c, type: 3}
+  - {fileID: 5254919662388331739, guid: 38bc4ba032924c44dbe36effd585c56b, type: 3}
+  - {fileID: 9016749532148556181, guid: de63f496b6e41a0489429b594ddad8a3, type: 3}
+  - {fileID: 3344223547160664369, guid: bce151621504f9f4588e6b14e1ddb24d, type: 3}
+  - {fileID: 2694503304550751125, guid: 638f7cce0f4840244a59728fb7ab6f5c, type: 3}
+  - {fileID: 7957007608762668967, guid: 240a2569a2b4b8d48a165e5792d2385f, type: 3}
+  - {fileID: 3821976471995218683, guid: a5f699e7f965c6d49972066e80a3a906, type: 3}
+  - {fileID: 9038264277245607990, guid: 6bb32fcfa794870429d8d253c45926b4, type: 3}
+  - {fileID: 2317167011188470359, guid: bb5bd362a92d9a0498974ba0a5514373, type: 3}
+  - {fileID: 7161519779281293773, guid: 04a9c47f641a8974192179b7e09ce90c, type: 3}
+  - {fileID: 1984673334444220912, guid: 77a0172a972cf8d40a966a63062aca82, type: 3}
+  - {fileID: 8271640425672816395, guid: 6e289f773469739498762214886c7c7a, type: 3}
+  - {fileID: 4163772841918647803, guid: fb170a66d602afc479dce22176bda384, type: 3}
+  - {fileID: 792072475119044904, guid: 782de4a5b835a99419ed4664944e43bc, type: 3}
+  - {fileID: 4744673042216478750, guid: 48938324c80073742aaa79838aad4c08, type: 3}
+  - {fileID: 4203171879702685003, guid: 747849e2ccd8c0c4599ee7bb2120ea37, type: 3}
+  - {fileID: 7661277348958104330, guid: f3f7469335340ff41b8e3973fe235423, type: 3}
+  - {fileID: 5206754511018269947, guid: 04e95e73081a308448469fca12ba0b06, type: 3}
+  - {fileID: 5364277397629428038, guid: 4fb2927445d865a40b0a024719024ce4, type: 3}
+  - {fileID: 5031311140136464844, guid: 7ca6756932643a546aab5894a98f6427, type: 3}
+  - {fileID: 3444266432500088185, guid: a637c3126c19b434580f5723b48dc3c1, type: 3}
+  - {fileID: 1107208931864052215, guid: 0314799160c332d40a66be50731df781, type: 3}
+  - {fileID: 1917544524704922920, guid: cdc2fa1f351dc4041b1a08cc684071b5, type: 3}
+  - {fileID: 5862645345184463192, guid: 6b70b52d8e13923419c28c7231e8b797, type: 3}
+  - {fileID: 405621347968349063, guid: 6fd2ff94a59813447aab6ab11e4003cb, type: 3}
+  - {fileID: 7761182958028785905, guid: 6e9c37134b6791a46a800c3cebf3bacc, type: 3}
+  - {fileID: 2548131737012552782, guid: d927af79ffc752a44af51950a7d35fe8, type: 3}
+  - {fileID: 8550531559659111939, guid: 0dcb11dcbdfa15042ba9e241e2388e3d, type: 3}
+  - {fileID: 2687674498309701334, guid: fd5a8f0bf53b562469079d30964a9790, type: 3}
+  - {fileID: 8354043668120048520, guid: 8129f1772db35c4408a4d8d380e232b5, type: 3}
+  - {fileID: 3983283011571062365, guid: d02eb36492cc33548aca5f73c5943455, type: 3}
+  - {fileID: 6610387497040833828, guid: f882e30c3f3fb7d40a58ba1293a90e5f, type: 3}
+  - {fileID: 2788625346890054468, guid: d24532d926a5cfa4f97062fc4dee28db, type: 3}
+  - {fileID: 5177657566865077501, guid: 8891e764d95734640b28613f2920d10d, type: 3}
+  - {fileID: 112098318333275163, guid: f150481e787b29d4da458d926fee6490, type: 3}
+  - {fileID: 5552394046113058401, guid: 223e811143d83c142b80e54b51a7dd41, type: 3}
+  - {fileID: 2296633143862296034, guid: 66b5da28e9158b143972dc663527707b, type: 3}
 --- !u!1839735485 &4293754725396653742
 Tilemap:
   m_ObjectHideFlags: 0
