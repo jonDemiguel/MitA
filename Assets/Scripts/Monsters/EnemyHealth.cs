@@ -17,6 +17,8 @@ public class EnemyHealth : MonoBehaviour, Destroyable
 
     public void TakeDamage(int damage)
     {
+        animator.SetTrigger("isHurt");
+        
         currentHealth -= damage;
 
         if (currentHealth <= 0)

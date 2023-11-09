@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CMAB : MonoBehaviour
 {
-    public float speed;
+    private float speed;
     private Vector2 movement;
     private Animator animator;
 

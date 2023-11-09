@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 4009423926449882949}
   - component: {fileID: 4689790255151341431}
   - component: {fileID: 2341202028148760818}
+  - component: {fileID: 5231284329313927962}
   m_Layer: 0
   m_Name: Boss
   m_TagString: Enemy
@@ -125,6 +126,9 @@ MonoBehaviour:
   moveSpeed: 5
   attackRange: 2
   damage: 10
+  attackDuration: 0.5
+  isFlip: 1
+  attackCooldown: 1
 --- !u!114 &4009423926449882949
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -203,3 +207,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &5231284329313927962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7615930850768576796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c71ff78efdb5b44ea7e547802539ba8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spellPrefab: {fileID: 7412090099839441614, guid: 80084130b781cf74995417e654c4eba5, type: 3}
+  castDistance: 5
+  initialCastDelay: 3
+  castDelay: 3
