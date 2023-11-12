@@ -8,6 +8,8 @@ TagManager:
   - red_eye_monster
   - purple_ghost_monster
   - GameOver
+  - GameManager
+  - Destroyable
   layers:
   - Default
   - TransparentFX

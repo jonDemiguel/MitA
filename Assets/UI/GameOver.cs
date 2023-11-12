@@ -14,7 +14,8 @@ public class MonoBehavior : MonoBehaviour
 
     public void TryAgain()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("GameMap2");
     }
 
 
