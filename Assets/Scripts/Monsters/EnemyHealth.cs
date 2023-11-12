@@ -4,6 +4,7 @@ public class EnemyHealth : MonoBehaviour, Destroyable
 {
     public int maxHealth = 100;
     private int currentHealth;
+    private Animator animator;
     public GameObject[] itemsToDrop; // Array of items that can be dropped
     [SerializeField] int experience_gain = 400;
     [SerializeField] float chanceOfDrop = 1f;
@@ -12,6 +13,7 @@ public class EnemyHealth : MonoBehaviour, Destroyable
     private void Start()
     {
         currentHealth = maxHealth;
+        animator = GetComponent<Animator>();
     }
 
     public void TakeDamage(int damage)
@@ -20,6 +22,7 @@ public class EnemyHealth : MonoBehaviour, Destroyable
 
         if (currentHealth <= 0)
         {
+            animator.SetBool("isDead", true);
             Die();
         }
 
@@ -29,7 +32,7 @@ public class EnemyHealth : MonoBehaviour, Destroyable
     void Die()
     {
         Debug.Log("Enemy has been defeated.");
-
+        
         // Drop a random item if any exist
         if (Random.value <= chanceOfDrop)
         {
@@ -62,6 +65,6 @@ public class EnemyHealth : MonoBehaviour, Destroyable
         }
 
         // Destroy the enemy object
-        Destroy(gameObject);
+        Destroy(gameObject, 1.0f);
     }
 }
