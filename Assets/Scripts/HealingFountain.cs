@@ -15,7 +15,7 @@ public class HealingFoundation : MonoBehaviour
             if (playerBehavior != null)
             {
                 // Calculate the healing amount
-                float healingAmount = Time.deltaTime * playerBehavior.MaxPlayerHP * healingRatePerSecond;
+                float healingAmount = Time.deltaTime * playerBehavior.maxPlayerHP * healingRatePerSecond;
 
                 // Round the healing amount to the nearest integer
                 int roundedHealingAmount = Mathf.RoundToInt(healingAmount);
