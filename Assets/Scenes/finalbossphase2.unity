@@ -251,9 +251,17 @@ PrefabInstance:
       propertyPath: m_Follow
       value: 
       objectReference: {fileID: 1888367158}
+    - target: {fileID: 2353660401925053942, guid: 3b59fa2d0ac8da74a81f037485e9ecc7, type: 3}
+      propertyPath: m_Lens.OrthographicSize
+      value: 10.42
+      objectReference: {fileID: 0}
     - target: {fileID: 7678516152763072143, guid: 3b59fa2d0ac8da74a81f037485e9ecc7, type: 3}
       propertyPath: m_Name
       value: FollowPlayer
+      objectReference: {fileID: 0}
+    - target: {fileID: 7678516152763072143, guid: 3b59fa2d0ac8da74a81f037485e9ecc7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -268,9 +276,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -364992929342197260, guid: 6719d0c7d10f5f84dbd28d44be3be549, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8450701128496472994, guid: 6719d0c7d10f5f84dbd28d44be3be549, type: 3}
       propertyPath: m_Name
       value: PF_1eye_monster
+      objectReference: {fileID: 0}
+    - target: {fileID: 8450701128496472994, guid: 6719d0c7d10f5f84dbd28d44be3be549, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8695062646178827207, guid: 6719d0c7d10f5f84dbd28d44be3be549, type: 3}
       propertyPath: m_LocalPosition.x
@@ -312,7 +328,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -364992929342197260, guid: 6719d0c7d10f5f84dbd28d44be3be549, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -328,6 +345,7 @@ GameObject:
   - component: {fileID: 838291753}
   - component: {fileID: 838291752}
   - component: {fileID: 838291751}
+  - component: {fileID: 838291754}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -378,7 +396,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 10
+  orthographic size: 10.42
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -403,12 +421,46 @@ Transform:
   m_GameObject: {fileID: 838291750}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0.46, y: 1.17, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &838291754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 838291750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72ece51f2901e7445ab60da3685d6b5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShowDebugText: 0
+  m_ShowCameraFrustum: 1
+  m_IgnoreTimeScale: 0
+  m_WorldUpOverride: {fileID: 0}
+  m_UpdateMethod: 2
+  m_BlendUpdateMethod: 1
+  m_DefaultBlend:
+    m_Style: 1
+    m_Time: 2
+    m_CustomCurve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+  m_CustomBlends: {fileID: 0}
+  m_CameraCutEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_CameraActivatedEvent:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &907723009 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8468073316499452341, guid: 1083cf65d4350ad4ea5676df2643985d, type: 3}
@@ -431,7 +483,7 @@ MonoBehaviour:
   skeletonPrefab: {fileID: 4887955916676022665, guid: 9f5406e14417c0d4b869fb0d49fee597, type: 3}
   castDistance: 5
   castAnimationDuration: 2
-  castDelay: 60
+  castDelay: 15
   isCasting: 0
 --- !u!1001 &950473686
 PrefabInstance:

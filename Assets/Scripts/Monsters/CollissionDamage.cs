@@ -1,58 +1,46 @@
 using System.Collections;
-using System.Collections.Generic;
-using TMPro;
-using UnityEditor.PackageManager;
 using UnityEngine;
 
-public class CollissionDamage : MonoBehaviour
+public class CollisionDamage : MonoBehaviour
 {
-    public int damageAmount = 10; // Amount of damage dealt to the player per attack
-    public float attackCooldown = 1f; // Cooldown time between attacks in seconds
+    public int damageAmount = 10;
+    public float attackCooldown = 1f;
     private bool canAttack = true;
     PlayerBehavior targetCharacter;
-    public bool inHitBox = false;
     GameObject player;
 
     void Start()
     {
-        // Start the Attack coroutine
         player = GameObject.FindGameObjectWithTag("Player");
-        StartCoroutine(AttackCoroutine());
     }
 
     void Update()
     {
-        if (player != null)
+        // Check if the player is in the hitbox and if the enemy can attack
+        if (player != null && canAttack)
         {
-            //if (distanceToPlayer <= attackDistance && canAttack)
-            if (inHitBox && canAttack)
-            {
-                AttackPlayer();
-                canAttack = false;
-            }
+            // Use a Raycast or another method to confirm that the player is within attack range
+            // and there are no obstacles between the enemy and the player.
         }
-        
     }
+
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player") && canAttack)
         {
-            inHitBox = true;
+            AttackPlayer();
+            StartCoroutine(AttackCooldown());
         }
     }
+
     void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            inHitBox = false;
-        }
+        // This method might not be needed anymore if all logic is handled in OnCollisionEnter2D
     }
 
     void AttackPlayer()
     {
-        // Perform attack logic here
         Debug.Log("Monster attacks player for " + damageAmount + " damage!");
-
         if (targetCharacter == null)
         {
             targetCharacter = player.GetComponent<PlayerBehavior>();
@@ -60,25 +48,10 @@ public class CollissionDamage : MonoBehaviour
         targetCharacter.PlayerTakeDmg(damageAmount);
     }
 
-    IEnumerator AttackCoroutine()
-    {
-        while (true)
-        {
-            yield return new WaitForSeconds(attackCooldown);
-            // Reset the attack cooldown after the specified cooldown duration
-            canAttack = true;
-        }
-    }
-
     IEnumerator AttackCooldown()
     {
-        // Put the attack on cooldown
         canAttack = false;
-
-        // Wait for the specified cooldown duration
         yield return new WaitForSeconds(attackCooldown);
-
-        // Reset the attack cooldown
         canAttack = true;
     }
 }
