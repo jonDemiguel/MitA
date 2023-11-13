@@ -24,6 +24,7 @@ public abstract class WeaponDmg : MonoBehaviour
 
     public virtual void PostDamage(int damage, Vector3 targetPosition)
     {
+        // Post the damage message at the given position
         MessageSystem.instance.PostMessage(damage.ToString(), targetPosition);
     }
 }

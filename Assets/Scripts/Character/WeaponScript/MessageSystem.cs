@@ -7,36 +7,39 @@ public class MessageSystem : MonoBehaviour
 {
     public static MessageSystem instance;
 
-    List<TMPro.TextMeshPro> messagePool;
+    List<TMPro.TextMeshPro> messagePool;    // List of damage messages that's reusable
+    int objectCount = 10;   // Number of damage messages to be stored
+    int count;  // Current index of damage message
+    [SerializeField] GameObject damageMessage;  // Prefab of damage message
 
     private void Awake()
     {
+        // Singleton
         instance = this;
     }
 
-    int objectCount = 10;
-    int count;
-
     private void Start()
     {
-        messagePool = new List<TMPro.TextMeshPro>(); 
-        for(int i = 0; i < objectCount; i++)
+        // Initialize the damage message pool
+        messagePool = new List<TMPro.TextMeshPro>();
+        for (int i = 0; i < objectCount; i++)
         {
             Populate();
         }
     }
 
+
     public void Populate()
     {
+        // Instantiate the damage message prefab and add it to the pool
         GameObject go = Instantiate(damageMessage, transform);
         messagePool.Add(go.GetComponent<TMPro.TextMeshPro>());
         go.SetActive(false);
     }
 
-    [SerializeField] GameObject damageMessage;
-
     public void PostMessage(string text, Vector3 worldPosition)
     {
+        // Post the damage message at the given position
         messagePool[count].gameObject.SetActive(true);
         messagePool[count].transform.position = worldPosition;
         messagePool[count].text = text;
@@ -46,8 +49,5 @@ public class MessageSystem : MonoBehaviour
         {
             count = 0;
         }
-        // GameObject go = Instantiate(damageMessage, transform);
-        // go.transform.position = worldPosition;
-        // go.GetComponent<TMPro.TextMeshPro>().text = text;
     }
 }
