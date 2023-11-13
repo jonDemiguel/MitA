@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WeaponDmg : MonoBehaviour
+public abstract class WeaponDmg : MonoBehaviour
 {
     float attackspeed = 4f;
     float timer;
@@ -20,5 +20,10 @@ public class WeaponDmg : MonoBehaviour
     {
         Debug.Log("attack");
         timer = attackspeed;
+    }
+
+    public virtual void PostDamage(int damage, Vector3 targetPosition)
+    {
+        MessageSystem.instance.PostMessage(damage.ToString(), targetPosition);
     }
 }
