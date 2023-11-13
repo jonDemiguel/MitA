@@ -88,6 +88,7 @@ void Attack()
         // animator.SetBool("isClose", true);
 
         // Deal damage to the player 
+
         // GameObject player = GameObject.FindGameObjectWithTag("Player");
         // if (player != null) {
         //     PlayerBehavior playerHealth = player.GetComponent<PlayerBehavior>();
@@ -100,11 +101,10 @@ void Attack()
         if (targetCharacter == null)
         {
             targetCharacter = player.GetComponent<PlayerBehavior>();
-    
         }
         targetCharacter.PlayerTakeDmg(damage);
         // Start a coroutine to reset isAttacking after the attack animation duration.
-        // StartCoroutine(ResetIsAttacking());
+
 }
 
 IEnumerator ResetIsAttacking()
@@ -117,7 +117,7 @@ IEnumerator ResetIsAttacking()
     // isAttacking = false;
 
     // Boolean for attack transition back to false
-    // animator.SetBool("isClose", false);
+
 }
 
 IEnumerator AttackCooldown()
