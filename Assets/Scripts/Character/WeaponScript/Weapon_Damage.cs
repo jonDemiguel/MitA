@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Weapon_Damage : MonoBehaviour
+public class Weapon_Damage : WeaponDmg
 {
     public int damageAmount = 10; 
     public string enemyTag = "Enemy";
@@ -18,6 +18,7 @@ public class Weapon_Damage : MonoBehaviour
         if (other.CompareTag(enemyTag)) {
             EnemyHealth enemyHealth = other.GetComponent<EnemyHealth>();
             if (enemyHealth != null) {
+                PostDamage(damageAmount, other.transform.position);
                 enemyHealth.TakeDamage(damageAmount);
                 Debug.Log("Dealt " + damageAmount + " damage to an enemy.");
             }
