@@ -76,11 +76,12 @@ void Attack()
             if (playerHealth != null) {
                 playerHealth.PlayerTakeDmg(damage);
                 Debug.Log("Attacks player for " + damage + " damage!");
+                StartCoroutine(ResetIsAttacking());
             }
         }
 
         // Start a coroutine to reset isAttacking after the attack animation duration.
-        StartCoroutine(ResetIsAttacking());
+        
 }
 
 IEnumerator ResetIsAttacking()
@@ -93,5 +94,6 @@ IEnumerator ResetIsAttacking()
 
     // Boolean for attack transition back to false
     animator.SetBool("isClose", false);
+    Debug.Log("I rest!");
 }
 }
