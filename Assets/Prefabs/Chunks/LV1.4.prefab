@@ -139,7 +139,7 @@ GameObject:
   - component: {fileID: 5249975965084146698}
   m_Layer: 0
   m_Name: sRA_Interior_336
-  m_TagString: Enemy
+  m_TagString: Destroyable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -268,6 +268,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 630268c2e55f4324b82c1f54c5b3b622, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemsToDrop:
+  - {fileID: 6542954674936235511, guid: a05ec956f7832ad4595f567544c326b6, type: 3}
+  - {fileID: 5088745367548216150, guid: b038f1ef81def4045b28248576e37891, type: 3}
+  - {fileID: 2919763588843830898, guid: 64bbe01f2b378c64984b9be94365b21e, type: 3}
+  - {fileID: 4662713221773132109, guid: 79deabd84d4464d4b9f7fe3e1aab1933, type: 3}
+  experience_gain: 400
 --- !u!114 &5249975965084146698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -288,6 +294,7 @@ MonoBehaviour:
   - {fileID: 4662713221773132109, guid: 79deabd84d4464d4b9f7fe3e1aab1933, type: 3}
   experience_gain: 0
   chanceOfDrop: 1
+  isDestroyable: 0
 --- !u!1 &3205193853782497318
 GameObject:
   m_ObjectHideFlags: 0

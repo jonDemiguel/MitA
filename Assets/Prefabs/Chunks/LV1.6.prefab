@@ -185,7 +185,7 @@ GameObject:
   - component: {fileID: 4086325738795664313}
   m_Layer: 0
   m_Name: sRA_Interior_432
-  m_TagString: Enemy
+  m_TagString: Destroyable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -314,6 +314,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 630268c2e55f4324b82c1f54c5b3b622, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemsToDrop:
+  - {fileID: 6542954674936235511, guid: a05ec956f7832ad4595f567544c326b6, type: 3}
+  - {fileID: 5088745367548216150, guid: b038f1ef81def4045b28248576e37891, type: 3}
+  - {fileID: 2919763588843830898, guid: 64bbe01f2b378c64984b9be94365b21e, type: 3}
+  - {fileID: 4662713221773132109, guid: 79deabd84d4464d4b9f7fe3e1aab1933, type: 3}
 --- !u!114 &4086325738795664313
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -334,6 +339,7 @@ MonoBehaviour:
   - {fileID: 4662713221773132109, guid: 79deabd84d4464d4b9f7fe3e1aab1933, type: 3}
   experience_gain: 0
   chanceOfDrop: 1
+  isDestroyable: 0
 --- !u!1 &4681378355056847853
 GameObject:
   m_ObjectHideFlags: 0
@@ -1426,7 +1432,7 @@ GameObject:
   - component: {fileID: 5637621254390104104}
   m_Layer: 0
   m_Name: sRA_Interior_433
-  m_TagString: Enemy
+  m_TagString: Destroyable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1555,6 +1561,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 630268c2e55f4324b82c1f54c5b3b622, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  itemsToDrop:
+  - {fileID: 6542954674936235511, guid: a05ec956f7832ad4595f567544c326b6, type: 3}
+  - {fileID: 5088745367548216150, guid: b038f1ef81def4045b28248576e37891, type: 3}
+  - {fileID: 2919763588843830898, guid: 64bbe01f2b378c64984b9be94365b21e, type: 3}
+  - {fileID: 4662713221773132109, guid: 79deabd84d4464d4b9f7fe3e1aab1933, type: 3}
 --- !u!114 &5637621254390104104
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1575,6 +1586,7 @@ MonoBehaviour:
   - {fileID: 4662713221773132109, guid: 79deabd84d4464d4b9f7fe3e1aab1933, type: 3}
   experience_gain: 0
   chanceOfDrop: 1
+  isDestroyable: 0
 --- !u!1 &5673873025895133674
 GameObject:
   m_ObjectHideFlags: 0
@@ -17993,7 +18005,50 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   propSpawnPoints: []
-  propPrefabs: []
+  propPrefabs:
+  - {fileID: 7160493251958563857, guid: fcfb2abdb2cc54e42bc3ce554ade48fe, type: 3}
+  - {fileID: 334555084809655848, guid: b20e6997a5a359a408beee48636e14c8, type: 3}
+  - {fileID: 8567157667417078468, guid: 738f077f72402a642bf940205bb9e186, type: 3}
+  - {fileID: 7737169346621828597, guid: 0a63fd4f46bc72541a2a549eef8ddb58, type: 3}
+  - {fileID: 2453523871530909975, guid: 72f8263a53ef9964e885fc0a3c9ce856, type: 3}
+  - {fileID: 1380825852171149916, guid: 06d6047fb7aae4c41a998199b90b8a7c, type: 3}
+  - {fileID: 3655461832502887386, guid: c3bd72651bebaa74f9c756de0a5fab74, type: 3}
+  - {fileID: 6359380610082921652, guid: 43139a7c2d564e84ca4c0834cdb64fc5, type: 3}
+  - {fileID: 969670774779964393, guid: 0ccfefb665d26cc4a86bf5a3bfc06734, type: 3}
+  - {fileID: 1688531136472741040, guid: 50b0b3270fd006d4d99bd88325b7d0f5, type: 3}
+  - {fileID: 4934292692324409988, guid: ca2536ac1695ec24f8860d344ee03dd2, type: 3}
+  - {fileID: 3310035829964739116, guid: 4df159f834f789148bf191b14ad49bbd, type: 3}
+  - {fileID: 732346972103694420, guid: e2b91676f2df7bf41ac2343d4512f92d, type: 3}
+  - {fileID: 8023655544374260242, guid: 8bf46294c36507a4c98b108f2f4953f5, type: 3}
+  - {fileID: 3322213709784190101, guid: 9dcf43d43a6a20a40806ea41f79c4693, type: 3}
+  - {fileID: 2875814308093947997, guid: 7c141a3e67e379c4c95c79a67ab4dce7, type: 3}
+  - {fileID: 5447876116197191798, guid: cd2e2da15ced20849b9ff293dd560475, type: 3}
+  - {fileID: 6532361234187570651, guid: a2e3b6334f4d83f4abd5dc255383eb86, type: 3}
+  - {fileID: 7419183412239792062, guid: d1b30b75823cd414aba19affbfc44d7d, type: 3}
+  - {fileID: 8396947769853306538, guid: 031b526ad133d054a9d11bc3bc6ca113, type: 3}
+  - {fileID: 1912002152024113155, guid: 66d554373c8d8584785d17ce05c073dc, type: 3}
+  - {fileID: 8591201054158261805, guid: eb12c848e4d91d84e9948670a1e4229f, type: 3}
+  - {fileID: 314886300319581830, guid: 736bf64aa53ef574099c3ccccf3da8d4, type: 3}
+  - {fileID: 824701102435155180, guid: bb9f16eafc1d31d4fa574dd05fb482f3, type: 3}
+  - {fileID: 9206753787834893661, guid: 4c605c76ca4f15948a98666cdf42ce4f, type: 3}
+  - {fileID: 8898574618385418691, guid: 48531351e247eb14d8a243c540fdf6ab, type: 3}
+  - {fileID: 4414297693019704619, guid: 672583c29b7b62e45a7728ba242d3b0b, type: 3}
+  - {fileID: 6841232642073276414, guid: 79434019768090b4db3e9708587163df, type: 3}
+  - {fileID: 1787884711906614990, guid: 42112658ad07911448b1b445c13cf08d, type: 3}
+  - {fileID: 5277374935415916866, guid: 9de410e50a66c8b46a26ae716ca4ce36, type: 3}
+  - {fileID: 3132704114027198715, guid: 32b0709e23f82284288a22e05ad2a9f2, type: 3}
+  - {fileID: 2800460292026292168, guid: ab736ae0def91914db1dbab2a44fd773, type: 3}
+  - {fileID: 7817855090239667408, guid: 4a0e2964187aa1b499199390b841945a, type: 3}
+  - {fileID: 6635658330444896917, guid: c225f2140fa9dcc4f9417c86a6667a10, type: 3}
+  - {fileID: 3797330825152718217, guid: d87d5c060c1c77b4594b3af94e4151fe, type: 3}
+  - {fileID: 7862539609183892805, guid: 75ee3ea6d45fdbd40a126ea6ab57f691, type: 3}
+  - {fileID: 7767174765634444096, guid: 3ac4037c7f87ca84ba32d7c8768b438d, type: 3}
+  - {fileID: 5548236407311950707, guid: 3dc65fce84ab12c428b79f6139456f88, type: 3}
+  - {fileID: 3645848498732749420, guid: 1e8f75c5c2e543742a0db98626749300, type: 3}
+  - {fileID: 259309222030943575, guid: ee11ecc8102e8d94aa2b1db45707ab8c, type: 3}
+  - {fileID: 2952712828253900380, guid: 2ce277a77f626544ca76cb7e3968a750, type: 3}
+  - {fileID: 7112963690648563843, guid: bbe657276e11bf74c883b44e358ec5ca, type: 3}
+  - {fileID: 2798396583783428411, guid: 83fba05cc07659d45b44bb5a75fc5a72, type: 3}
 --- !u!1839735485 &4293754725396653742
 Tilemap:
   m_ObjectHideFlags: 0

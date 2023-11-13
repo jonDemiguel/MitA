@@ -8,6 +8,7 @@ public class EnemyHealth : MonoBehaviour, Destroyable
     public GameObject[] itemsToDrop; // Array of items that can be dropped
     [SerializeField] int experience_gain = 400;
     [SerializeField] float chanceOfDrop = 1f;
+    public bool isDestroyable;
 
     private void Start()
     {
@@ -17,6 +18,8 @@ public class EnemyHealth : MonoBehaviour, Destroyable
 
     public void TakeDamage(int damage)
     {
+        animator.SetTrigger("isHurt");
+        
         currentHealth -= damage;
 
         if (currentHealth <= 0)
