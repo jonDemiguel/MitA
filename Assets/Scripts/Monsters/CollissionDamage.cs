@@ -1,10 +1,7 @@
 using System.Collections;
-<<<<<<< HEAD
-=======
 using System.Collections.Generic;
 using TMPro;
 
->>>>>>> origin
 using UnityEngine;
 
 public class CollisionDamage : MonoBehaviour
