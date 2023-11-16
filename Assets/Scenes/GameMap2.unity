@@ -205,7 +205,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 45978861}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 654345322}
+        m_TargetAssemblyTypeName: LevelMenu, Assembly-CSharp
+        m_MethodName: increaseCritical
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &45978861
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -405,7 +417,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 86919171}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 654345322}
+        m_TargetAssemblyTypeName: LevelMenu, Assembly-CSharp
+        m_MethodName: increaseDamage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &86919171
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1066,7 +1090,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 430611181}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 654345322}
+        m_TargetAssemblyTypeName: LevelMenu, Assembly-CSharp
+        m_MethodName: increaseSpeed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &430611181
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1142,13 +1178,13 @@ MonoBehaviour:
   prefab:
   - {fileID: 8450701128496472994, guid: 6719d0c7d10f5f84dbd28d44be3be549, type: 3}
   - {fileID: 2313408403525335318, guid: 3e6c510a0140b7a4f9375a9019e53385, type: 3}
-  - {fileID: 6108424903772323162, guid: d80b86103cc4a4171b34478de0bcd357, type: 3}
+  - {fileID: 240551342877182979, guid: a2493d3addb1248ee9dc8407f3ef9c0a, type: 3}
   - {fileID: 7548037834864715729, guid: 6037e48be39943040a68b67a74d30dbb, type: 3}
   - {fileID: 6455280753277181184, guid: 936fdef637604434392ca9af6f583cb4, type: 3}
-  - {fileID: 1804073470432445616, guid: 90acf2c4ff3ce40cf9d5d64fdcd94993, type: 3}
+  - {fileID: 4049006562588698182, guid: 3e866cc4c6da14d4486ff296028b0db5, type: 3}
   - {fileID: 3565710270847601256, guid: 2767b25f02a63dd478e62ffd64c432d3, type: 3}
   - {fileID: 7814079288601450305, guid: fc96f84a43152c44a80bd4c6d4cbe661, type: 3}
-  - {fileID: 1232587148974458000, guid: 0147fe04518b6405abd223144f1539ab, type: 3}
+  - {fileID: 5338182454947631777, guid: fad769526cf9943aca342e63b4c3361c, type: 3}
   mainCamera: {fileID: 1300887325}
   gameManager: {fileID: 0}
 --- !u!4 &520049010
@@ -1812,7 +1848,7 @@ GameObject:
   - component: {fileID: 654345323}
   m_Layer: 5
   m_Name: UIs
-  m_TagString: Untagged
+  m_TagString: LevelMenu
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2366,7 +2402,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 814623215}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 654345322}
+        m_TargetAssemblyTypeName: LevelMenu, Assembly-CSharp
+        m_MethodName: increaseHealth
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &814623215
 MonoBehaviour:
   m_ObjectHideFlags: 0

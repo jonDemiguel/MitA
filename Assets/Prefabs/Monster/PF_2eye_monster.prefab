@@ -120,7 +120,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damageAmount: 20
   attackCooldown: 1
-  inHitBox: 0
 --- !u!114 &4054951951280724057
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -137,6 +136,7 @@ MonoBehaviour:
   itemsToDrop: []
   experience_gain: 400
   chanceOfDrop: 1
+  isDestroyable: 0
 --- !u!70 &3240303599123243034
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -159,7 +159,7 @@ CapsuleCollider2D:
     m_Bits: 4294967295
   m_ForceReceiveLayers:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 0
   m_ContactCaptureLayers:
     serializedVersion: 2
     m_Bits: 4294967295

@@ -23,7 +23,11 @@ public class PauseMenu : MonoBehaviour
             {
                 ResumeGame();
                 pauseMenu.SetActive(false);
-                lm.closeMenu();
+                if(lm != null)
+                {
+                    lm.closeMenu();
+                }
+                
             }
             else
                 PauseGame();

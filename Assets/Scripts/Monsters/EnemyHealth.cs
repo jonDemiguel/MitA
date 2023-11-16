@@ -18,13 +18,13 @@ public class EnemyHealth : MonoBehaviour, Destroyable
 
     public void TakeDamage(int damage)
     {
-        animator.SetTrigger("isHurt");
+        //animator.SetTrigger("isHurt");
         
         currentHealth -= damage;
 
         if (currentHealth <= 0)
         {
-            animator.SetBool("isDead", true);
+            //animator.SetBool("isDead", true);
             Die();
         }
 
@@ -54,7 +54,7 @@ public class EnemyHealth : MonoBehaviour, Destroyable
             if (playerLevel != null)
             {
                 // Add experience to the player
-                playerLevel.AddExperience(experience_gain);
+                //playerLevel.AddExperience(experience_gain);
             }
             else
             {
