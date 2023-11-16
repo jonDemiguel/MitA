@@ -39,11 +39,11 @@ public class EnemySpawnManager : MonoBehaviour
 
     void Update()
     {
-        
         if (GameObject.FindGameObjectsWithTag("Enemy").Length == 0)
         {
             EndWave();
         }
+        Debug.Log("BOSS ROOM: " + GameObject.FindGameObjectsWithTag("Enemy").Length);
     }
 
     // Start is called before the first frame update
@@ -68,6 +68,12 @@ public class EnemySpawnManager : MonoBehaviour
             nextScene = "FinalBossRoom";
             wave = 2;
         }
+        if(activeScene == "FinalBossRoom")
+        {
+            nextScene = "MainMenu";
+            wave = 3;
+        }
+
         StartCoroutine(SpawnEnemies());
         
     }
@@ -105,6 +111,7 @@ public class EnemySpawnManager : MonoBehaviour
         else
         {
             // Open the menu and wait for user input
+            
             levelMenu.openMenu();
             yield return StartCoroutine(levelMenu.WaitForUserInput());
         }
@@ -195,6 +202,10 @@ public class EnemySpawnManager : MonoBehaviour
             if(wave == 2)
             {
                 type = (type % 3) + 6;
+            }
+            if(wave == 3)
+            {
+                type = prefab.Length - 1;
             }
             Vector3 spawnPosition = getSpawnLocation();
             Vector3 spawnScale = new Vector3(10f, 10f, 1f);

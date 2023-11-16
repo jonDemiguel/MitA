@@ -54,7 +54,7 @@ public class EnemyHealth : MonoBehaviour, Destroyable
             if (playerLevel != null)
             {
                 // Add experience to the player
-                playerLevel.AddExperience(experience_gain);
+                //playerLevel.AddExperience(experience_gain);
             }
             else
             {

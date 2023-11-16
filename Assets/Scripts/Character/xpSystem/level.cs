@@ -36,8 +36,16 @@ public class Level : MonoBehaviour
 
     private void Start()
     {
-        experienceBar.UpdateExperienceSlider(experience, ExperienceToLevelUp);
-        experienceBar.SetLevelText(Level_update);
+        if(experienceBar == null)
+        {
+            Debug.Log("experienceBar ERROR");
+        }
+        else
+        {
+            experienceBar.UpdateExperienceSlider(experience, ExperienceToLevelUp);
+            experienceBar.SetLevelText(Level_update);
+        }
+        
     }
 
     public void AddExperience(int amount)
@@ -70,6 +78,6 @@ public class Level : MonoBehaviour
     private void upGradeAttribute()
     {
         
-        lve.playEffect();
+       // lve.playEffect();
     }
 }

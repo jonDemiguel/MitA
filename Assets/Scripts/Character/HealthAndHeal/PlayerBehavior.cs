@@ -43,7 +43,7 @@ public class PlayerBehavior : MonoBehaviour
         // Handle player death logic here (e.g., play death animation, show game over screen, etc.)
         Destroy(gameObject);
         Time.timeScale = 0f;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene("GameOver");
     }
 
     // Armor logic
