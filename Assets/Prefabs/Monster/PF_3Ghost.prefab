@@ -253,7 +253,7 @@ CircleCollider2D:
     m_Bits: 4294967295
   m_ForceReceiveLayers:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 0
   m_ContactCaptureLayers:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -330,6 +330,7 @@ MonoBehaviour:
   itemsToDrop: []
   experience_gain: 400
   chanceOfDrop: 1
+  isDestroyable: 0
 --- !u!114 &1120073270807900111
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -343,4 +344,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageAmount: 15
-  inHitBox: 0

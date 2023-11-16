@@ -257,7 +257,7 @@ CapsuleCollider2D:
     m_Bits: 4294967295
   m_ForceReceiveLayers:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 0
   m_ContactCaptureLayers:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -299,6 +299,7 @@ MonoBehaviour:
   itemsToDrop: []
   experience_gain: 400
   chanceOfDrop: 1
+  isDestroyable: 0
 --- !u!114 &4399085843833275941
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -312,7 +313,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageAmount: 5
-  inHitBox: 0
 --- !u!1 &5251032924250182271
 GameObject:
   m_ObjectHideFlags: 0

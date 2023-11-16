@@ -18,11 +18,13 @@ public class EnemyHealth : MonoBehaviour, Destroyable
 
     public void TakeDamage(int damage)
     {
+        //animator.SetTrigger("isHurt");
+        
         currentHealth -= damage;
 
         if (currentHealth <= 0)
         {
-            animator.SetBool("isDead", true);
+            //animator.SetBool("isDead", true);
             Die();
         }
 

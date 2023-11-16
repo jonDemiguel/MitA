@@ -90,6 +90,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f13b2cf011d874144a781df56894abb2, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5890742905326803480}
+    - targetCorrespondingSourceObject: {fileID: -2253911629886400664, guid: f13b2cf011d874144a781df56894abb2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -2966037066286866188}
   m_SourcePrefab: {fileID: -8435245712485981826, guid: f13b2cf011d874144a781df56894abb2, type: 3}
 --- !u!1 &8450701128496472994 stripped
 GameObject:
@@ -168,7 +171,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damageAmount: 10
   attackCooldown: 3
-  inHitBox: 0
 --- !u!114 &5406389115267342671
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -185,6 +187,7 @@ MonoBehaviour:
   itemsToDrop: []
   experience_gain: 400
   chanceOfDrop: 1
+  isDestroyable: 0
 --- !u!70 &6319973735132859497
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -207,7 +210,7 @@ CapsuleCollider2D:
     m_Bits: 4294967295
   m_ForceReceiveLayers:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 0
   m_ContactCaptureLayers:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -247,3 +250,17 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &-2966037066286866188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8450701128496472994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: daf7fe3959160e34abdf99a594cb41cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flashDuration: 0.2
+  flashColor: {r: 1, g: 0, b: 0, a: 1}

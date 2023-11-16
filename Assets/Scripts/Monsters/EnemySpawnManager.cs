@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -41,7 +42,7 @@ public class EnemySpawnManager : MonoBehaviour
         
         if (GameObject.FindGameObjectsWithTag("Enemy").Length == 0)
         {
-            SceneManager.LoadScene(nextScene);
+            EndWave();
         }
     }
 
@@ -89,11 +90,37 @@ public class EnemySpawnManager : MonoBehaviour
 
     //End wave
     void EndWave()
-    {    
-        gameManager.ResetKillCount();
-        enemySpawned = 0;
+    {
+        StartCoroutine(EndWaveCoroutine());
+    }
+
+
+    IEnumerator EndWaveCoroutine()
+    {
+        LevelMenu levelMenu = GameObject.FindGameObjectWithTag("LevelMenu").GetComponent<LevelMenu>();
+        if (levelMenu == null)
+        {
+            Debug.Log("LevelMenu doesn't exist");
+        }
+        else
+        {
+            // Open the menu and wait for user input
+            levelMenu.openMenu();
+            yield return StartCoroutine(levelMenu.WaitForUserInput());
+        }
+
+        if (levelMenu == null)
+        {
+            Debug.Log("LevelMenu doesn't exist");
+        }
+        else
+        {
+            levelMenu.closeMenu();
+        }
+        // Load the next scene
         SceneManager.LoadScene(nextScene);
     }
+
 
     public Vector3 getSpawnLocation()
     {
