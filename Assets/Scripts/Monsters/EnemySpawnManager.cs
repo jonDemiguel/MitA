@@ -70,7 +70,8 @@ public class EnemySpawnManager : MonoBehaviour
         }
         if(activeScene == "FinalBossRoom")
         {
-            nextScene = "MainMenu";
+            nextScene = "VictoryMenu";
+            startEnemyCount = 1;
             wave = 3;
         }
 
@@ -87,11 +88,25 @@ public class EnemySpawnManager : MonoBehaviour
 
     private bool CheckEnemyCount()
     {
-        if (enemySpawned >= (startEnemyCount * Math.Pow(modifier, wave)))
+        if(wave != 3)
         {
-            return false;
+            if (enemySpawned >= (startEnemyCount * Math.Pow(modifier, wave)))
+            {
+                return false;
+            }
+            return true;
         }
-        return true;
+        else
+        {
+            if (enemySpawned < 1)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 
     //End wave
@@ -103,28 +118,30 @@ public class EnemySpawnManager : MonoBehaviour
 
     IEnumerator EndWaveCoroutine()
     {
-        LevelMenu levelMenu = GameObject.FindGameObjectWithTag("LevelMenu").GetComponent<LevelMenu>();
-        if (levelMenu == null)
+        if (wave != 3)
         {
-            Debug.Log("LevelMenu doesn't exist");
-        }
-        else
-        {
-            // Open the menu and wait for user input
-            
-            levelMenu.openMenu();
-            yield return StartCoroutine(levelMenu.WaitForUserInput());
-        }
+            LevelMenu levelMenu = GameObject.FindGameObjectWithTag("LevelMenu").GetComponent<LevelMenu>();
+            if (levelMenu == null)
+            {
+                Debug.Log("LevelMenu doesn't exist");
+            }
+            else
+            {
+                // Open the menu and wait for user input
 
-        if (levelMenu == null)
-        {
-            Debug.Log("LevelMenu doesn't exist");
+                levelMenu.openMenu();
+                yield return StartCoroutine(levelMenu.WaitForUserInput());
+            }
+
+            if (levelMenu == null)
+            {
+                Debug.Log("LevelMenu doesn't exist");
+            }
+            else
+            {
+                levelMenu.closeMenu();
+            }
         }
-        else
-        {
-            levelMenu.closeMenu();
-        }
-        // Load the next scene
         SceneManager.LoadScene(nextScene);
     }
 
@@ -160,7 +177,7 @@ public class EnemySpawnManager : MonoBehaviour
         Vector2 topIntersection = cameraPosition + new Vector2(-halfWidth, halfHeight) / direction;
         Vector2 bottomIntersection = cameraPosition + new Vector2(halfWidth, -halfHeight) / direction;
 
-        //Offset so that sprite instantiates off camera by margin offset value
+        //Offset so thgat sprite instantiates off camera by margin offset value
         //If Right
         if (direction.x > 0 && direction.y >= 0)
         {
