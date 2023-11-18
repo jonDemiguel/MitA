@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    //Movement
-    public float moveSpeed;
+    // Movement
+    [HideInInspector]
+    public float moveSpeed; // Now hidden in Inspector and will be set by PlayerStats
     [HideInInspector]
     public Vector2 moveDir;
     [HideInInspector]
@@ -13,17 +14,35 @@ public class PlayerMovement : MonoBehaviour
     [HideInInspector]
     public float lastVerticalVector;
 
-    //References
-    Rigidbody2D rb;
+    // References
+    private Rigidbody2D rb;
+    private PlayerStats playerStats;
+    private Animator animator; // Added for animation
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        playerStats = GetComponent<PlayerStats>(); // Get the PlayerStats component
+        animator = GetComponent<Animator>(); // Get the Animator component
+
+        if (playerStats != null)
+            moveSpeed = playerStats.currentSpeed; // Set moveSpeed to the currentSpeed from PlayerStats
+        else
+            Debug.LogError("PlayerStats component not found!");
     }
 
     void Update()
     {
         InputManagement();
+        if (playerStats != null)
+            moveSpeed = playerStats.currentSpeed; // Continuously update moveSpeed to reflect changes in PlayerStats
+
+        // Set animator parameters
+        if (animator != null)
+        {
+            animator.SetFloat("moveX", moveDir.x);
+            animator.SetFloat("moveY", moveDir.y);
+        }
     }
 
     void FixedUpdate()
@@ -31,7 +50,7 @@ public class PlayerMovement : MonoBehaviour
         Move();
     }
 
-    void InputManagement()
+    private void InputManagement()
     {
         float moveX = Input.GetAxisRaw("Horizontal");
         float moveY = Input.GetAxisRaw("Vertical");
@@ -39,17 +58,13 @@ public class PlayerMovement : MonoBehaviour
         moveDir = new Vector2(moveX, moveY).normalized;
 
         if (moveDir.x != 0)
-        {
             lastHorizontalVector = moveDir.x;
-        }
 
         if (moveDir.y != 0)
-        {
             lastVerticalVector = moveDir.y;
-        }
     }
 
-    void Move()
+    private void Move()
     {
         rb.velocity = new Vector2(moveDir.x * moveSpeed, moveDir.y * moveSpeed);
     }
