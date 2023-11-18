@@ -51,7 +51,10 @@ public class LevelMenu : MonoBehaviour
     {
         Time.timeScale = 0f;
         isPaused = true;
-        levelMenu.SetActive(true);
+        if(levelMenu != null)
+        {
+            levelMenu.SetActive(true);
+        }
         
         //levelPointText.text = "Level Points: " + lv.levelPoint.ToString();
     }
@@ -62,44 +65,44 @@ public class LevelMenu : MonoBehaviour
     public void increaseHealth()
     {
         userHasMadeSelection = true;
-        /*if (lv.levelPoint > 0)
-        {
-            playerSta.baseHealth += playerSta.healthIncreasePerLevel;
-            lv.levelPoint--;
-            updatePointText();
-        }*/
+        // if (lv.levelPoint > 0)
+        // {
+        //     playerSta.LevelUpHealth();
+        //     lv.levelPoint--;
+        //     updatePointText();
+        // }
     }
 
     public void increaseDamage()
     {
         userHasMadeSelection = true;
-        /*if (lv.levelPoint > 0)
-        {
-            playerSta.baseDamage += playerSta.damageIncreasePerLevel;
-            lv.levelPoint--;
-            updatePointText();
-        }*/
+        // if (lv.levelPoint > 0)
+        // {
+        //     playerSta.LevelUpDamage();
+        //     lv.levelPoint--;
+        //     updatePointText();
+        // }
     }
 
     public void increaseSpeed()
     {
         userHasMadeSelection = true;
-        /*if (lv.levelPoint > 0)
-        {
-            playerSta.baseSpeed += playerSta.speedIncreasePerLevel;
-            lv.levelPoint--;
-            updatePointText();
-        }*/
+        // if (lv.levelPoint > 0)
+        // {
+        //     playerSta.LevelUpSpeed();
+        //     lv.levelPoint--;
+        //     updatePointText();
+        // }
     }
 
     public void increaseCritical()
     {
         userHasMadeSelection = true;
-        /*if (lv.levelPoint > 0)
-        {
-            playerSta.baseCritChance += playerSta.critChanceIncreasePerLevel;
-            lv.levelPoint--;
-            updatePointText();
-        }*/
+        // if (lv.levelPoint > 0)
+        // {
+        //     playerSta.LevelUpCritChance();
+        //     lv.levelPoint--;
+        //     updatePointText();
+        // }
     }
 }

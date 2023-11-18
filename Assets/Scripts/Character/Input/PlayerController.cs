@@ -11,11 +11,18 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
-        mainCamera = Camera.main; // Cache the main camera
+        mainCamera = GameObject.Find("MainCamera").GetComponent<Camera>(); // Cache the main camera
     }
 
     void Update()
     {
+        if (mainCamera == null)
+        {
+            mainCamera = GameObject.Find("MainCamera").GetComponent<Camera>();
+            return;
+        }
+
+
         AimGunAtMouse();
         
         if (Input.GetMouseButtonDown(0)) // On left mouse click

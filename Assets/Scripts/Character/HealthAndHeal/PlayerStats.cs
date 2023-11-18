@@ -17,10 +17,10 @@ public class PlayerStats : MonoBehaviour
     public float critChanceIncreasePerLevel = 0.02f; // 2% increase per level
 
     // Current stats
-    [HideInInspector] public float currentSpeed;
-    [HideInInspector] public int currentDamage;
-    [HideInInspector] public int currentHealth;
-    [HideInInspector] public float currentCritChance;
+    public float currentSpeed;
+    public int currentDamage;
+    public int currentHealth;
+    public float currentCritChance;
 
     void Start()
     {
@@ -43,4 +43,27 @@ public class PlayerStats : MonoBehaviour
         // Update health in the GameManager or relevant script handling health
         GameManager.gameManager._playerHealth.SetMaxHealth(currentHealth);
     }
+
+    public void LevelUpHealth()
+    {
+        baseHealth += healthIncreasePerLevel;
+        GameManager.gameManager._playerHealth.SetMaxHealth(currentHealth);
+    }
+
+    public void LevelUpDamage()
+    {
+        baseDamage += damageIncreasePerLevel;
+    }
+
+    public void LevelUpSpeed()
+    {
+        baseSpeed += speedIncreasePerLevel;
+    }
+
+    public void LevelUpCritChance()
+    {
+        baseCritChance += critChanceIncreasePerLevel;
+    }
+
+
 }

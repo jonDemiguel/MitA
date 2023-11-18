@@ -125,6 +125,7 @@ public class EnemySpawnManager : MonoBehaviour
 
     IEnumerator EndWaveCoroutine()
     {
+        
         if (wave != 3)
         {
             LevelMenu levelMenu = GameObject.FindGameObjectWithTag("LevelMenu").GetComponent<LevelMenu>();
@@ -148,6 +149,11 @@ public class EnemySpawnManager : MonoBehaviour
             {
                 levelMenu.closeMenu();
             }
+        }
+        else
+        {
+            GameObject player = GameObject.FindGameObjectWithTag("Player");
+            Destroy(player);
         }
         SceneManager.LoadScene(nextScene);
     }
