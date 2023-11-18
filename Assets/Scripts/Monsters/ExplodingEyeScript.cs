@@ -6,6 +6,7 @@ public class ExplodingEyeScript : MonoBehaviour
     public float moveSpeed = 5f;
     public Animator animator; 
     public string explosionAnimationName = "Explode";
+    public int damageAmount = 1;
 
     private Vector3 previousPosition;
     private SpriteRenderer spriteRenderer;
@@ -51,18 +52,26 @@ public class ExplodingEyeScript : MonoBehaviour
     // When the monster touches the player character, it will trigger the explode function
     private void OnTriggerEnter2D(Collider2D other) {
         if (other.CompareTag("Player") && !isExploding) {
-            StartCoroutine(Explode());
+            StartCoroutine(Explode(other)); // Pass the collider to the coroutine
         }
     }
     
-    //the coroutine for the explosion animation
-    private IEnumerator Explode() {
-        isExploding = true;
-        
-        animator.SetBool("isExploding", true);
-        
-        yield return new WaitForSeconds(1.1f); 
-        
-        Destroy(gameObject);
+    // Modified coroutine for the explosion animation
+    private IEnumerator Explode(Collider2D playerCollider) {
+    isExploding = true;
+    
+    animator.SetBool("isExploding", true);
+    
+    yield return new WaitForSeconds(1.1f); // Wait for the animation to finish
+
+    // Apply damage to the player
+    if (playerCollider != null && playerCollider.gameObject != null) {
+        PlayerBehavior playerBehavior = playerCollider.gameObject.GetComponent<PlayerBehavior>();
+        if (playerBehavior != null) {
+            playerBehavior.PlayerTakeDmg(damageAmount);
+        }
+    }
+    
+    Destroy(gameObject);
     }
 }
