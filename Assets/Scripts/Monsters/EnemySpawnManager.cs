@@ -22,6 +22,8 @@ public class EnemySpawnManager : MonoBehaviour
     private int enemySpawned = 0;
     bool stillEnemies;
 
+    RoundCountdown roundCountdown;
+
     //In game assets
     public GameObject[] prefab;
     int screenWidth = Screen.width;
@@ -43,7 +45,6 @@ public class EnemySpawnManager : MonoBehaviour
         {
             EndWave();
         }
-        Debug.Log("BOSS ROOM: " + GameObject.FindGameObjectsWithTag("Enemy").Length);
     }
 
     // Start is called before the first frame update
@@ -61,7 +62,7 @@ public class EnemySpawnManager : MonoBehaviour
         if (activeScene == "Level2")
         {
             nextScene = "Level3";
-            wave = 1;
+            wave = 1; 
         }
         if (activeScene == "Level3")
         {
@@ -75,6 +76,12 @@ public class EnemySpawnManager : MonoBehaviour
             wave = 3;
         }
 
+        //Timer Countdown
+        //roundCountdown = GameObject.FindGameObjectWithTag("Countdown").GetComponent<RoundCountdown>();
+        //if (roundCountdown != null)
+        //{
+        //    roundCountdown.StartCountdown();
+        //}
         StartCoroutine(SpawnEnemies());
         
     }

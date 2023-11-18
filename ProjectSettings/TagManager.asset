@@ -11,6 +11,7 @@ TagManager:
   - GameManager
   - Destroyable
   - LevelMenu
+  - Countdown
   layers:
   - Default
   - TransparentFX
