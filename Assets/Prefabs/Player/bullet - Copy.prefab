@@ -10,11 +10,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -2253911629886400664, guid: 28d5614c868bd9f4fa71ea65d4b60133, type: 3}
       propertyPath: m_Name
-      value: bullet
+      value: bullet - Copy
       objectReference: {fileID: 0}
     - target: {fileID: -2253911629886400664, guid: 28d5614c868bd9f4fa71ea65d4b60133, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7878350319992209165, guid: 28d5614c868bd9f4fa71ea65d4b60133, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7878350319992209165, guid: 28d5614c868bd9f4fa71ea65d4b60133, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7878350319992209165, guid: 28d5614c868bd9f4fa71ea65d4b60133, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7878350319992209165, guid: 28d5614c868bd9f4fa71ea65d4b60133, type: 3}
       propertyPath: m_LocalPosition.x
@@ -56,6 +68,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7878350319992209165, guid: 28d5614c868bd9f4fa71ea65d4b60133, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -90,8 +106,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b84d0a907289164ab73718d185da280, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inHitBox: 0
-  damage: 5
 --- !u!70 &7729539732889605684
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -121,7 +135,7 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.005000001, y: 0.08499999}
