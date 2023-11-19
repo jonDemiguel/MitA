@@ -16,10 +16,9 @@ public class BulletDamageToEnemy : MonoBehaviour
     void AttackEnemy(GameObject enemy)
     {
         PlayerStats stats = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerStats>();
-
         // Calculate critical hit
-        bool isCritical = Random.value < stats.currentCritChance;
-        int finalDamage = isCritical ? stats.currentDamage * 2 : stats.currentDamage;
+        bool isCritical = Random.value < stats.baseCritChance;
+        int finalDamage = isCritical ? stats.baseDamage * 2 : stats.baseDamage;
 
         Debug.Log("Bullet attacks enemy for " + finalDamage + " damage!" + (isCritical ? " Critical Hit!" : ""));
 

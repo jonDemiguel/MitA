@@ -24,10 +24,12 @@ public class PlayerController : MonoBehaviour
 
 
         AimGunAtMouse();
-        
-        if (Input.GetMouseButtonDown(0)) // On left mouse click
+        if(Time.timeScale == 1.0f)
         {
-            Shoot();
+            if (Input.GetMouseButtonDown(0)) // On left mouse click
+            {
+                Shoot();
+            }
         }
     }
 

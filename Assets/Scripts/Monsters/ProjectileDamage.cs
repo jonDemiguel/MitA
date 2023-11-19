@@ -6,13 +6,17 @@ using UnityEngine;
 public class ProjectileDamage : MonoBehaviour
 {
     public int damageAmount;
-    private bool hasDamagedPlayer = false; 
+    private bool hasDamagedPlayer = false;
+    PlayerStats stats;
 
     void Start()
     {
+        stats = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerStats>();
+        damageAmount = stats.baseDamage;
     }
 
-    void Update() {
+    void Update() 
+    {
 
     }
 

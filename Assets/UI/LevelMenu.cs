@@ -15,6 +15,7 @@ public class LevelMenu : MonoBehaviour
     bool userHasMadeSelection = false;
     void Start()
     {
+        playerSta = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerStats>();
         levelMenu.SetActive(false);
     }
 
@@ -65,44 +66,29 @@ public class LevelMenu : MonoBehaviour
     public void increaseHealth()
     {
         userHasMadeSelection = true;
-        // if (lv.levelPoint > 0)
-        // {
-        //     playerSta.LevelUpHealth();
-        //     lv.levelPoint--;
-        //     updatePointText();
-        // }
+        
+        playerSta.LevelUpHealth();
+        
     }
 
     public void increaseDamage()
     {
         userHasMadeSelection = true;
-        // if (lv.levelPoint > 0)
-        // {
-        //     playerSta.LevelUpDamage();
-        //     lv.levelPoint--;
-        //     updatePointText();
-        // }
+
+        playerSta.LevelUpDamage();
     }
 
     public void increaseSpeed()
     {
         userHasMadeSelection = true;
-        // if (lv.levelPoint > 0)
-        // {
-        //     playerSta.LevelUpSpeed();
-        //     lv.levelPoint--;
-        //     updatePointText();
-        // }
+
+        playerSta.LevelUpSpeed();
     }
 
     public void increaseCritical()
     {
         userHasMadeSelection = true;
-        // if (lv.levelPoint > 0)
-        // {
-        //     playerSta.LevelUpCritChance();
-        //     lv.levelPoint--;
-        //     updatePointText();
-        // }
+
+        playerSta.LevelUpCritChance();
     }
 }

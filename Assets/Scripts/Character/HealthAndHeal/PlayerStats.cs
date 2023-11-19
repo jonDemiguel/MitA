@@ -11,7 +11,7 @@ public class PlayerStats : MonoBehaviour
     public float baseCritChance = 0.1f; // 10% base crit chance
 
     // Stat growth per level
-    public float speedIncreasePerLevel = 0.5f;
+    public float speedIncreasePerLevel = 5f;
     public int damageIncreasePerLevel = 5;
     public int healthIncreasePerLevel = 20;
     public float critChanceIncreasePerLevel = 0.02f; // 2% increase per level
@@ -48,6 +48,8 @@ public class PlayerStats : MonoBehaviour
     {
         baseHealth += healthIncreasePerLevel;
         GameManager.gameManager._playerHealth.SetMaxHealth(currentHealth);
+        PlayerBehavior playerBehavior = GetComponent<PlayerBehavior>();
+        playerBehavior.SetHealth(baseHealth);
     }
 
     public void LevelUpDamage()
@@ -58,6 +60,7 @@ public class PlayerStats : MonoBehaviour
     public void LevelUpSpeed()
     {
         baseSpeed += speedIncreasePerLevel;
+        
     }
 
     public void LevelUpCritChance()
