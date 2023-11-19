@@ -5,17 +5,21 @@ using UnityEngine.SceneManagement;
 
 public class PlayerBehavior : MonoBehaviour
 {
-    public int MaxPlayerHP = 100;
-    public int currentPlayerHP = 100;
+    PlayerStats stats;
+    int MaxPlayerHP = 100;
+    int currentPlayerHP = 100;
     public int armor = 0;
     private DamageFlash damageFlash;
     [SerializeField] PlayerHPstats hpBar;
 
     void Start()
     {
+        stats = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerStats>();
         damageFlash = GetComponent<DamageFlash>();
         hpBar.StatePlayer(currentPlayerHP, MaxPlayerHP);
     }
+
+
 
     public void PlayerTakeDmg(int dmg)
     {
@@ -65,6 +69,13 @@ public class PlayerBehavior : MonoBehaviour
         {
             currentPlayerHP = MaxPlayerHP;
         }
+        hpBar.StatePlayer(currentPlayerHP, MaxPlayerHP);
+    }
+    
+    public void SetHealth(int amount) 
+    {
+        MaxPlayerHP = amount;
+        currentPlayerHP = MaxPlayerHP;
         hpBar.StatePlayer(currentPlayerHP, MaxPlayerHP);
     }
 }

@@ -35,7 +35,7 @@ public class PlayerMovement : MonoBehaviour
     {
         InputManagement();
         if (playerStats != null)
-            moveSpeed = playerStats.currentSpeed; // Continuously update moveSpeed to reflect changes in PlayerStats
+            moveSpeed = playerStats.baseSpeed; // Continuously update moveSpeed to reflect changes in PlayerStats
 
         // Set animator parameters
         if (animator != null)
@@ -43,6 +43,12 @@ public class PlayerMovement : MonoBehaviour
             animator.SetFloat("moveX", moveDir.x);
             animator.SetFloat("moveY", moveDir.y);
         }
+    }
+
+    public void SetMoveSpeed(float speed)
+    {
+        moveSpeed = speed;
+        Debug.Log(moveSpeed);
     }
 
     void FixedUpdate()

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Movement : MonoBehaviour
 {
-    public float moveSpeed = 3;
+    float moveSpeed;
     Rigidbody2D rb;
     Vector2 moveDirection;
     // Start is called before the first frame update
@@ -16,7 +16,15 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log("HELLO");
         inputManage();
+        moveSpeed = GetComponent<PlayerStats>().currentSpeed;
+    }
+
+    public void SetMoveSpeed(float speed)
+    {
+        moveSpeed = speed;
+        Debug.Log(moveSpeed);
     }
 
     void FixedUpdate()
@@ -31,6 +39,7 @@ public class Movement : MonoBehaviour
     }
     void Move()
     {
+        Debug.Log("Actual: " + moveSpeed);
         rb.velocity = new Vector2(moveDirection.x * moveSpeed, moveDirection.y * moveSpeed);
     }
     private void OnAnimatorMove()

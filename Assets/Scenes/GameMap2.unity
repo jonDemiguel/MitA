@@ -6817,11 +6817,27 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 130634667777208275, guid: 764091be0858da145996dece33f38d67, type: 3}
       propertyPath: baseSpeed
-      value: 20
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 130634667777208275, guid: 764091be0858da145996dece33f38d67, type: 3}
       propertyPath: baseDamage
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 130634667777208275, guid: 764091be0858da145996dece33f38d67, type: 3}
+      propertyPath: speedIncreasePerLevel
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 130634667777208275, guid: 764091be0858da145996dece33f38d67, type: 3}
+      propertyPath: damageIncreasePerLevel
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 130634667777208275, guid: 764091be0858da145996dece33f38d67, type: 3}
+      propertyPath: healthIncreasePerLevel
       value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 130634667777208275, guid: 764091be0858da145996dece33f38d67, type: 3}
+      propertyPath: critChanceIncreasePerLevel
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 339675308182881460, guid: 764091be0858da145996dece33f38d67, type: 3}
       propertyPath: m_Name
