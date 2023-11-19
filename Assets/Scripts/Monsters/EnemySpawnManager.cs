@@ -23,6 +23,7 @@ public class EnemySpawnManager : MonoBehaviour
     bool stillEnemies;
 
     RoundCountdown roundCountdown;
+    GameObject player;
 
     //In game assets
     public GameObject[] prefab;
@@ -75,6 +76,9 @@ public class EnemySpawnManager : MonoBehaviour
             startEnemyCount = 1;
             wave = 3;
         }
+
+        player = GameObject.FindGameObjectWithTag("Player");
+        player.transform.position = new Vector3(0f, 0f, 0f);
 
         //Timer Countdown
         //roundCountdown = GameObject.FindGameObjectWithTag("Countdown").GetComponent<RoundCountdown>();
@@ -152,7 +156,6 @@ public class EnemySpawnManager : MonoBehaviour
         }
         else
         {
-            GameObject player = GameObject.FindGameObjectWithTag("Player");
             Destroy(player);
         }
         SceneManager.LoadScene(nextScene);
