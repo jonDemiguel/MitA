@@ -55,7 +55,7 @@ public class EnemySpawnManager : MonoBehaviour
         gameManager = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
         gameManager.NewScene();
         activeScene = gameManager.GetActiveScene();
-        if (activeScene == "GameMap2")
+        if (activeScene == "Level1")
         {
            nextScene = "Level2";
            wave = 0;

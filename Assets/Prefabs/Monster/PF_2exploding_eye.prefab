@@ -124,7 +124,7 @@ MonoBehaviour:
   moveSpeed: 5
   animator: {fileID: 1160356261127867848, guid: 98c4df253fa55f541a8dc1a29c787b13, type: 3}
   explosionAnimationName: Explode
-  damageAmount: 10
+  damageAmount: 25
 --- !u!58 &4984217449509994842
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -174,6 +174,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 50
   itemsToDrop: []
-  experience_gain: 20
   chanceOfDrop: 1
   isDestroyable: 0

@@ -5,7 +5,7 @@ using UnityEngine;
 public class MapController : MonoBehaviour
 {
     public List<GameObject> terrainChunks;
-    public GameObject player;
+    GameObject player;
     public float checkerRadius;
     public Vector3 noTerrainPosition;
     public LayerMask terrainMask;
@@ -24,6 +24,7 @@ public class MapController : MonoBehaviour
 
     void Start()
     {
+        player = GameObject.FindGameObjectWithTag("Player");
         pm = FindObjectOfType<PlayerMovement>();
     }
 
