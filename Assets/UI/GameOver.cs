@@ -15,7 +15,7 @@ public class MonoBehavior : MonoBehaviour
     public void TryAgain()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene("GameMap2");
+        SceneManager.LoadScene("Level1");
     }
 
 

@@ -6,6 +6,14 @@ public class BulletDamageToEnemy : MonoBehaviour
 {
     void OnTriggerEnter2D(Collider2D collision)
     {
+        if (collision.CompareTag("Destroyable"))
+        {
+            DestroyableObject destroyableObject = collision.GetComponent<DestroyableObject>();
+            if (destroyableObject != null)
+            {
+                destroyableObject.TakeDamage(5);
+            }
+        }
         if (collision.gameObject.CompareTag("Enemy"))
         {
             AttackEnemy(collision.gameObject);

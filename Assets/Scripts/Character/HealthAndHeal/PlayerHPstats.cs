@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerHPstats : MonoBehaviour
 {
+
     [SerializeField] Transform bar;
 
     public void StatePlayer (int current, int maxHP)

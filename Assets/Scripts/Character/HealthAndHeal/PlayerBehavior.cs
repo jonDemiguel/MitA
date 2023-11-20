@@ -76,6 +76,7 @@ public class PlayerBehavior : MonoBehaviour
     {
         MaxPlayerHP = amount;
         currentPlayerHP = MaxPlayerHP;
-        hpBar.StatePlayer(currentPlayerHP, MaxPlayerHP);
+        hpBar.StatePlayer(MaxPlayerHP, MaxPlayerHP);
+
     }
 }
