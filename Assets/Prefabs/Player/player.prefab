@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 7809621299301503979}
   - component: {fileID: 1450192498736397962}
   - component: {fileID: 130634667777208275}
+  - component: {fileID: 773253456038396229}
   m_Layer: 0
   m_Name: player
   m_TagString: Player
@@ -210,8 +211,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab1b41a55bfece64bb1e7ef9194a322b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxPlayerHP: 100
-  currentPlayerHP: 100
   armor: 1
   hpBar: {fileID: 8562929468850784699}
 --- !u!114 &909187250225296297
@@ -280,7 +279,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 339675308182881460}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c04e6a376dc2f3f4a888219f2daa92b0, type: 3}
   m_Name: 
@@ -327,7 +326,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 339675308182881460}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0ff333de6f573744db7ccb6b94682c08, type: 3}
   m_Name: 
@@ -382,18 +381,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerLevel: 1
-  baseSpeed: 5
-  baseDamage: 25
+  baseSpeed: 10
+  baseDamage: 5
   baseHealth: 100
   baseCritChance: 0.1
-  speedIncreasePerLevel: 0.5
-  damageIncreasePerLevel: 5
-  healthIncreasePerLevel: 20
-  critChanceIncreasePerLevel: 0.02
+  speedIncreasePerLevel: 5
+  damageIncreasePerLevel: 20
+  healthIncreasePerLevel: 100
+  critChanceIncreasePerLevel: 0.1
   currentSpeed: 0
   currentDamage: 0
   currentHealth: 0
   currentCritChance: 0
+--- !u!114 &773253456038396229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 339675308182881460}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eeed1e53fb1d54f48b4261a78b3c1dc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &656416989381879995
 GameObject:
   m_ObjectHideFlags: 0

@@ -48,6 +48,7 @@ GameObject:
   - component: {fileID: 3196278724053007847}
   - component: {fileID: 8295251381273529891}
   - component: {fileID: 1120073270807900111}
+  - component: {fileID: 7097029022547694675}
   m_Layer: 0
   m_Name: PF_3Ghost
   m_TagString: Enemy
@@ -203,7 +204,7 @@ CapsuleCollider2D:
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 0
   m_ForceReceiveLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -246,7 +247,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 50
   itemsToDrop: []
-  experience_gain: 400
   chanceOfDrop: 1
   isDestroyable: 0
 --- !u!114 &1120073270807900111
@@ -262,3 +262,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damageAmount: 15
+--- !u!114 &7097029022547694675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7814079288601450305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: daf7fe3959160e34abdf99a594cb41cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flashDuration: 0.2
+  flashColor: {r: 1, g: 0, b: 0, a: 1}

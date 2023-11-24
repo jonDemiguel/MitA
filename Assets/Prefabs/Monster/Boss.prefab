@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 4689790255151341431}
   - component: {fileID: 2341202028148760818}
   - component: {fileID: 5231284329313927962}
+  - component: {fileID: 7816347374273229259}
   m_Layer: 0
   m_Name: Boss
   m_TagString: Enemy
@@ -124,7 +125,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
-  attackRange: 2
+  attackRange: 3
   damage: 10
   attackDuration: 0.5
   isFlip: 1
@@ -141,9 +142,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eab2d90575effa141833b0684a602215, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 1000
+  maxHealth: 500
+  currentHealth: 0
   itemsToDrop: []
-  experience_gain: 400
   chanceOfDrop: 1
   isDestroyable: 0
 --- !u!70 &4689790255151341431
@@ -165,10 +166,10 @@ CapsuleCollider2D:
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 0
   m_ForceReceiveLayers:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 0
   m_ContactCaptureLayers:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -224,3 +225,16 @@ MonoBehaviour:
   castDistance: 5
   initialCastDelay: 3
   castDelay: 3
+--- !u!114 &7816347374273229259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7615930850768576796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9253f5f93f350894a8ee7feb26b35c4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  secondPhasePrefab: {fileID: 8468073316499452341, guid: 1083cf65d4350ad4ea5676df2643985d, type: 3}

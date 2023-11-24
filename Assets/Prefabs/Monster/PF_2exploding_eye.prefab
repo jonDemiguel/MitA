@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 752949688910631693}
   - component: {fileID: 4984217449509994842}
   - component: {fileID: -3763469821699458989}
+  - component: {fileID: -6880894071297013801}
   m_Layer: 0
   m_Name: PF_2exploding_eye
   m_TagString: Enemy
@@ -176,3 +177,17 @@ MonoBehaviour:
   itemsToDrop: []
   chanceOfDrop: 1
   isDestroyable: 0
+--- !u!114 &-6880894071297013801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4049006562588698182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: daf7fe3959160e34abdf99a594cb41cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flashDuration: 0.2
+  flashColor: {r: 1, g: 0, b: 0, a: 1}
