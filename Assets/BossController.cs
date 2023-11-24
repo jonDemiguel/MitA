@@ -34,7 +34,7 @@ public class BossController : MonoBehaviour
         {
             Instantiate(secondPhasePrefab, transform.position, transform.rotation);
             // Optionally, deactivate the current boss object
-            gameObject.SetActive(false);
+                gameObject.SetActive(false);
         }
         else
         {
