@@ -3,12 +3,13 @@ using UnityEngine;
 public class EnemyHealth : MonoBehaviour, Destroyable
 {
     public int maxHealth = 100;
-    private int currentHealth;
+    public int currentHealth;
     private Animator animator;
     public GameObject[] itemsToDrop; // Array of items that can be dropped
     //[SerializeField] int experience_gain = 400;
     [SerializeField] float chanceOfDrop = 1f;
     public bool isDestroyable;
+    private DamageFlash damageFlash;
 
     private void Start()
     {
@@ -18,13 +19,27 @@ public class EnemyHealth : MonoBehaviour, Destroyable
 
     public void TakeDamage(int damage)
     {
-        //animator.SetTrigger("isHurt");
+        if (HasTrigger(animator, "isHurt"))
+        {
+            animator.SetTrigger("isHurt");
+        }
         
         currentHealth -= damage;
 
+        // Flash the enemy sprite red
+        damageFlash = GetComponent<DamageFlash>();
+        if (damageFlash != null)
+        {
+            damageFlash.Flash();
+        }
+
+
         if (currentHealth <= 0)
         {
-            //animator.SetBool("isDead", true);
+            if (HasTrigger(animator, "isDead"))
+            {
+                animator.SetTrigger("isDead");
+            }
             Die();
         }
 
@@ -68,5 +83,24 @@ public class EnemyHealth : MonoBehaviour, Destroyable
 
         // Destroy the enemy object
         Destroy(gameObject, 1.0f);
+    }
+
+    // Method to check if the Animator has a specific trigger
+    bool HasTrigger(Animator animator, string triggerName)
+    {
+        if (animator == null)
+        {
+            return false;
+        }
+
+        foreach (AnimatorControllerParameter param in animator.parameters)
+        {
+            if (param.type == AnimatorControllerParameterType.Trigger && param.name == triggerName)
+            {
+                return true;
+            }
+        }
+
+        return false;
     }
 }

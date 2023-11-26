@@ -46,26 +46,26 @@ public class PlayerStats : MonoBehaviour
 
     public void LevelUpHealth()
     {
-        baseHealth += healthIncreasePerLevel;
+        currentHealth += healthIncreasePerLevel;
         GameManager.gameManager._playerHealth.SetMaxHealth(currentHealth);
         PlayerBehavior playerBehavior = GetComponent<PlayerBehavior>();
-        playerBehavior.SetHealth(baseHealth);
+        playerBehavior.SetHealth(currentHealth);
     }
 
     public void LevelUpDamage()
     {
-        baseDamage += damageIncreasePerLevel;
+        currentDamage += damageIncreasePerLevel;
     }
 
     public void LevelUpSpeed()
     {
-        baseSpeed += speedIncreasePerLevel;
+        currentSpeed += speedIncreasePerLevel;
         
     }
 
     public void LevelUpCritChance()
     {
-        baseCritChance += critChanceIncreasePerLevel;
+        currentCritChance += critChanceIncreasePerLevel;
     }
 
 

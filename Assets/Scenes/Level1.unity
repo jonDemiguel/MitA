@@ -3014,11 +3014,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1006969049}
   m_CullTransparentMesh: 1
---- !u!1 &1115601419 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 339675308182881460, guid: 764091be0858da145996dece33f38d67, type: 3}
-  m_PrefabInstance: {fileID: 4613105776202262584}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1115601428 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8247083726572836595, guid: 764091be0858da145996dece33f38d67, type: 3}
@@ -3029,22 +3024,10 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1307770642612579619, guid: 764091be0858da145996dece33f38d67, type: 3}
   m_PrefabInstance: {fileID: 4613105776202262584}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1115601419}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 79ee6b7c14cf2ab4cb0c7bcc3f6af3c1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1115601435
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1115601419}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eeed1e53fb1d54f48b4261a78b3c1dc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1116939139
@@ -5990,7 +5973,6 @@ MonoBehaviour:
   - {fileID: 5501191041386302037, guid: 43b4adb6b1797644984ebe8e230e6de9, type: 3}
   - {fileID: 8776081628895139481, guid: 4086f024bf148684e887e5295f585467, type: 3}
   - {fileID: 8776081628895139481, guid: b6064d5244a1d1b4aa68618588e5e9e1, type: 3}
-  player: {fileID: 1115601419}
   checkerRadius: 0.2
   noTerrainPosition: {x: 0, y: 0, z: 0}
   terrainMask:
@@ -6541,7 +6523,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 130634667777208275, guid: 764091be0858da145996dece33f38d67, type: 3}
       propertyPath: baseSpeed
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 130634667777208275, guid: 764091be0858da145996dece33f38d67, type: 3}
       propertyPath: baseDamage
@@ -6549,11 +6531,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 130634667777208275, guid: 764091be0858da145996dece33f38d67, type: 3}
       propertyPath: speedIncreasePerLevel
-      value: 3
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 130634667777208275, guid: 764091be0858da145996dece33f38d67, type: 3}
       propertyPath: damageIncreasePerLevel
-      value: 10
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 130634667777208275, guid: 764091be0858da145996dece33f38d67, type: 3}
       propertyPath: healthIncreasePerLevel
@@ -6630,10 +6612,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 339675308182881460, guid: 764091be0858da145996dece33f38d67, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1115601435}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 764091be0858da145996dece33f38d67, type: 3}
 --- !u!1001 &6510246657130607392
 PrefabInstance:

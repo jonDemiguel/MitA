@@ -137,7 +137,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 20
   itemsToDrop: []
-  experience_gain: 400
   chanceOfDrop: 1
   isDestroyable: 0
 --- !u!70 &6319973735132859497
@@ -159,7 +158,7 @@ CapsuleCollider2D:
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 0
   m_ForceReceiveLayers:
     serializedVersion: 2
     m_Bits: 0
