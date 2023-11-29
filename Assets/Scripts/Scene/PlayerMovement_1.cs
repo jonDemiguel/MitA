@@ -35,7 +35,7 @@ public class PlayerMovement : MonoBehaviour
     {
         InputManagement();
         if (playerStats != null)
-            moveSpeed = playerStats.baseSpeed; // Continuously update moveSpeed to reflect changes in PlayerStats
+            moveSpeed = playerStats.currentSpeed; // Continuously update moveSpeed to reflect changes in PlayerStats
 
         // Set animator parameters
         if (animator != null)

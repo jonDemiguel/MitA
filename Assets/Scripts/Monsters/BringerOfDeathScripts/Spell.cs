@@ -18,7 +18,7 @@ public class Spell : MonoBehaviour
             }
 
             // Destroy the spell after applying damage
-            Destroy(gameObject);
+            DestroySpell();
         }
     }
 
@@ -26,6 +26,6 @@ public class Spell : MonoBehaviour
     public void DestroySpell()
     {
         // This method can be called by an animation event at the end of the spell animation
-        Destroy(gameObject);
+        Destroy(gameObject,1.3f);
     }
 }

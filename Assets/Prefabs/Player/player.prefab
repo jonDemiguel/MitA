@@ -387,8 +387,8 @@ MonoBehaviour:
   baseCritChance: 0.1
   speedIncreasePerLevel: 5
   damageIncreasePerLevel: 20
-  healthIncreasePerLevel: 100
-  critChanceIncreasePerLevel: 0.1
+  healthIncreasePerLevel: 25
+  critChanceIncreasePerLevel: 0.3
   currentSpeed: 0
   currentDamage: 0
   currentHealth: 0

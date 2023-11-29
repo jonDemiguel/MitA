@@ -19,12 +19,7 @@ public class CollisionDamage : MonoBehaviour
 
     void Update()
     {
-        // Check if the player is in the hitbox and if the enemy can attack
-        if (player != null && canAttack)
-        {
-            // Use a Raycast or another method to confirm that the player is within attack range
-            // and there are no obstacles between the enemy and the player.
-        }
+        // This method might not be needed anymore if all logic is handled in OnCollisionEnter2D
     }
 
     void OnCollisionEnter2D(Collision2D collision)
@@ -36,14 +31,26 @@ public class CollisionDamage : MonoBehaviour
         }
     }
 
-    void OnCollisionExit2D(Collision2D collision)
+    void OnCollisionStay2D(Collision2D collision)
     {
-        // This method might not be needed anymore if all logic is handled in OnCollisionEnter2D
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            StartCoroutine(AttemptAttack());
+        }
+    }
+
+    IEnumerator AttemptAttack()
+    {
+        if (canAttack)
+        {
+            AttackPlayer();
+            yield return StartCoroutine(AttackCooldown());
+        }
     }
 
     void AttackPlayer()
     {
-        Debug.Log("Monster attacks player for " + damageAmount + " damage!");
+        //Debug.Log("Monster attacks player for " + damageAmount + " damage!");
         if (targetCharacter == null)
         {
             targetCharacter = player.GetComponent<PlayerBehavior>();

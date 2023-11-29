@@ -6522,36 +6522,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 130634667777208275, guid: 764091be0858da145996dece33f38d67, type: 3}
-      propertyPath: baseSpeed
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 130634667777208275, guid: 764091be0858da145996dece33f38d67, type: 3}
-      propertyPath: baseDamage
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 130634667777208275, guid: 764091be0858da145996dece33f38d67, type: 3}
-      propertyPath: speedIncreasePerLevel
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 130634667777208275, guid: 764091be0858da145996dece33f38d67, type: 3}
-      propertyPath: damageIncreasePerLevel
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 130634667777208275, guid: 764091be0858da145996dece33f38d67, type: 3}
       propertyPath: healthIncreasePerLevel
-      value: 100
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 130634667777208275, guid: 764091be0858da145996dece33f38d67, type: 3}
       propertyPath: critChanceIncreasePerLevel
-      value: 0.1
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 339675308182881460, guid: 764091be0858da145996dece33f38d67, type: 3}
       propertyPath: m_Name
       value: player
-      objectReference: {fileID: 0}
-    - target: {fileID: 972403036335350293, guid: 764091be0858da145996dece33f38d67, type: 3}
-      propertyPath: m_Enabled
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1307770642612579619, guid: 764091be0858da145996dece33f38d67, type: 3}
       propertyPath: lm
@@ -6603,10 +6583,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8247083726572836595, guid: 764091be0858da145996dece33f38d67, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8805715908513732437, guid: 764091be0858da145996dece33f38d67, type: 3}
-      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
