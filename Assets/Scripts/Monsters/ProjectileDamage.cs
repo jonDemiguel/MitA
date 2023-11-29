@@ -38,5 +38,6 @@ public class ProjectileDamage : MonoBehaviour
         if (playerBehavior != null) {
             playerBehavior.PlayerTakeDmg(damageAmount);
         }
+        Destroy(gameObject);
     }
 }

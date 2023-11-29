@@ -7,9 +7,7 @@ public class Enemy : MonoBehaviour
     public float castDistance = 5f; // The distance from the player where the spell can be cast
     public float initialCastDelay = 5f; // Time in seconds to wait before first cast
     public float castDelay = 3f; // Time between casts after the first
-
     private GameObject player; // To store the player reference
-
 
     void Start()
     {
@@ -22,16 +20,20 @@ public class Enemy : MonoBehaviour
 
     IEnumerator InitialSpellCast()
     {
+        
         yield return new WaitForSeconds(initialCastDelay);
-        CastSpell();
-        // Start the regular casting routine
-        InvokeRepeating(nameof(CastSpell), castDelay, castDelay);
+        if (gameObject.activeInHierarchy)
+        {    
+            CastSpell();
+            // Start the regular casting routine
+            InvokeRepeating(nameof(CastSpell), castDelay, castDelay);
+        }
     }
 
     // Call this method to cast a spell
     public void CastSpell()
     {
-        if (player != null)
+        if (player != null && gameObject.activeInHierarchy)
         {
             // Get a random direction relative to the player's position
             Vector3 randomDirection = Random.insideUnitSphere * castDistance;

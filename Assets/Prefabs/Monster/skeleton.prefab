@@ -122,7 +122,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41cf274b49ac79643a6024f549c8ef31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 3
+  moveSpeed: 6
   attackRange: 2
   damage: 1
   attackDuration: 0.41
@@ -141,9 +141,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
+  currentHealth: 0
   itemsToDrop: []
-  experience_gain: 400
   chanceOfDrop: 1
+  isDestroyable: 0
 --- !u!61 &1776653434488085794
 BoxCollider2D:
   m_ObjectHideFlags: 0
