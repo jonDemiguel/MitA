@@ -119,5 +119,5 @@ MonoBehaviour:
   skeletonPrefab: {fileID: 4887955916676022665, guid: 9f5406e14417c0d4b869fb0d49fee597, type: 3}
   castDistance: 5
   castAnimationDuration: 2
-  castDelay: 15
+  castDelay: 5
   isCasting: 0
