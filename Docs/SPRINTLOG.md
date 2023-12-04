@@ -11,4 +11,4 @@
 | 6 | Nov 6 | [EXP, Project Planning, Spinning Sword](https://docs.google.com/presentation/d/10JnRSeJlbRkDH7tbecXtgftwfQmyWt-BksU94ErdFTk/edit?usp=sharing) |
 | 7 | Nov 13 | [New Maps, Final Boss, Final Boss Map](https://docs.google.com/presentation/d/1flmdCDc0gNd1s5UuuHifoiaTP6mSc1E9sP77pmM7nVY/edit?usp=sharing) |
 | 8 | Nov 27 | [Video Trailer, Completed Demo](https://docs.google.com/presentation/d/1ZV4E5aIVk8TuTw1cH2YxONrdNKeOWP1K0mPY3j61u4U/edit?usp=sharing) |
-| - | Dec 1 | Project Showcase |
+| - | Dec 1 | Project Showcase | 
